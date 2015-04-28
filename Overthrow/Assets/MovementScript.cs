@@ -5,7 +5,7 @@ public class MovementScript : MonoBehaviour {
 
 	public int smooth;
 	public float speed = 3.0f;
-	private Vector3 targetPosition;
+	private Vector3 targetPosition, cameraTargetPosition;
 	public bool moving = false;
 
 	// Use this for initialization
@@ -32,6 +32,14 @@ public class MovementScript : MonoBehaviour {
 
 		if (moving) {
 			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+			/*cameraTargetPosition = targetPosition;
+			cameraTargetPosition.x /= 5;
+			cameraTargetPosition.y = Camera.main.transform.position.y;
+			cameraTargetPosition.z /= 5;
+			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, cameraTargetPosition, Time.deltaTime * speed);*/
+			if ((targetPosition - transform.position).magnitude < 0.1) {
+				moving = false;
+			}
 		}
 
 	}
