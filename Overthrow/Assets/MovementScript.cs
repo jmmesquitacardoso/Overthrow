@@ -1,0 +1,38 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class MovementScript : MonoBehaviour {
+
+	public int smooth;
+	public float speed = 3.0f;
+	private Vector3 targetPosition;
+	public bool moving = false;
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+			moving = true;
+			Plane playerPlane = new Plane(Vector3.up, transform.position);
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			float hitDist = 0.0f;
+
+			if (playerPlane.Raycast (ray, out hitDist)) {	
+				var targetPoint = ray.GetPoint(hitDist);
+				targetPosition = ray.GetPoint(hitDist);
+				var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
+				transform.rotation = targetRotation;
+			}
+		}
+
+		if (moving) {
+			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+		}
+
+	}
+}
