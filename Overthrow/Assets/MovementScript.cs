@@ -43,4 +43,10 @@ public class MovementScript : MonoBehaviour {
 		}
 
 	}
+
+	void OnCollisionEnter(Collision collision) {
+		if (moving) {
+			moving = false;
+		}
+	}
 }
