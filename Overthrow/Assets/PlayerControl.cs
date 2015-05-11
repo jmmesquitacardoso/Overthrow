@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MovementScript : MonoBehaviour {
-
-	public int smooth;
+public class PlayerControl : MonoBehaviour {
+	
 	public float speed = 3.0f;
 	private Vector3 targetPosition, cameraTargetPosition;
 	public bool moving = false;
@@ -16,12 +15,44 @@ public class MovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+		PlayerSkills ();
+
+		MouseMovement ();
+
+	}
+
+	void OnCollisionEnter(Collision collision) {
+		if (moving) {
+			moving = false;
+		}
+	}
+
+	void PlayerSkills() {
+		if (Input.GetKeyDown(KeyCode.Alpha1)) {
+			Debug.Log ("Pressed key 1!");
+		}
+		
+		
+		if (Input.GetKeyDown(KeyCode.Alpha2)) {
+			Debug.Log ("Pressed key 2!");
+		}
+		
+		if (Input.GetKeyDown(KeyCode.Alpha3)) {
+			Debug.Log ("Pressed key 3!");
+		}
+		
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			Debug.Log ("Pressed key 4!");
+		}
+	}
+
+	void MouseMovement() {
+		if (Input.GetMouseButtonDown (0)) {
 			moving = true;
 			Plane playerPlane = new Plane(Vector3.up, transform.position);
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			float hitDist = 0.0f;
-
+			
 			if (playerPlane.Raycast (ray, out hitDist)) {	
 				var targetPoint = ray.GetPoint(hitDist);
 				targetPosition = ray.GetPoint(hitDist);
@@ -29,24 +60,12 @@ public class MovementScript : MonoBehaviour {
 				transform.rotation = targetRotation;
 			}
 		}
-
+		
 		if (moving) {
 			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
-			/*cameraTargetPosition = targetPosition;
-			cameraTargetPosition.x /= 5;
-			cameraTargetPosition.y = Camera.main.transform.position.y;
-			cameraTargetPosition.z /= 5;
-			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, cameraTargetPosition, Time.deltaTime * speed);*/
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				moving = false;
 			}
-		}
-
-	}
-
-	void OnCollisionEnter(Collision collision) {
-		if (moving) {
-			moving = false;
 		}
 	}
 }
