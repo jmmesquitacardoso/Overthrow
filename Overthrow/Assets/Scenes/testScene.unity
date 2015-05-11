@@ -638,9 +638,9 @@ GameObject:
   - 33: {fileID: 955474572}
   - 135: {fileID: 955474571}
   - 23: {fileID: 955474570}
-  - 114: {fileID: 955474574}
   - 135: {fileID: 955474575}
   - 54: {fileID: 955474576}
+  - 114: {fileID: 955474574}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -711,10 +711,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 955474569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e1e42a88b27fd14a8bf01e3ce53cca1, type: 3}
+  m_Script: {fileID: 11500000, guid: b8c319b77e4f46d40b87f4c0d0c26c36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smooth: 0
   speed: 3
   moving: 0
 --- !u!135 &955474575
