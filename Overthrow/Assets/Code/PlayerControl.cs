@@ -6,6 +6,10 @@ public class PlayerControl : MonoBehaviour {
 	public float speed = 3.0f;
 	private Vector3 targetPosition, cameraTargetPosition;
 	public bool moving = false;
+	private Ray ray;
+	private RaycastHit hit;
+	private Transform currentTarget;
+	public Transform elementalMissiles;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +23,7 @@ public class PlayerControl : MonoBehaviour {
 
 		MouseMovement ();
 
+		UpdateCurrentTarget ();
 	}
 
 	void OnCollisionEnter(Collision collision) {
@@ -27,9 +32,21 @@ public class PlayerControl : MonoBehaviour {
 		}
 	}
 
+	void UpdateCurrentTarget() {
+		ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+		if(Physics.Raycast(ray, out hit))
+		{
+			currentTarget = hit.transform;
+		}
+	}
+
 	void PlayerSkills() {
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			Debug.Log ("Pressed key 1!");
+			elementalMissiles.GetComponent<MissileMovement>().target = currentTarget;
+			elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
+			Debug.Log (currentTarget.name);
+			Instantiate(elementalMissiles);
 		}
 		
 		

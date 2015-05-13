@@ -46,8 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraFollowScript.cs" />
-     <Compile Include="Assets\PlayerControl.cs" />
+     <Compile Include="Assets\Code\CameraFollowScript.cs" />
+     <Compile Include="Assets\Code\MissileMovement.cs" />
+     <Compile Include="Assets\Code\PlayerControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
