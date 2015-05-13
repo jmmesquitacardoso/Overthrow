@@ -43,15 +43,21 @@ public class PlayerControl : MonoBehaviour {
 
 	void PlayerSkills() {
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			elementalMissiles.GetComponent<MissileMovement>().target = currentTarget;
-			elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
-			Debug.Log (currentTarget.name);
-			Instantiate(elementalMissiles);
+			if (currentTarget.tag == "Enemy") {
+				elementalMissiles.GetComponent<MissileMovement>().target = currentTarget;
+				elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
+				Debug.Log (currentTarget.name);
+				Instantiate(elementalMissiles);
+			}
 		}
 		
 		
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			Debug.Log ("Pressed key 2!");
+			moving = false;
+			Vector3 mousePosition = Input.mousePosition;
+			mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+			mousePosition.y = 1f;
+			transform.position = mousePosition;
 		}
 		
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
