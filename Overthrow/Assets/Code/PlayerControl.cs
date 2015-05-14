@@ -54,10 +54,9 @@ public class PlayerControl : MonoBehaviour {
 		
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			moving = false;
-			Vector3 mousePosition = Input.mousePosition;
-			mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-			mousePosition.y = 1f;
-			transform.position = mousePosition;
+			GetMouseWorldPosition();
+
+			transform.position = targetPosition;
 		}
 		
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
@@ -72,16 +71,7 @@ public class PlayerControl : MonoBehaviour {
 	void MouseMovement() {
 		if (Input.GetMouseButtonDown (0)) {
 			moving = true;
-			Plane playerPlane = new Plane(Vector3.up, transform.position);
-			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-			float hitDist = 0.0f;
-			
-			if (playerPlane.Raycast (ray, out hitDist)) {	
-				var targetPoint = ray.GetPoint(hitDist);
-				targetPosition = ray.GetPoint(hitDist);
-				var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
-				transform.rotation = targetRotation;
-			}
+			GetMouseWorldPosition();
 		}
 		
 		if (moving) {
@@ -89,6 +79,19 @@ public class PlayerControl : MonoBehaviour {
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				moving = false;
 			}
+		}
+	}
+
+	void GetMouseWorldPosition() {
+		Plane playerPlane = new Plane(Vector3.up, transform.position);
+		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		float hitDist = 0.0f;
+		
+		if (playerPlane.Raycast (ray, out hitDist)) {	
+			var targetPoint = ray.GetPoint(hitDist);
+			targetPosition = ray.GetPoint(hitDist);
+			var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
+			transform.rotation = targetRotation;
 		}
 	}
 }
