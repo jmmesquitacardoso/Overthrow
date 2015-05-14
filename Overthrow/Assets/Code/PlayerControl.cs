@@ -10,10 +10,11 @@ public class PlayerControl : MonoBehaviour {
 	private RaycastHit hit;
 	private Transform currentTarget;
 	public Transform elementalMissiles;
+	private float blinkCooldown;
 
 	// Use this for initialization
 	void Start () {
-	
+		blinkCooldown = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -53,10 +54,12 @@ public class PlayerControl : MonoBehaviour {
 		
 		
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			moving = false;
-			GetMouseWorldPosition();
-
-			transform.position = targetPosition;
+			if (blinkCooldown <= Time.time) {
+				moving = false;
+				GetMouseWorldPosition();
+				transform.position = targetPosition;
+				blinkCooldown = Time.time + 15f;
+			}
 		}
 		
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
@@ -86,12 +89,19 @@ public class PlayerControl : MonoBehaviour {
 		Plane playerPlane = new Plane(Vector3.up, transform.position);
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		float hitDist = 0.0f;
+		var rotation = transform.rotation;
 		
 		if (playerPlane.Raycast (ray, out hitDist)) {	
 			var targetPoint = ray.GetPoint(hitDist);
 			targetPosition = ray.GetPoint(hitDist);
 			var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
+			rotation = targetRotation;
+			rotation.x = 270;
+			Debug.Log ("X Rotation after = " + rotation.x);
+			targetRotation = rotation;
+			Debug.Log ("X Rotation initial = " + targetRotation);
 			transform.rotation = targetRotation;
+			Debug.Log ("X Rotation final = " + transform.rotation.x);
 		}
 	}
 }
