@@ -45,7 +45,7 @@ public class PlayerControl : MonoBehaviour {
 		mode = Mode.ARPG;
 		globalCooldown = 1f / attackSpeed;
 		globalCooldownTimeSpan = Time.time;
-		//anim = gameObject.GetComponent<Animator> ();
+		anim = gameObject.GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -135,7 +135,7 @@ public class PlayerControl : MonoBehaviour {
 	void Grapple() {
 		Instantiate (grapple);
 		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
-		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation;
+		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation.eulerAngles;
 		grapple.position = new Vector3 (transform.position.x + 1, 1, transform.position.z + 1);
 	}
 
@@ -146,7 +146,7 @@ public class PlayerControl : MonoBehaviour {
 		}
 		
 		if (moving) {
-			//anim.Play("Sexy_Walk-final");
+			anim.Play("Sexy_Walk-final");
 			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				moving = false;
@@ -165,7 +165,7 @@ public class PlayerControl : MonoBehaviour {
 			var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
 			transform.rotation = targetRotation;
 			var rotation = transform.rotation.eulerAngles;
-			rotation.x = 270;
+			rotation.x += 270;
 			transform.rotation = Quaternion.Euler (rotation);
 		}
 	}

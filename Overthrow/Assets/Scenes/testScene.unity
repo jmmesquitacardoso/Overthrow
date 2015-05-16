@@ -682,7 +682,7 @@ Transform:
   m_GameObject: {fileID: 926969020}
   m_LocalRotation: {x: .70710659, y: 0, z: 0, w: -.707106948}
   m_LocalPosition: {x: -4.5999999, y: 4, z: -6.98000002}
-  m_LocalScale: {x: .25, y: .25, z: .25}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children:
   - {fileID: 921317783}
   m_Father: {fileID: 0}
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de5aa69cbed9524d9a2f007e2b7d938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 955474573}
+  player: {fileID: 926969021}
 --- !u!1 &1143642400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,11 +1169,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1213,6 +1213,7 @@ GameObject:
   - 33: {fileID: 1508597158}
   - 136: {fileID: 1508597157}
   - 23: {fileID: 1508597156}
+  - 114: {fileID: 1508597160}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Enemy
@@ -1279,6 +1280,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+--- !u!114 &1508597160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1508597155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9435934a0918aa34cbedb3bd9386c158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseTexture: {fileID: 2800000, guid: 714e1ef7160dba04f879c9959209bc1f, type: 3}
 --- !u!1 &1642281253
 GameObject:
   m_ObjectHideFlags: 0

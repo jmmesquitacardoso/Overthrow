@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Code\CameraFollowScript.cs" />
+     <Compile Include="Assets\Code\EnemyScript.cs" />
      <Compile Include="Assets\Code\GrappleLogic.cs" />
      <Compile Include="Assets\Code\MissileMovement.cs" />
      <Compile Include="Assets\Code\PlayerControl.cs" />
