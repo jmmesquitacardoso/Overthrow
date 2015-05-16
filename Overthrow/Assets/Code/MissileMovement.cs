@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MissileMovement : MonoBehaviour {
 
-	public Transform target;
+	public Vector3 targetPosition;
 
 	private bool moving = false;
 
@@ -18,11 +18,15 @@ public class MissileMovement : MonoBehaviour {
 		moving = true;
 	
 		if (moving) {
-			transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * speed);
-			if ((target.position - transform.position).magnitude < 0.1) {
+			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+			if ((targetPosition - transform.position).magnitude < 0.1) {
 				moving = false;
 				Destroy(gameObject);
 			}
 		}
+	}
+
+	void OnCollisionEnter(Collision collision) {
+		
 	}
 }

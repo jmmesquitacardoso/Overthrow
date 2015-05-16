@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.04071426, y: 1, z: -10.0998001}
-  m_LocalScale: {x: .200000003, y: 6, z: .200000003}
+  m_LocalPosition: {x: -4.06215525, y: 1, z: 17.1744289}
+  m_LocalScale: {x: .200000003, y: 1, z: .200000003}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,9 +73,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8296db5434a59ba409b8e3106651f6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: -8.04071426, y: 4, z: -11.0998001}
+  playerPosition: {x: -5.06215525, y: 4, z: 16.1744289}
   grappleSpeed: 20
-  playerRotation: {x: 270, y: 45.0386887, z: 0}
+  playerRotation: {x: 270, y: 61.9229546, z: 0}
 --- !u!136 &13683194
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -78,10 +78,17 @@ public class PlayerControl : MonoBehaviour {
 
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
-					ElementalMissiles ();
+					ElementalMissiles (currentTarget.position);
 				} else {
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
+			}
+
+			if (Input.GetKeyDown(KeyCode.Alpha1) && Input.GetKeyDown(KeyCode.LeftShift)) {
+				if (mode == Mode.ARPG) {
+					ElementalMissiles (Vector3.zero);
+				} else {
+				}
 			}
 		
 			if (Input.GetKeyDown (KeyCode.Alpha2)) {
@@ -116,10 +123,10 @@ public class PlayerControl : MonoBehaviour {
 		} 
 	}
 
-	void ElementalMissiles() {
+	void ElementalMissiles(Vector3 targetPosition) {
 		if (currentTarget.tag == "Enemy") {
 			moving = false;
-			elementalMissiles.GetComponent<MissileMovement>().target = currentTarget;
+			elementalMissiles.GetComponent<MissileMovement>().targetPosition = targetPosition;
 			elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
 			RotateTowardsTargetPosition(currentTarget.position);
 			Debug.Log (currentTarget.name);
@@ -135,10 +142,10 @@ public class PlayerControl : MonoBehaviour {
 	}
 
 	void Grapple() {
-		Instantiate (grapple);
 		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
 		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation.eulerAngles;
 		grapple.position = new Vector3 (transform.position.x + 1, 1, transform.position.z + 1);
+		Instantiate (grapple);
 	}
 
 	void MouseMovement() {
