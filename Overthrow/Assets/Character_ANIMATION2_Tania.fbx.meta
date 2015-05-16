@@ -203,7 +203,1907 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|CameraAction
+      takeName: Armature|CameraAction
+      firstFrame: 0
+      lastFrame: 686
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|dance
+      takeName: Armature|dance
+      firstFrame: 0
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Sexy_Walk
+      takeName: Armature|Sexy_Walk
+      firstFrame: 0
+      lastFrame: 357
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Sexy_Walk-final
+      takeName: Armature|Sexy_Walk-final
+      firstFrame: 0
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: body|CameraAction
+      takeName: body|CameraAction
+      firstFrame: 0
+      lastFrame: 686
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: body|dance
+      takeName: body|dance
+      firstFrame: 0
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: eyes|CameraAction
+      takeName: eyes|CameraAction
+      firstFrame: 0
+      lastFrame: 686
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: eyes|Sexy_Walk
+      takeName: eyes|Sexy_Walk
+      firstFrame: 0
+      lastFrame: 357
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: oculos|CameraAction
+      takeName: oculos|CameraAction
+      firstFrame: 0
+      lastFrame: 686
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: cabelo|CameraAction
+      takeName: cabelo|CameraAction
+      firstFrame: 0
+      lastFrame: 686
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ancas
+        weight: 1
+      - path: Armature/ancas/coluna
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/anular1_e/anular2_e/anular3_e/anular3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/indicador1_e/indicador2_e/indicador3_e/indicador3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/minimo1_e/minimo2_e/minimo3_e/minimo3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/m\xE9dio1_e/m\xE9dio2_e/m\xE9dio3_e/m\xE9dio3_e_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e/bra\xE7o_e/antebra\xE7o_e/mao_e/pulegar1_e/pulegar2_e/pulegar3_e/pulegar3_e_end"
+        weight: 1
+      - path: Armature/ancas/coluna/ombro_e.001
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/anular1_e.001/anular2_e.001/anular3_e.001/anular3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/indicador1_e.001/indicador2_e.001/indicador3_e.001/indicador3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/minimo1_e.001/minimo2_e.001/minimo3_e.001/minimo3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/m\xE9dio1_e.001/m\xE9dio2_e.001/m\xE9dio3_e.001/m\xE9dio3_e.001_end"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001"
+        weight: 1
+      - path: "Armature/ancas/coluna/ombro_e.001/bra\xE7o_e.001/antebra\xE7o_e.001/mao_e.001/pulegar1_e.001/pulegar2_e.001/pulegar3_e.001/pulegar3_e.001_end"
+        weight: 1
+      - path: Armature/ancas/coluna/peito
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/ancas/coluna/peito/pesco\xE7o/cabe\xE7a/cabe\xE7a_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e
+        weight: 1
+      - path: Armature/ancas/coxa_e/perna_e
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e"
+        weight: 1
+      - path: "Armature/ancas/coxa_e/perna_e/p\xE9_e/dedos_p\xE9_e/dedos_p\xE9_e_end"
+        weight: 1
+      - path: Armature/ancas/coxa_e.001
+        weight: 1
+      - path: Armature/ancas/coxa_e.001/perna_e.001
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001"
+        weight: 1
+      - path: "Armature/ancas/coxa_e.001/perna_e.001/p\xE9_e.001/dedos_p\xE9_e.001/dedos_p\xE9_e.001_end"
+        weight: 1
+      - path: Armature/IK_mao_d
+        weight: 1
+      - path: Armature/IK_mao_d/IK_mao_d_end
+        weight: 1
+      - path: Armature/IK_mao_d.001
+        weight: 1
+      - path: Armature/IK_mao_d.001/IK_mao_d.001_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e
+        weight: 1
+      - path: Armature/IK_Pole_perna_e/IK_Pole_perna_e_end
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001
+        weight: 1
+      - path: Armature/IK_Pole_perna_e.001/IK_Pole_perna_e.001_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e
+        weight: 1
+      - path: Armature/IK_Target_perna_e/IK_Target_perna_e_end
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001
+        weight: 1
+      - path: Armature/IK_Target_perna_e.001/IK_Target_perna_e.001_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: cabelo
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: oculos
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

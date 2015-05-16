@@ -118,8 +118,10 @@ public class PlayerControl : MonoBehaviour {
 
 	void ElementalMissiles() {
 		if (currentTarget.tag == "Enemy") {
+			moving = false;
 			elementalMissiles.GetComponent<MissileMovement>().target = currentTarget;
 			elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
+			RotateTowardsTargetPosition(currentTarget.position);
 			Debug.Log (currentTarget.name);
 			Instantiate(elementalMissiles);
 		}
@@ -146,12 +148,23 @@ public class PlayerControl : MonoBehaviour {
 		}
 		
 		if (moving) {
-			anim.Play("Run");
-			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+			anim.Play ("Run");
+			transform.position = Vector3.MoveTowards (transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				moving = false;
 			}
+		} else {
+			anim.Play("Idle");
 		}
+	}
+
+	void RotateTowardsTargetPosition(Vector3 targetPosition) {
+		var targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
+		transform.rotation = targetRotation;
+		var rotation = transform.rotation.eulerAngles;
+		rotation.x = 270;
+		rotation.z = 0;
+		transform.rotation = Quaternion.Euler (rotation);
 	}
 
 	void GetMouseWorldPosition() {
@@ -162,11 +175,7 @@ public class PlayerControl : MonoBehaviour {
 		if (playerPlane.Raycast (ray, out hitDist)) {	
 			var targetPoint = ray.GetPoint(hitDist);
 			targetPosition = ray.GetPoint(hitDist);
-			var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
-			transform.rotation = targetRotation;
-			var rotation = transform.rotation.eulerAngles;
-			rotation.x += 270;
-			transform.rotation = Quaternion.Euler (rotation);
+			RotateTowardsTargetPosition(targetPoint);
 		}
 	}
 }
