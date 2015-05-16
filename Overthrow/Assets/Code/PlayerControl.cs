@@ -146,7 +146,7 @@ public class PlayerControl : MonoBehaviour {
 		}
 		
 		if (moving) {
-			anim.Play("Sexy_Walk-final");
+			anim.Play("Run");
 			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				moving = false;
