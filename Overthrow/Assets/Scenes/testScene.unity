@@ -673,15 +673,15 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &926969021
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 926969020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.92089105, y: 4, z: 7.15960741}
+  m_LocalRotation: {x: .70710659, y: 0, z: 0, w: -.707106948}
+  m_LocalPosition: {x: -4.5999999, y: 4, z: -6.98000002}
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children:
   - {fileID: 921317783}
@@ -701,8 +701,16 @@ MonoBehaviour:
   speed: 3
   blinkCooldown: 0
   naturesWrathCooldown: 15
-  moving: 0
-  elementalMissiles: {fileID: 0}
+  attackSpeed: 1
+  dodgeChance: 15
+  critChance: 15
+  health: 400
+  mana: 200
+  strength: 100
+  attackPower: 1000
+  criticalHitDamage: 1
+  elementalMissiles: {fileID: 416032, guid: 69486f405a39aeb4e89e253f09436b2f, type: 2}
+  grapple: {fileID: 422668, guid: e22e24f276306c247b766b3d07b67c59, type: 2}
 --- !u!1 &955474569
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &955474570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -793,8 +801,16 @@ MonoBehaviour:
   speed: 5
   blinkCooldown: 5
   naturesWrathCooldown: 15
-  moving: 0
+  attackSpeed: 1
+  dodgeChance: 15
+  critChance: 15
+  health: 400
+  mana: 200
+  strength: 100
+  attackPower: 1000
+  criticalHitDamage: 1
   elementalMissiles: {fileID: 416032, guid: 69486f405a39aeb4e89e253f09436b2f, type: 2}
+  grapple: {fileID: 422668, guid: e22e24f276306c247b766b3d07b67c59, type: 2}
 --- !u!135 &955474575
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -817,7 +833,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -1178,6 +1194,10 @@ Prefab:
     - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
+      propertyPath: m_Name
+      value: animator
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}

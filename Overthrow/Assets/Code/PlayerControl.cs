@@ -6,20 +6,34 @@ enum Mode {ARPG, Stealth};
 public class PlayerControl : MonoBehaviour {
 	
 	public float speed = 3.0f;
-	public float blinkCooldown = 15;
-	public float naturesWrathCooldown = 15;
+	public float blinkCooldown = 15f;
+	public float naturesWrathCooldown = 15f;
+	public float attackSpeed = 1f;
+	public float dodgeChance = 15f;
+	public float critChance = 15f;
 	private float blinkTimeSpan;
 	private float naturesWrathTimeSpan;
+	private float globalCooldown;
+	private float globalCooldownTimeSpan;
 
-	private Vector3 targetPosition, cameraTargetPosition;
+	public int health = 400;
+	public int mana = 0200;
+	public int strength = 100;
+	public int attackPower = 1000;
+	public int criticalHitDamage = 1;
 
-	public bool moving = false;
+	private Animator anim;
+
+	private Vector3 targetPosition;
+
+	private bool moving = false;
 
 	private Ray ray;
 
 	private RaycastHit hit;
 	
 	public Transform elementalMissiles;
+	public Transform grapple;
 	private Transform currentTarget;
 
 	private Mode mode;
@@ -27,7 +41,11 @@ public class PlayerControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		blinkTimeSpan = Time.time;
+		naturesWrathTimeSpan = Time.time;
 		mode = Mode.ARPG;
+		globalCooldown = 1f / attackSpeed;
+		globalCooldownTimeSpan = Time.time;
+		//anim = gameObject.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -56,38 +74,46 @@ public class PlayerControl : MonoBehaviour {
 	}
 
 	void PlayerSkills() {
-		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			if (mode == Mode.ARPG) {
-				ElementalMissiles();
-			} else {
-			}
-		}
-		
-		if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			if (mode == Mode.ARPG) {
-				if (blinkTimeSpan <= Time.time) {
-					Blink ();
-				}
-			} else {
-			}
-		}
-		
-		if (Input.GetKeyDown(KeyCode.Alpha3)) {
-			Debug.Log ("Pressed key 3!");
-		}
-		
-		if (Input.GetKeyDown(KeyCode.Alpha4)) {
-			Debug.Log ("Pressed key 4!");
-		}
+		if (globalCooldownTimeSpan <= Time.time) {
 
-		if (Input.GetMouseButtonDown (1)) {
-			Debug.Log ("Switching mode!");
-			if (mode == Mode.ARPG) {
-				mode = Mode.Stealth;
-			} else {
-				mode = Mode.ARPG;
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				if (mode == Mode.ARPG) {
+					ElementalMissiles ();
+				} else {
+				}
+				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
-		}
+		
+			if (Input.GetKeyDown (KeyCode.Alpha2)) {
+				if (mode == Mode.ARPG) {
+					if (blinkTimeSpan <= Time.time) {
+						Blink ();
+					}
+				} else {
+					Grapple();
+				}
+				globalCooldownTimeSpan = Time.time + globalCooldown;
+			}
+		
+			if (Input.GetKeyDown (KeyCode.Alpha3)) {
+				Debug.Log ("Pressed key 3!");
+				globalCooldownTimeSpan = Time.time + globalCooldown;
+			}
+		
+			if (Input.GetKeyDown (KeyCode.Alpha4)) {
+				Debug.Log ("Pressed key 4!");
+				globalCooldownTimeSpan = Time.time + globalCooldown;
+			}
+
+			if (Input.GetMouseButtonDown (1)) {
+				Debug.Log ("Switching mode!");
+				if (mode == Mode.ARPG) {
+					mode = Mode.Stealth;
+				} else {
+					mode = Mode.ARPG;
+				}
+			}
+		} 
 	}
 
 	void ElementalMissiles() {
@@ -106,6 +132,13 @@ public class PlayerControl : MonoBehaviour {
 		blinkTimeSpan = Time.time + blinkCooldown;
 	}
 
+	void Grapple() {
+		Instantiate (grapple);
+		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
+		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation;
+		grapple.position = new Vector3 (transform.position.x + 1, 1, transform.position.z + 1);
+	}
+
 	void MouseMovement() {
 		if (Input.GetMouseButtonDown (0)) {
 			moving = true;
@@ -113,6 +146,7 @@ public class PlayerControl : MonoBehaviour {
 		}
 		
 		if (moving) {
+			//anim.Play("Sexy_Walk-final");
 			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				moving = false;
@@ -124,19 +158,15 @@ public class PlayerControl : MonoBehaviour {
 		Plane playerPlane = new Plane(Vector3.up, transform.position);
 		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		float hitDist = 0.0f;
-		var rotation = transform.rotation;
 		
 		if (playerPlane.Raycast (ray, out hitDist)) {	
 			var targetPoint = ray.GetPoint(hitDist);
 			targetPosition = ray.GetPoint(hitDist);
 			var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
-			rotation = targetRotation;
-			rotation.x = 270;
-			Debug.Log ("X Rotation after = " + rotation.x);
-			targetRotation = rotation;
-			Debug.Log ("X Rotation initial = " + targetRotation);
 			transform.rotation = targetRotation;
-			Debug.Log ("X Rotation final = " + transform.rotation.x);
+			var rotation = transform.rotation.eulerAngles;
+			rotation.x = 270;
+			transform.rotation = Quaternion.Euler (rotation);
 		}
 	}
 }
