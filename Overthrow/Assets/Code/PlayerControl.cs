@@ -22,9 +22,9 @@ public class PlayerControl : MonoBehaviour {
 	public int attackPower = 1000;
 	public int criticalHitDamage = 1;
 
-	private Animator anim;
+	private Vector3 targetPosition; 
 
-	private Vector3 targetPosition;
+	private Animator anim;
 
 	private bool moving = false;
 
@@ -58,12 +58,19 @@ public class PlayerControl : MonoBehaviour {
 		UpdateCurrentTarget ();
 	}
 
+	//Displays the current frames per second
+	void OnGUI()
+	{
+		GUI.Label(new Rect(0, 0, 100, 100), "FPS = " + (int)(1.0f / Time.smoothDeltaTime));        
+	}
+
 	void OnCollisionEnter(Collision collision) {
 		if (moving) {
 			moving = false;
 		}
 	}
 
+	// Gets the current target the mouse is hovering
 	void UpdateCurrentTarget() {
 		ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -73,7 +80,9 @@ public class PlayerControl : MonoBehaviour {
 		}
 	}
 
+	//Function that reacts to the current key down and casts the skill associated with the key
 	void PlayerSkills() {
+		//if the global cooldown is over
 		if (globalCooldownTimeSpan <= Time.time) {
 
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
@@ -93,6 +102,7 @@ public class PlayerControl : MonoBehaviour {
 		
 			if (Input.GetKeyDown (KeyCode.Alpha2)) {
 				if (mode == Mode.ARPG) {
+					//if blink is not on cooldown
 					if (blinkTimeSpan <= Time.time) {
 						Blink ();
 					}
@@ -123,17 +133,19 @@ public class PlayerControl : MonoBehaviour {
 		} 
 	}
 
+	// Casts the Elemental Missiles skill
+	// Player stops moving and rotates in the direction of the missiles
 	void ElementalMissiles(Vector3 targetPosition) {
 		if (currentTarget.tag == "Enemy") {
 			moving = false;
 			elementalMissiles.GetComponent<MissileMovement>().targetPosition = targetPosition;
 			elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
 			RotateTowardsTargetPosition(currentTarget.position);
-			Debug.Log (currentTarget.name);
 			Instantiate(elementalMissiles);
 		}
 	}
 
+	//Casts the Blink skill
 	void Blink() {
 		moving = false;
 		GetMouseWorldPosition();
@@ -141,13 +153,19 @@ public class PlayerControl : MonoBehaviour {
 		blinkTimeSpan = Time.time + blinkCooldown;
 	}
 
+	//Casts the Grapple skill
 	void Grapple() {
+		moving = false;
 		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
+		GetMouseWorldPosition ();
+		grapple.GetComponent<GrappleLogic> ().targetPosition = targetPosition;
+		RotateTowardsTargetPosition (targetPosition);
 		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation.eulerAngles;
 		grapple.position = new Vector3 (transform.position.x + 1, 1, transform.position.z + 1);
 		Instantiate (grapple);
 	}
 
+	//Handles the movement based on mouse clicks
 	void MouseMovement() {
 		if (Input.GetMouseButtonDown (0)) {
 			moving = true;
@@ -165,6 +183,7 @@ public class PlayerControl : MonoBehaviour {
 		}
 	}
 
+	//Rotates the player in the direction of the vector3 targetPosition
 	void RotateTowardsTargetPosition(Vector3 targetPosition) {
 		var targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
 		transform.rotation = targetRotation;
@@ -174,15 +193,15 @@ public class PlayerControl : MonoBehaviour {
 		transform.rotation = Quaternion.Euler (rotation);
 	}
 
+	//Gets the world coordinates of the mouse
 	void GetMouseWorldPosition() {
 		Plane playerPlane = new Plane(Vector3.up, transform.position);
 		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		float hitDist = 0.0f;
 		
-		if (playerPlane.Raycast (ray, out hitDist)) {	
-			var targetPoint = ray.GetPoint(hitDist);
+		if (playerPlane.Raycast (ray, out hitDist)) {
 			targetPosition = ray.GetPoint(hitDist);
-			RotateTowardsTargetPosition(targetPoint);
+			RotateTowardsTargetPosition(targetPosition);
 		}
 	}
 }
