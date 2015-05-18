@@ -48,6 +48,10 @@ public class PlayerControl : MonoBehaviour {
 		state = PlayerState.Idle;
 		InvokeRepeating("ManaRegen",0,1f);
 	}
+
+	void Awake() {
+		Application.targetFrameRate = 60;
+	}
 	
 	// Update is called once per frame
 	void Update () {
