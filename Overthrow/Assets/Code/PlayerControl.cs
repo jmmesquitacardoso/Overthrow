@@ -17,7 +17,9 @@ public class PlayerControl : MonoBehaviour {
 	private float globalCooldown;
 	private float globalCooldownTimeSpan;
 
-	public int health = 400;
+	public int maxHealth = 400;
+	public int currentHealth = 400;
+	public int healthPerSecond = 2;
 	public int maxMana = 400;
 	public int currentMana = 200;
 	public int manaPerSecond = 2;
@@ -59,6 +61,14 @@ public class PlayerControl : MonoBehaviour {
 		PlayerSkills ();
 
 		UpdateCurrentTarget ();
+
+		switch (state) {
+		case PlayerState.Idle: anim.Play("Idle");
+			break;
+		case PlayerState.Moving: anim.Play("Run");
+			break;
+		default: break;
+		}
 
 	}
 
@@ -196,13 +206,10 @@ public class PlayerControl : MonoBehaviour {
 		}
 		
 		if (state == PlayerState.Moving) {
-			anim.Play ("Run");
 			transform.position = Vector3.MoveTowards (transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				state = PlayerState.Idle;
 			}
-		} else {
-			anim.Play("Idle");
 		}
 	}
 

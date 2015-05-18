@@ -31,6 +31,7 @@ public class EnemyScript : MonoBehaviour {
 		}
 	}
 
+	//When the mouse hovers on the enemy, the enemy is highlighted and the cursor changes
 	void OnMouseEnter()
 	{
 		Cursor.SetCursor(mouseTexture, new Vector2(5,0), CursorMode.Auto);
