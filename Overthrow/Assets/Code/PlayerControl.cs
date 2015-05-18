@@ -18,7 +18,9 @@ public class PlayerControl : MonoBehaviour {
 	private float globalCooldownTimeSpan;
 
 	public int health = 400;
-	public int mana = 0200;
+	public int maxMana = 400;
+	public int currentMana = 200;
+	public int manaPerSecond = 2;
 	public int strength = 100;
 	public int attackPower = 1000;
 	public int criticalHitDamage = 1;
@@ -44,6 +46,7 @@ public class PlayerControl : MonoBehaviour {
 		globalCooldownTimeSpan = Time.time;
 		anim = gameObject.GetComponentInChildren<Animator>();
 		state = PlayerState.Idle;
+		InvokeRepeating("ManaRegen",0,1f);
 	}
 	
 	// Update is called once per frame
@@ -52,6 +55,7 @@ public class PlayerControl : MonoBehaviour {
 		PlayerSkills ();
 
 		UpdateCurrentTarget ();
+
 	}
 
 	void FixedUpdate () {
@@ -62,12 +66,24 @@ public class PlayerControl : MonoBehaviour {
 	//Displays the current frames per second
 	void OnGUI()
 	{
-		GUI.Label(new Rect(0, 0, 100, 100), "FPS = " + (int)(1.0f / Time.smoothDeltaTime));        
+		GUI.Label(new Rect(0, 0, 100, 100), "FPS = " + (int)(1.0f / Time.smoothDeltaTime));     
+		GUI.Label(new Rect(100, 0, 150, 100), "MANA = " + currentMana);  
 	}
 
 	void OnCollisionEnter(Collision collision) {
 		if (state == PlayerState.Moving) {
 			state = PlayerState.Idle;
+		}
+	}
+
+	//This function is called every second, so the mana regens at a rate of manaPerSecond/second
+	void ManaRegen() {
+		if (currentMana <= maxMana) {
+			if ((currentMana+manaPerSecond) <= maxMana) {
+				currentMana += manaPerSecond;
+			} else {
+				currentMana = maxMana;
+			}
 		}
 	}
 
