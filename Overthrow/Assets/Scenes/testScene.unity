@@ -497,6 +497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseTexture: {fileID: 2800000, guid: 714e1ef7160dba04f879c9959209bc1f, type: 3}
+  pulledToPosition: {x: 0, y: 0, z: 0}
+  pull: 0
+  pullSpeed: 20
 --- !u!1 &1642281253
 GameObject:
   m_ObjectHideFlags: 0

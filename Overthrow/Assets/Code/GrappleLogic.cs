@@ -28,6 +28,10 @@ public class GrappleLogic : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		
+		Debug.Log ("Name = " + collision.gameObject.name);
+		if (collision.gameObject.tag == "Enemy") {
+			collision.gameObject.GetComponent<EnemyScript>().pulledToPosition = playerPosition;
+			collision.gameObject.GetComponent<EnemyScript>().pull = true;
+		}
 	}
 }
