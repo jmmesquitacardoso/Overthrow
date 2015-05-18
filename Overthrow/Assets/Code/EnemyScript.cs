@@ -22,6 +22,10 @@ public class EnemyScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+	}
+
+	void FixedUpdate() {
 		if (pull) {
 			transform.position = Vector3.MoveTowards(transform.position, pulledToPosition, Time.deltaTime * pullSpeed);
 		}

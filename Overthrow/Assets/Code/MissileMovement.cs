@@ -15,8 +15,11 @@ public class MissileMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+	}
+
+	void FixedUpdate() {
 		moving = true;
-	
+		
 		if (moving) {
 			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
