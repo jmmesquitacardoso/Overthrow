@@ -137,7 +137,9 @@ MonoBehaviour:
   attackSpeed: 1
   dodgeChance: 15
   critChance: 15
-  health: 400
+  maxHealth: 400
+  currentHealth: 200
+  healthPerSecond: 2
   maxMana: 400
   currentMana: 200
   manaPerSecond: 30
@@ -146,6 +148,7 @@ MonoBehaviour:
   criticalHitDamage: 1
   elementalMissiles: {fileID: 416032, guid: 69486f405a39aeb4e89e253f09436b2f, type: 2}
   grapple: {fileID: 422668, guid: e22e24f276306c247b766b3d07b67c59, type: 2}
+  trap: {fileID: 403356, guid: e5f6d9508becedd4fa64a641b323270f, type: 2}
 --- !u!1001 &956238279
 Prefab:
   m_ObjectHideFlags: 0
@@ -463,7 +466,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .5
+  m_Radius: 2
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

@@ -44,4 +44,11 @@ public class EnemyScript : MonoBehaviour {
 		Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
 		rend.material.color = originalColor;
 	}
+
+	void OnCollisionEnter(Collision collision) {
+		if (collision.gameObject.tag == "Trap") {
+			Destroy(gameObject);
+			Destroy(collision.gameObject);
+		}
+	}
 }

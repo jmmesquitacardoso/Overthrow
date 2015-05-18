@@ -18,7 +18,7 @@ public class PlayerControl : MonoBehaviour {
 	private float globalCooldownTimeSpan;
 
 	public int maxHealth = 400;
-	public int currentHealth = 400;
+	public int currentHealth = 200;
 	public int healthPerSecond = 2;
 	public int maxMana = 400;
 	public int currentMana = 200;
@@ -35,6 +35,7 @@ public class PlayerControl : MonoBehaviour {
 	
 	public Transform elementalMissiles;
 	public Transform grapple;
+	public Transform trap;
 	private Transform currentTarget;
 
 	private Mode mode;
@@ -49,6 +50,7 @@ public class PlayerControl : MonoBehaviour {
 		anim = gameObject.GetComponentInChildren<Animator>();
 		state = PlayerState.Idle;
 		InvokeRepeating("ManaRegen",0,1f);
+		InvokeRepeating("HealthRegen",0,1f);
 	}
 
 	void Awake() {
@@ -81,7 +83,8 @@ public class PlayerControl : MonoBehaviour {
 	void OnGUI()
 	{
 		GUI.Label(new Rect(0, 0, 100, 100), "FPS = " + (int)(1.0f / Time.smoothDeltaTime));     
-		GUI.Label(new Rect(100, 0, 150, 100), "MANA = " + currentMana);  
+		GUI.Label(new Rect(100, 0, 150, 100), "MANA = " + currentMana);    
+		GUI.Label(new Rect(250, 0, 150, 100), "Health = " + currentHealth);  
 	}
 
 	void OnCollisionEnter(Collision collision) {
@@ -97,6 +100,17 @@ public class PlayerControl : MonoBehaviour {
 				currentMana += manaPerSecond;
 			} else {
 				currentMana = maxMana;
+			}
+		}
+	}
+
+	//This function is called every second, so health regens at a rate of healthPerSecond/second
+	void HealthRegen() {
+		if (currentHealth <= maxHealth) {
+			if ((currentHealth+healthPerSecond) <= maxHealth) {
+				currentHealth += healthPerSecond;
+			} else {
+				currentHealth = maxHealth;
 			}
 		}
 	}
@@ -122,6 +136,7 @@ public class PlayerControl : MonoBehaviour {
 				if (mode == Mode.ARPG) {
 					ElementalMissiles (currentTarget.position);
 				} else {
+					Trap();
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
@@ -130,6 +145,7 @@ public class PlayerControl : MonoBehaviour {
 				if (mode == Mode.ARPG) {
 					ElementalMissiles (Vector3.zero);
 				} else {
+
 				}
 			}
 		
@@ -178,6 +194,17 @@ public class PlayerControl : MonoBehaviour {
 		}
 	}
 
+	//Casts the Trap skill
+	void Trap() {
+		state = PlayerState.Idle;
+		GetMouseWorldPosition ();
+		trap.position = targetPosition;
+		var position = trap.position;
+		position.y = 1.5f;
+		trap.position = position;
+		Instantiate (trap);
+	}
+
 	//Casts the Blink skill
 	void Blink() {
 		state = PlayerState.Idle;
@@ -192,7 +219,6 @@ public class PlayerControl : MonoBehaviour {
 		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
 		GetMouseWorldPosition ();
 		grapple.GetComponent<GrappleLogic> ().targetPosition = targetPosition;
-		RotateTowardsTargetPosition (targetPosition);
 		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation.eulerAngles;
 		grapple.position = new Vector3 (transform.position.x + 1, 1, transform.position.z + 1);
 		Instantiate (grapple);
