@@ -2,6 +2,7 @@
 using System.Collections;
 
 enum Mode {ARPG, Stealth};
+enum PlayerState {Idle, Moving};
 
 public class PlayerControl : MonoBehaviour {
 	
@@ -26,11 +27,7 @@ public class PlayerControl : MonoBehaviour {
 
 	private Animator anim;
 
-	private bool moving = false;
-
-	private Ray ray;
-
-	private RaycastHit hit;
+	private PlayerState state;
 	
 	public Transform elementalMissiles;
 	public Transform grapple;
@@ -46,6 +43,7 @@ public class PlayerControl : MonoBehaviour {
 		globalCooldown = 1f / attackSpeed;
 		globalCooldownTimeSpan = Time.time;
 		anim = gameObject.GetComponentInChildren<Animator>();
+		state = PlayerState.Idle;
 	}
 	
 	// Update is called once per frame
@@ -53,9 +51,12 @@ public class PlayerControl : MonoBehaviour {
 
 		PlayerSkills ();
 
-		MouseMovement ();
-
 		UpdateCurrentTarget ();
+	}
+
+	void FixedUpdate () {
+		
+		MouseMovement ();
 	}
 
 	//Displays the current frames per second
@@ -65,14 +66,16 @@ public class PlayerControl : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		if (moving) {
-			moving = false;
+		if (state == PlayerState.Moving) {
+			state = PlayerState.Idle;
 		}
 	}
 
 	// Gets the current target the mouse is hovering
 	void UpdateCurrentTarget() {
-		ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		
+	    RaycastHit hit;
 
 		if(Physics.Raycast(ray, out hit))
 		{
@@ -137,7 +140,7 @@ public class PlayerControl : MonoBehaviour {
 	// Player stops moving and rotates in the direction of the missiles
 	void ElementalMissiles(Vector3 targetPosition) {
 		if (currentTarget.tag == "Enemy") {
-			moving = false;
+			state = PlayerState.Idle;
 			elementalMissiles.GetComponent<MissileMovement>().targetPosition = targetPosition;
 			elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
 			RotateTowardsTargetPosition(currentTarget.position);
@@ -147,7 +150,7 @@ public class PlayerControl : MonoBehaviour {
 
 	//Casts the Blink skill
 	void Blink() {
-		moving = false;
+		state = PlayerState.Idle;
 		GetMouseWorldPosition();
 		transform.position = targetPosition;
 		blinkTimeSpan = Time.time + blinkCooldown;
@@ -155,7 +158,7 @@ public class PlayerControl : MonoBehaviour {
 
 	//Casts the Grapple skill
 	void Grapple() {
-		moving = false;
+		state = PlayerState.Idle;
 		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
 		GetMouseWorldPosition ();
 		grapple.GetComponent<GrappleLogic> ().targetPosition = targetPosition;
@@ -168,15 +171,15 @@ public class PlayerControl : MonoBehaviour {
 	//Handles the movement based on mouse clicks
 	void MouseMovement() {
 		if (Input.GetMouseButtonDown (0)) {
-			moving = true;
+			state = PlayerState.Moving;
 			GetMouseWorldPosition();
 		}
 		
-		if (moving) {
+		if (state == PlayerState.Moving) {
 			anim.Play ("Run");
 			transform.position = Vector3.MoveTowards (transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
-				moving = false;
+				state = PlayerState.Idle;
 			}
 		} else {
 			anim.Play("Idle");
@@ -196,7 +199,7 @@ public class PlayerControl : MonoBehaviour {
 	//Gets the world coordinates of the mouse
 	void GetMouseWorldPosition() {
 		Plane playerPlane = new Plane(Vector3.up, transform.position);
-		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		float hitDist = 0.0f;
 		
 		if (playerPlane.Raycast (ray, out hitDist)) {

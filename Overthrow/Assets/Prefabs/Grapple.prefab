@@ -12,6 +12,7 @@ GameObject:
   - 136: {fileID: 13683194}
   - 23: {fileID: 2353240}
   - 114: {fileID: 11499294}
+  - 54: {fileID: 5402952}
   m_Layer: 0
   m_Name: Grapple
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.41750145, y: 1, z: 9.75737858}
+  m_LocalPosition: {x: -19.6963902, y: 1, z: -6.27475786}
   m_LocalScale: {x: .200000003, y: 1, z: .200000003}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,6 +63,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184898}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5402952
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184898}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!114 &11499294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,10 +89,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8296db5434a59ba409b8e3106651f6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: 3.41750121, y: 4.07000732, z: 8.75737858}
-  targetPosition: {x: 5.31542969, y: 4.07000732, z: 4.56048584}
+  playerPosition: {x: -20.6963902, y: 4.07000732, z: -7.27475786}
+  targetPosition: {x: 4.72167969, y: 4.07000732, z: 3.70062256}
   grappleSpeed: 20
-  playerRotation: {x: 270, y: 155.666458, z: 0}
+  playerRotation: {x: 270, y: 66.6455917, z: 0}
 --- !u!136 &13683194
 CapsuleCollider:
   m_ObjectHideFlags: 1
