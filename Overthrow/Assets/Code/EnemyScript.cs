@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
@@ -14,6 +15,10 @@ public class EnemyScript : MonoBehaviour {
 	public bool pull = false;
 
 	public float pullSpeed = 20f;
+
+	public Text currentEnemyText;
+
+	public Image currentEnemyHealthBar;
 
 	// Use this for initialization
 	void Start () {
@@ -37,12 +42,16 @@ public class EnemyScript : MonoBehaviour {
 		Cursor.SetCursor(mouseTexture, new Vector2(5,0), CursorMode.Auto);
 		originalColor = rend.material.color;
 		rend.material.color = Color.yellow;
+		currentEnemyText.text = gameObject.name;
+		currentEnemyHealthBar.enabled = true;
 	}
 	
 	void OnMouseExit()
 	{
 		Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
 		rend.material.color = originalColor;
+		currentEnemyText.text = "";
+		currentEnemyHealthBar.enabled = false;
 	}
 
 	void OnCollisionEnter(Collision collision) {
