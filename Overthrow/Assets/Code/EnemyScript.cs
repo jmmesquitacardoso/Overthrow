@@ -20,6 +20,9 @@ public class EnemyScript : MonoBehaviour {
 
 	public Image currentEnemyHealthBar;
 
+	public int maxHealth = 400;
+	public int currentHealth = 250;
+
 	// Use this for initialization
 	void Start () {
 		rend = GetComponent<Renderer>();
@@ -39,11 +42,12 @@ public class EnemyScript : MonoBehaviour {
 	//When the mouse hovers on the enemy, the enemy is highlighted and the cursor changes
 	void OnMouseEnter()
 	{
-		Cursor.SetCursor(mouseTexture, new Vector2(5,0), CursorMode.Auto);
+		Cursor.SetCursor(mouseTexture, new Vector2(0,0), CursorMode.Auto);
 		originalColor = rend.material.color;
 		rend.material.color = Color.yellow;
 		currentEnemyText.text = gameObject.name;
 		currentEnemyHealthBar.enabled = true;
+		currentEnemyHealthBar.fillAmount = ((float)currentHealth / (float)maxHealth);
 	}
 	
 	void OnMouseExit()
@@ -52,6 +56,15 @@ public class EnemyScript : MonoBehaviour {
 		rend.material.color = originalColor;
 		currentEnemyText.text = "";
 		currentEnemyHealthBar.enabled = false;
+	}
+
+	public void TakeDamage(int damage) {
+		currentHealth -= damage;
+		currentEnemyHealthBar.fillAmount = ((float)currentHealth / (float)maxHealth);
+		if (currentHealth <= 0) {
+			currentEnemyText.text = "";
+			Destroy(gameObject);
+		}
 	}
 
 	void OnCollisionEnter(Collision collision) {

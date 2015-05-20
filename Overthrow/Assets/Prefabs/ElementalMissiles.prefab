@@ -12,6 +12,7 @@ GameObject:
   - 65: {fileID: 6509348}
   - 23: {fileID: 2333766}
   - 114: {fileID: 11413794}
+  - 54: {fileID: 5475944}
   m_Layer: 8
   m_Name: ElementalMissiles
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5999999, y: 4.07000017, z: -5.98000002}
+  m_LocalPosition: {x: -9.40571404, y: 4.07000017, z: -5.04833651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,6 +63,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197680}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5475944
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197680}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!65 &6509348
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -87,6 +103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 6.69053841, y: 3, z: 5}
   speed: 30
+  damage: 100
+  critChance: 15.6999998
+  criticalHitDamage: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

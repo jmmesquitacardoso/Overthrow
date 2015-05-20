@@ -16,6 +16,7 @@ public class PlayerControl : MonoBehaviour {
 	private float naturesWrathTimeSpan;
 	private float globalCooldown;
 	private float globalCooldownTimeSpan;
+	public float criticalHitDamage = 1;
 
 	public int maxHealth = 400;
 	public int currentHealth = 200;
@@ -25,8 +26,6 @@ public class PlayerControl : MonoBehaviour {
 	public int manaPerSecond = 2;
 	public int strength = 100;
 	public int attackPower = 1000;
-	public int criticalHitDamage = 1;
-
 	private Vector3 targetPosition; 
 
 	private Animator anim;
@@ -188,6 +187,9 @@ public class PlayerControl : MonoBehaviour {
 		if (currentTarget.tag == "Enemy") {
 			state = PlayerState.Idle;
 			elementalMissiles.GetComponent<MissileMovement>().targetPosition = targetPosition;
+			elementalMissiles.GetComponent<MissileMovement>().damage = (int)(attackPower*0.10);
+			elementalMissiles.GetComponent<MissileMovement>().critChance = critChance;
+			elementalMissiles.GetComponent<MissileMovement>().criticalHitDamage = criticalHitDamage;
 			elementalMissiles.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z+1);
 			RotateTowardsTargetPosition(currentTarget.position);
 			Instantiate(elementalMissiles);
