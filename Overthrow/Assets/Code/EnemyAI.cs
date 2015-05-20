@@ -22,7 +22,12 @@ public class EnemyAI : MonoBehaviour {
 			lookAtPlayer ();
 		}
 		if (playerDistance < 12f) {
-			chase();
+			if(playerDistance > 2f){
+				chase();
+			}
+			/*else if (playerDistance < 2f){
+				attack ();
+			}*/
 		}
 	}
 
@@ -35,49 +40,13 @@ public class EnemyAI : MonoBehaviour {
 	void chase(){
 		transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 	}
+	/*
+	void attack(){
+		RaycastHit hiy;
+		if (Physics.Raycast (transform.position, transform.forward, out WheelHit)){
+			if(hit.collider.gameObject.tag == "Player")
+		}
+	}*/
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
