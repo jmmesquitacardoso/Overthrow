@@ -965,7 +965,7 @@ Transform:
   - {fileID: 1816174552}
   m_Father: {fileID: 1815944218}
   m_RootOrder: 0
---- !u!4 &921317783
+--- !u!4 &921317783 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
   m_PrefabInternal: {fileID: 1458997215}
@@ -1027,6 +1027,7 @@ MonoBehaviour:
   elementalMissiles: {fileID: 416032, guid: 69486f405a39aeb4e89e253f09436b2f, type: 2}
   grapple: {fileID: 422668, guid: e22e24f276306c247b766b3d07b67c59, type: 2}
   trap: {fileID: 403356, guid: e5f6d9508becedd4fa64a641b323270f, type: 2}
+  naturesWrath: {fileID: 400008, guid: 01603b7302bd34f379cc7d1ef6b55a15, type: 2}
 --- !u!1 &941444462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,8 +1535,6 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
-  m_UseDefaultSmoothness: 1
-  m_DefaultSmoothness: 0
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987

@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour {
 	private float globalCooldown;
 	private float globalCooldownTimeSpan;
 	public float criticalHitDamage = 1;
-
+	
 	public int maxHealth = 400;
 	public int currentHealth = 200;
 	public int healthPerSecond = 2;
@@ -27,18 +27,20 @@ public class PlayerControl : MonoBehaviour {
 	public int strength = 100;
 	public int attackPower = 1000;
 	private Vector3 targetPosition; 
-
+	
 	private Animator anim;
-
+	
 	private PlayerState state;
 	
 	public Transform elementalMissiles;
 	public Transform grapple;
 	public Transform trap;
+	public Transform naturesWrath;
+	
 	private Transform currentTarget;
-
+	
 	private Mode mode;
-
+	
 	// Use this for initialization
 	void Start () {
 		blinkTimeSpan = Time.time;
@@ -51,18 +53,18 @@ public class PlayerControl : MonoBehaviour {
 		InvokeRepeating("ManaRegen",0,1f);
 		InvokeRepeating("HealthRegen",0,1f);
 	}
-
+	
 	void Awake() {
 		Application.targetFrameRate = 60;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+		
 		PlayerSkills ();
-
+		
 		UpdateCurrentTarget ();
-
+		
 		switch (state) {
 		case PlayerState.Idle: anim.Play("Idle");
 			break;
@@ -70,14 +72,14 @@ public class PlayerControl : MonoBehaviour {
 			break;
 		default: break;
 		}
-
+		
 	}
-
+	
 	void FixedUpdate () {
 		
 		MouseMovement ();
 	}
-
+	
 	//Displays the current frames per second
 	void OnGUI()
 	{
@@ -85,13 +87,13 @@ public class PlayerControl : MonoBehaviour {
 		GUI.Label(new Rect(100, 0, 150, 100), "MANA = " + currentMana);    
 		GUI.Label(new Rect(250, 0, 150, 100), "Health = " + currentHealth);  
 	}
-
+	
 	void OnCollisionEnter(Collision collision) {
 		if (state == PlayerState.Moving) {
 			state = PlayerState.Idle;
 		}
 	}
-
+	
 	//This function is called every second, so the mana regens at a rate of manaPerSecond/second
 	void ManaRegen() {
 		if (currentMana <= maxMana) {
@@ -102,7 +104,7 @@ public class PlayerControl : MonoBehaviour {
 			}
 		}
 	}
-
+	
 	//This function is called every second, so health regens at a rate of healthPerSecond/second
 	void HealthRegen() {
 		if (currentHealth <= maxHealth) {
@@ -113,24 +115,24 @@ public class PlayerControl : MonoBehaviour {
 			}
 		}
 	}
-
+	
 	// Gets the current target the mouse is hovering
 	void UpdateCurrentTarget() {
 		var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		
-	    RaycastHit hit;
-
+		RaycastHit hit;
+		
 		if(Physics.Raycast(ray, out hit))
 		{
 			currentTarget = hit.transform;
 		}
 	}
-
+	
 	//Function that reacts to the current key down and casts the skill associated with the key
 	void PlayerSkills() {
 		//if the global cooldown is over
 		if (globalCooldownTimeSpan <= Time.time) {
-
+			
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
 					ElementalMissiles (currentTarget.position);
@@ -139,15 +141,15 @@ public class PlayerControl : MonoBehaviour {
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
-
+			
 			if (Input.GetKeyDown(KeyCode.Alpha1) && Input.GetKeyDown(KeyCode.LeftShift)) {
 				if (mode == Mode.ARPG) {
 					ElementalMissiles (Vector3.zero);
 				} else {
-
+					
 				}
 			}
-		
+			
 			if (Input.GetKeyDown (KeyCode.Alpha2)) {
 				if (mode == Mode.ARPG) {
 					//if blink is not on cooldown
@@ -159,17 +161,19 @@ public class PlayerControl : MonoBehaviour {
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
-		
+			
 			if (Input.GetKeyDown (KeyCode.Alpha3)) {
 				Debug.Log ("Pressed key 3!");
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
-		
+			
 			if (Input.GetKeyDown (KeyCode.Alpha4)) {
-				Debug.Log ("Pressed key 4!");
+				if (mode == Mode.ARPG) {
+					NaturesWrath();
+				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
-
+			
 			if (Input.GetMouseButtonDown (1)) {
 				Debug.Log ("Switching mode!");
 				if (mode == Mode.ARPG) {
@@ -180,7 +184,7 @@ public class PlayerControl : MonoBehaviour {
 			}
 		} 
 	}
-
+	
 	// Casts the Elemental Missiles skill
 	// Player stops moving and rotates in the direction of the missiles
 	void ElementalMissiles(Vector3 targetPosition) {
@@ -195,7 +199,7 @@ public class PlayerControl : MonoBehaviour {
 			Instantiate(elementalMissiles);
 		}
 	}
-
+	
 	//Casts the Trap skill
 	void Trap() {
 		state = PlayerState.Idle;
@@ -206,7 +210,7 @@ public class PlayerControl : MonoBehaviour {
 		trap.position = position;
 		Instantiate (trap);
 	}
-
+	
 	//Casts the Blink skill
 	void Blink() {
 		state = PlayerState.Idle;
@@ -214,7 +218,7 @@ public class PlayerControl : MonoBehaviour {
 		transform.position = targetPosition;
 		blinkTimeSpan = Time.time + blinkCooldown;
 	}
-
+	
 	//Casts the Grapple skill
 	void Grapple() {
 		state = PlayerState.Idle;
@@ -222,10 +226,23 @@ public class PlayerControl : MonoBehaviour {
 		GetMouseWorldPosition ();
 		grapple.GetComponent<GrappleLogic> ().targetPosition = targetPosition;
 		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation.eulerAngles;
-		grapple.position = new Vector3 (transform.position.x + 1, 1, transform.position.z + 1);
+		grapple.position = new Vector3 (transform.position.x + Mathf.Cos(transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin(transform.rotation.eulerAngles.y));
 		Instantiate (grapple);
 	}
-
+	
+	void NaturesWrath() {
+		state = PlayerState.Idle;
+		GetMouseWorldPosition ();
+		naturesWrath.GetComponent<NaturesWrathLogic> ().targetPosition = targetPosition;
+		naturesWrath.GetComponent<NaturesWrathLogic>().damage = (int)(attackPower*0.10);
+		naturesWrath.GetComponent<NaturesWrathLogic>().critChance = critChance;
+		naturesWrath.GetComponent<NaturesWrathLogic>().criticalHitDamage = criticalHitDamage;
+		Debug.Log ("X cos = " + Mathf.Cos (transform.rotation.eulerAngles.y));
+		Debug.Log ("Z cos = " + Mathf.Sin (transform.rotation.eulerAngles.y));
+		naturesWrath.position = new Vector3(transform.position.x + Mathf.Cos(transform.rotation.eulerAngles.y),transform.position.y,transform.position.z + Mathf.Sin(transform.rotation.eulerAngles.y));
+		Instantiate(naturesWrath);
+	}
+	
 	//Handles the movement based on mouse clicks
 	void MouseMovement() {
 		if (Input.GetMouseButtonDown (0)) {
@@ -240,7 +257,7 @@ public class PlayerControl : MonoBehaviour {
 			}
 		}
 	}
-
+	
 	//Rotates the player in the direction of the vector3 targetPosition
 	void RotateTowardsTargetPosition(Vector3 targetPosition) {
 		var targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
@@ -250,7 +267,7 @@ public class PlayerControl : MonoBehaviour {
 		rotation.z = 0;
 		transform.rotation = Quaternion.Euler (rotation);
 	}
-
+	
 	//Gets the world coordinates of the mouse
 	void GetMouseWorldPosition() {
 		Plane playerPlane = new Plane(Vector3.up, transform.position);
