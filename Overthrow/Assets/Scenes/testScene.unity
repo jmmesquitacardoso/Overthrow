@@ -2224,8 +2224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseTexture: {fileID: 2800000, guid: 714e1ef7160dba04f879c9959209bc1f, type: 3}
   pulledToPosition: {x: 0, y: 0, z: 0}
-  pull: 0
+  state: 0
   pullSpeed: 20
+  knockUpSpeed: 30
   currentEnemyText: {fileID: 1419011104}
   currentEnemyHealthBar: {fileID: 1662865142}
   maxHealth: 400

@@ -53,6 +53,7 @@
      <Compile Include="Assets\Code\MissileMovement.cs" />
      <Compile Include="Assets\Code\NaturesWrathLogic.cs" />
      <Compile Include="Assets\Code\PlayerControl.cs" />
+     <Compile Include="Assets\Code\Utils.cs" />
      <Compile Include="Assets\Elementals\Scripts\OrbitCamera.cs" />
      <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
      <None Include="Assets\Elementals\!Readme.txt" />
