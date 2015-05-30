@@ -50,7 +50,7 @@
      <Compile Include="Assets\Code\EnemyAI.cs" />
      <Compile Include="Assets\Code\EnemyScript.cs" />
      <Compile Include="Assets\Code\GrappleLogic.cs" />
-     <Compile Include="Assets\Code\MissileMovement.cs" />
+     <Compile Include="Assets\Code\MissileLogic.cs" />
      <Compile Include="Assets\Code\NaturesWrathLogic.cs" />
      <Compile Include="Assets\Code\PlayerControl.cs" />
      <Compile Include="Assets\Code\Utils.cs" />

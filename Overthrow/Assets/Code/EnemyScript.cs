@@ -2,14 +2,6 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public enum EnemyState
-{
-	IDLE,
-	PULLED,
-	KNOCKUP,
-	KNOCKUPDOWN}
-;
-
 public class EnemyScript : MonoBehaviour
 {
 

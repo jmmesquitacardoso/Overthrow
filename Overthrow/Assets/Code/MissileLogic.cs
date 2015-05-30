@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MissileMovement : MonoBehaviour {
+public class MissileLogic : MonoBehaviour {
 
 	public Vector3 targetPosition;
 

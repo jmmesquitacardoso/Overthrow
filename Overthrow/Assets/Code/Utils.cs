@@ -1,11 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum EnemyState
+{
+	IDLE,
+	PULLED,
+	KNOCKUP,
+	KNOCKUPDOWN,
+	MINDCONTROLLED}
+;
+
+enum Mode
+{
+	ARPG,
+	Stealth}
+;
+
+enum PlayerState
+{
+	Idle,
+	Moving}
+;
+
 public class Utils
 {
 	private static Utils instance;
 
-	public Utils() {
+	public Utils ()
+	{
 	}
 
 	public static Utils Instance {
