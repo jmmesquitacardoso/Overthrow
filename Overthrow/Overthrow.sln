@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{607CE605-12CD-92D4-0896-5437E20055B0}") = "Overthrow", "Assembly-CSharp.csproj", "{D5D7859C-9984-9D1B-B104-613131BC492B}"
 EndProject
+Project("{607CE605-12CD-92D4-0896-5437E20055B0}") = "Overthrow", "Assembly-UnityScript.unityproj", "{DF9FA98D-CB73-01C1-D492-84527F118663}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{D5D7859C-9984-9D1B-B104-613131BC492B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5D7859C-9984-9D1B-B104-613131BC492B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5D7859C-9984-9D1B-B104-613131BC492B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF9FA98D-CB73-01C1-D492-84527F118663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9FA98D-CB73-01C1-D492-84527F118663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9FA98D-CB73-01C1-D492-84527F118663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9FA98D-CB73-01C1-D492-84527F118663}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-				GlobalSection(MonoDevelopProperties) = preSolution
+					GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
