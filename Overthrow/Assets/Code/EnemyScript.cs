@@ -18,11 +18,13 @@ public class EnemyScript : MonoBehaviour
 	public Image currentEnemyHealthBar;
 	public int maxHealth = 400;
 	public int currentHealth = 250;
+	private bool inBlizzard = false;
 
 	// Use this for initialization
 	void Start ()
 	{
 		rend = GetComponent<Renderer> ();
+		InvokeRepeating ("TakeBlizzardDamage", 0, 1f);
 	}
 	
 	// Update is called once per frame
@@ -94,6 +96,21 @@ public class EnemyScript : MonoBehaviour
 	{
 		state = EnemyState.KNOCKUP;
 		knockUpPosition = new Vector3 (transform.position.x, transform.position.y + 20, transform.position.z);
+	}
+
+	public void EnterBlizzard () {
+		inBlizzard = true;
+	}
+
+	public void ExitBlizzard () {
+		inBlizzard = false;
+	}
+
+	void TakeBlizzardDamage () {
+		if (inBlizzard) {
+			Debug.Log ("In Blizzard");
+			currentHealth -= 10;
+		}
 	}
 
 	void OnCollisionEnter (Collision collision)

@@ -335,6 +335,7 @@ MonoBehaviour:
   trap: {fileID: 403356, guid: e5f6d9508becedd4fa64a641b323270f, type: 2}
   flare: {fileID: 470870, guid: 375c87d04e1766047ae66d32c94a9e1a, type: 2}
   naturesWrath: {fileID: 401072, guid: fa1260828ea4c0945918e5ad391e1cb1, type: 2}
+  blizzard: {fileID: 490956, guid: 93a2780b3eab5ac478877f4c8ce49e64, type: 2}
 --- !u!1 &941444462
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +825,7 @@ GameObject:
   - 136: {fileID: 1508597157}
   - 23: {fileID: 1508597156}
   - 114: {fileID: 1508597160}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -909,7 +910,7 @@ MonoBehaviour:
   currentEnemyText: {fileID: 1419011104}
   currentEnemyHealthBar: {fileID: 1662865142}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1 &1642281253
 GameObject:
   m_ObjectHideFlags: 0

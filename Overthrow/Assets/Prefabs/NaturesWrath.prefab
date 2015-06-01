@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 453448}
   - 198: {fileID: 19858736}
   - 199: {fileID: 19940676}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 415386}
   - 198: {fileID: 19887048}
   - 199: {fileID: 19982716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 411168}
   - 198: {fileID: 19852844}
   - 199: {fileID: 19985802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 114: {fileID: 11471960}
   - 54: {fileID: 5483376}
   - 65: {fileID: 6590386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NaturesWrath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   - 4: {fileID: 426920}
   - 198: {fileID: 19850366}
   - 199: {fileID: 19915278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sparkles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - 4: {fileID: 438116}
   - 198: {fileID: 19857020}
   - 199: {fileID: 19924400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dust Puff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.0392838, y: 4.07000732, z: -19.3649273}
+  m_LocalPosition: {x: -4.49652672, y: 4.07000017, z: -7.97463226}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438116}
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fe96d8b6c345a4e9baf507860dd44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 7.50689697, y: 4.07000732, z: -14.5449219}
+  targetPosition: {x: 9.99591064, y: 4.07000732, z: 8.94018555}
   speed: 3
   critChance: 15.6999998
   criticalHitDamage: 2

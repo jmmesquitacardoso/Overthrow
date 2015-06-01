@@ -33,6 +33,7 @@ public class PlayerControl : MonoBehaviour
 	public Transform trap;
 	public Transform flare;
 	public Transform naturesWrath;
+	public Transform blizzard;
 	private Transform currentTarget;
 	private Mode mode;
 	
@@ -171,7 +172,7 @@ public class PlayerControl : MonoBehaviour
 			if (Input.GetKeyDown (KeyCode.Alpha3)) {
 				Debug.Log ("Pressed key 3!");
 				if (mode == Mode.ARPG) {
-
+					Blizzard();
 				} else {
 					Flare();
 				}
@@ -208,6 +209,7 @@ public class PlayerControl : MonoBehaviour
 			elementalMissiles.GetComponent<MissileLogic> ().criticalHitDamage = criticalHitDamage;
 			elementalMissiles.position = new Vector3 (transform.position.x + 1, transform.position.y, transform.position.z + 1);
 			RotateTowardsTargetPosition (currentTarget.position);
+			elementalMissiles.GetComponent<MissileLogic> ().rotation = transform.rotation;
 			Instantiate (elementalMissiles);
 		}
 	}
@@ -234,6 +236,19 @@ public class PlayerControl : MonoBehaviour
 		flare.GetComponent<Flare>().targetPosition = targetPosition;
 		flare.GetComponent<Flare> ().rotation = transform.rotation.eulerAngles;
 		Instantiate (flare);
+	}
+
+	void Blizzard ()
+	{
+		state = PlayerState.Idle;
+		GetMouseWorldPosition ();
+		blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.10);
+		blizzard.GetComponent<BlizzardLogic> ().critChance = critChance;
+		blizzard.GetComponent<BlizzardLogic> ().criticalHitDamage = criticalHitDamage;
+		Vector3 blizzardPosition = targetPosition;
+		blizzardPosition.y = 15.5f;
+		blizzard.position = blizzardPosition;
+		Instantiate (blizzard);
 	}
 	
 	//Casts the Blink skill
