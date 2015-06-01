@@ -3,14 +3,15 @@ using System.Collections;
 
 public class Flare : MonoBehaviour {
 
-	public Bezier shotPath;
+	private Bezier shotPath;
 	private float t = 0;
 	public Vector3 targetPosition;
+	public Vector3 rotation;
 
 	// Use this for initialization
 	void Start () {
 
-		shotPath = new Bezier( transform.position, new Vector3(transform.position.x + 2f, transform.position.y + 3f, transform.position.z + 2f), new Vector3(targetPosition.x - 2f, targetPosition.y + 1f, targetPosition.z - 2f), targetPosition);
+		shotPath = new Bezier( transform.position, new Vector3(transform.position.x + (Mathf.Cos(this.rotation.x) * 3f), transform.position.y + 20f, transform.position.z + (Mathf.Cos(this.rotation.z) * 3f)), new Vector3(targetPosition.x + (Mathf.Cos(this.rotation.x) * 3f), targetPosition.y + 20f, targetPosition.z + (Mathf.Cos(this.rotation.x) * 3f)), new Vector3(targetPosition.x, 0, targetPosition.z));
 	}
 	
 	// Update is called once per frame

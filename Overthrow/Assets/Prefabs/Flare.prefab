@@ -11,6 +11,7 @@ GameObject:
   - 198: {fileID: 19862000}
   - 199: {fileID: 19936592}
   - 108: {fileID: 10818908}
+  - 114: {fileID: 11491198}
   m_Layer: 0
   m_Name: Flare
   m_TagString: Untagged
@@ -83,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.989151, y: 0, z: -11.8535767}
+  m_LocalPosition: {x: -13.3011503, y: 1, z: -48.6130447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469436}
@@ -100,12 +101,12 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5.01000023
+  m_Intensity: 8
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -121,7 +122,20 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
+  m_AreaSize: {x: 10, y: 10}
+--- !u!114 &11491198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5c4ef98203fea4e943977467164d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 8.85107422, y: 4.07000732, z: -48.5698853}
+  rotation: {x: 270, y: 92.4111938, z: 0}
 --- !u!198 &19852662
 ParticleSystem:
   m_ObjectHideFlags: 1

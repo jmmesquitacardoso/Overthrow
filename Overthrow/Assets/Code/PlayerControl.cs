@@ -232,6 +232,7 @@ public class PlayerControl : MonoBehaviour
 		GetMouseWorldPosition ();
 		flare.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
 		flare.GetComponent<Flare>().targetPosition = targetPosition;
+		flare.GetComponent<Flare> ().rotation = transform.rotation.eulerAngles;
 		Instantiate (flare);
 	}
 	
