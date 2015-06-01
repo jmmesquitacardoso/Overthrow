@@ -29,6 +29,7 @@ public class PlayerControl : MonoBehaviour
 	public Transform elementalMissiles;
 	public Transform grapple;
 	public Transform trap;
+	public Transform flare;
 	public Transform naturesWrath;
 	private Transform currentTarget;
 	private Mode mode;
@@ -167,6 +168,11 @@ public class PlayerControl : MonoBehaviour
 			
 			if (Input.GetKeyDown (KeyCode.Alpha3)) {
 				Debug.Log ("Pressed key 3!");
+				if (mode == Mode.ARPG) {
+
+				} else {
+					Flare();
+				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
 			
@@ -214,6 +220,15 @@ public class PlayerControl : MonoBehaviour
 		position.y = 1.5f;
 		trap.position = position;
 		Instantiate (trap);
+	}
+
+	//casts the flare skill
+	void Flare() {
+		state = PlayerState.Idle;
+		GetMouseWorldPosition ();
+		flare.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
+		flare.GetComponent<Flare>().targetPosition = targetPosition;
+		Instantiate (flare);
 	}
 	
 	//Casts the Blink skill
