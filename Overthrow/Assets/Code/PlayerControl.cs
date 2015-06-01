@@ -23,6 +23,8 @@ public class PlayerControl : MonoBehaviour
 	public int manaPerSecond = 2;
 	public int strength = 100;
 	public int attackPower = 1000;
+	public int blizzardRange = 30;
+	public int trapRange = 10;
 	private Vector3 targetPosition;
 	private Animator anim;
 	private PlayerState state;
@@ -209,11 +211,13 @@ public class PlayerControl : MonoBehaviour
 	{
 		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
-		trap.position = targetPosition;
-		var position = trap.position;
-		position.y = 1.5f;
-		trap.position = position;
-		Instantiate (trap);
+		if (Vector3.Distance (targetPosition, transform.position) <= trapRange) {
+			trap.position = targetPosition;
+			var position = trap.position;
+			position.y = 1.5f;
+			trap.position = position;
+			Instantiate (trap);
+		}
 	}
 	
 	//Casts the Blink skill
