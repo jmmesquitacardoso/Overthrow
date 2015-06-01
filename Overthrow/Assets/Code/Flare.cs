@@ -10,7 +10,7 @@ public class Flare : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		shotPath = new Bezier( transform.position, , Random.insideUnitSphere * 2f, new Vector3( transform.position.x + 30f, 0f, transform.position.z + 30 ) );
+		shotPath = new Bezier( transform.position, new Vector3(transform.position.x + 2f, transform.position.y + 3f, transform.position.z + 2f), new Vector3(targetPosition.x - 2f, targetPosition.y + 1f, targetPosition.z - 2f), targetPosition);
 	}
 	
 	// Update is called once per frame
