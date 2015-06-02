@@ -71,12 +71,10 @@ public class PlayerControl : MonoBehaviour
 		manaGlobe.fillAmount = (float) currentMana / (float) maxMana;
 
 		if (blinkTimeSpan > Time.time) {
-			Debug.Log("Diff: " + ((float) ((blinkTimeSpan - Time.time))) / blinkCooldown);
 			blinkIcon.fillAmount = 1f - ((float) ((blinkTimeSpan - Time.time)) / blinkCooldown);
 		}
 
 		if (naturesWrathTimeSpan > Time.time) {
-			Debug.Log("Diff: " + ((float) ((naturesWrathTimeSpan - Time.time))) / naturesWrathCooldown);
 			naturesWrathIcon.fillAmount = 1f - ((float) ((naturesWrathTimeSpan - Time.time)) / naturesWrathCooldown);
 		}
 
@@ -114,9 +112,7 @@ public class PlayerControl : MonoBehaviour
 	//Displays the current frames per second
 	void OnGUI ()
 	{
-		GUI.Label (new Rect (0, 0, 100, 100), "FPS = " + (int)(1.0f / Time.smoothDeltaTime));     
-		GUI.Label (new Rect (100, 0, 150, 100), "MANA = " + currentMana);    
-		GUI.Label (new Rect (250, 0, 150, 100), "Health = " + currentHealth);  
+		GUI.Label (new Rect (0, 0, 100, 100), "FPS = " + (int)(1.0f / Time.smoothDeltaTime)); 
 	}
 	
 	void OnCollisionEnter (Collision collision)
