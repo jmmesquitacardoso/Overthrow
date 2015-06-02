@@ -46,8 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BlizzardLogic.cs" />
      <Compile Include="Assets\Code\Bezier.cs" />
+     <Compile Include="Assets\Code\BlizzardLogic.cs" />
      <Compile Include="Assets\Code\CameraFollowScript.cs" />
      <Compile Include="Assets\Code\EnemyAI.cs" />
      <Compile Include="Assets\Code\EnemyScript.cs" />

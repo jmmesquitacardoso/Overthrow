@@ -4,7 +4,6 @@ using System.Collections;
 public class MissileLogic : MonoBehaviour {
 
 	public Vector3 targetPosition;
-	public Quaternion rotation;
 
 	public float speed = 3.0f;
 
@@ -14,7 +13,6 @@ public class MissileLogic : MonoBehaviour {
 	public float criticalHitDamage;
 
 	void Start () {
-		transform.rotation = rotation;
 	}
 	
 	// Update is called once per frame
@@ -23,6 +21,9 @@ public class MissileLogic : MonoBehaviour {
 
 	void FixedUpdate() {
 		transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+		if ((targetPosition - transform.position).magnitude < 0.01) {
+			Destroy(gameObject);
+		}
 	}
 
 	void OnCollisionEnter(Collision collision) {

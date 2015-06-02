@@ -11,6 +11,7 @@ public class EnemyScript : MonoBehaviour
 	public Vector3 pulledToPosition;
 	private Vector3 knockUpPosition;
 	private Vector3 knockUpDownPosition;
+	private Vector3 transformPosition2D;
 	public EnemyState state = EnemyState.IDLE;
 	public float pullSpeed = 20f;
 	public float knockUpSpeed = 30f;
@@ -109,7 +110,7 @@ public class EnemyScript : MonoBehaviour
 	void TakeBlizzardDamage () {
 		if (inBlizzard) {
 			Debug.Log ("In Blizzard");
-			currentHealth -= 10;
+			TakeDamage(10);
 		}
 	}
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerControl : MonoBehaviour
@@ -36,6 +37,8 @@ public class PlayerControl : MonoBehaviour
 	public Transform blizzard;
 	private Transform currentTarget;
 	private Mode mode;
+	public Text warningText;
+	private bool shiftDown = false;
 	
 	// Use this for initialization
 	void Start ()
@@ -59,7 +62,14 @@ public class PlayerControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		
+		if (Input.GetKeyDown (KeyCode.LeftShift)) {
+			shiftDown = true;
+		}
+
+		if (Input.GetKeyUp (KeyCode.LeftShift)) {
+			shiftDown = false;
+		}
+
 		PlayerSkills ();
 		
 		UpdateCurrentTarget ();
@@ -133,6 +143,12 @@ public class PlayerControl : MonoBehaviour
 			currentTarget = hit.transform;
 		}
 	}
+
+	IEnumerator DisplayWarningText(string warning) {
+		warningText.text = warning;
+		yield return new WaitForSeconds (2f);
+		warningText.text = "";
+	}
 	
 	//Function that reacts to the current key down and casts the skill associated with the key
 	void PlayerSkills ()
@@ -142,16 +158,17 @@ public class PlayerControl : MonoBehaviour
 			
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
-					ElementalMissiles (currentTarget.position);
+					ElementalMissiles (currentTarget.position, true);
 				} else {
 					Trap ();
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
 			
-			if (Input.GetKeyDown (KeyCode.Alpha1) && Input.GetKeyDown (KeyCode.LeftShift)) {
+			if (shiftDown && Input.GetKeyDown(KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
-					ElementalMissiles (Vector3.zero);
+					GetMouseWorldPosition();
+					ElementalMissiles (targetPosition, false);
 				} else {
 					
 				}
@@ -162,6 +179,8 @@ public class PlayerControl : MonoBehaviour
 					//if blink is not on cooldown
 					if (blinkTimeSpan <= Time.time) {
 						Blink ();
+					} else {
+						StartCoroutine(DisplayWarningText("Blink is on cooldown!"));
 					}
 				} else {
 					Grapple ();
@@ -170,18 +189,21 @@ public class PlayerControl : MonoBehaviour
 			}
 			
 			if (Input.GetKeyDown (KeyCode.Alpha3)) {
-				Debug.Log ("Pressed key 3!");
 				if (mode == Mode.ARPG) {
-					Blizzard();
+					Blizzard ();
 				} else {
-					Flare();
+					Flare ();
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
 			
 			if (Input.GetKeyDown (KeyCode.Alpha4)) {
 				if (mode == Mode.ARPG) {
-					NaturesWrath ();
+					if (naturesWrathTimeSpan <= Time.time) {
+						NaturesWrath ();
+					} else {
+						StartCoroutine(DisplayWarningText("Nature's Wrath is on cooldown!"));
+					}
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
@@ -194,22 +216,23 @@ public class PlayerControl : MonoBehaviour
 					mode = Mode.ARPG;
 				}
 			}
-		} 
+		} else {
+			//StartCoroutine(DisplayWarningText("Not ready yet!"));
+		}
 	}
 	
 	// Casts the Elemental Missiles skill
 	// Player stops moving and rotates in the direction of the missiles
-	void ElementalMissiles (Vector3 targetPosition)
+	void ElementalMissiles (Vector3 targetPosition, bool targeted)
 	{
-		if (currentTarget.tag == "Enemy") {
+		if (currentTarget.tag == "Enemy" && targeted || !targeted) {
 			state = PlayerState.Idle;
 			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = targetPosition;
 			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);
 			elementalMissiles.GetComponent<MissileLogic> ().critChance = critChance;
 			elementalMissiles.GetComponent<MissileLogic> ().criticalHitDamage = criticalHitDamage;
 			elementalMissiles.position = new Vector3 (transform.position.x + 1, transform.position.y, transform.position.z + 1);
-			RotateTowardsTargetPosition (currentTarget.position);
-			elementalMissiles.GetComponent<MissileLogic> ().rotation = transform.rotation;
+			RotateTowardsTargetPosition (targetPosition);
 			Instantiate (elementalMissiles);
 		}
 	}
@@ -254,10 +277,10 @@ public class PlayerControl : MonoBehaviour
 	//Casts the Blink skill
 	void Blink ()
 	{
+		blinkTimeSpan = Time.time + blinkCooldown;
 		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
 		transform.position = targetPosition;
-		blinkTimeSpan = Time.time + blinkCooldown;
 	}
 	
 	//Casts the Grapple skill
@@ -274,6 +297,7 @@ public class PlayerControl : MonoBehaviour
 	
 	void NaturesWrath ()
 	{
+		naturesWrathTimeSpan = Time.time + naturesWrathCooldown;
 		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
 		naturesWrath.GetComponent<NaturesWrathLogic> ().targetPosition = targetPosition;
