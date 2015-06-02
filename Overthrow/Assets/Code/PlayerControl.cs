@@ -39,6 +39,9 @@ public class PlayerControl : MonoBehaviour
 	private Mode mode;
 	public Text warningText;
 	private bool shiftDown = false;
+	public Image healthGlobe;
+	public Image manaGlobe;
+	public Image blinkIcon;
 	
 	// Use this for initialization
 	void Start ()
@@ -62,6 +65,14 @@ public class PlayerControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		healthGlobe.fillAmount = (float) currentHealth / (float) maxHealth;
+
+		manaGlobe.fillAmount = (float) currentMana / (float) maxMana;
+
+		if (blinkTimeSpan > Time.time) {
+			blinkIcon.fillAmount = (float) Time.time / (float) blinkTimeSpan;
+		}
+
 		if (Input.GetKeyDown (KeyCode.LeftShift)) {
 			shiftDown = true;
 		}
@@ -248,6 +259,8 @@ public class PlayerControl : MonoBehaviour
 			position.y = 1.5f;
 			trap.position = position;
 			Instantiate (trap);
+		} else {
+			StartCoroutine(DisplayWarningText("Out of range!"));
 		}
 	}
 
@@ -265,13 +278,17 @@ public class PlayerControl : MonoBehaviour
 	{
 		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
-		blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.10);
-		blizzard.GetComponent<BlizzardLogic> ().critChance = critChance;
-		blizzard.GetComponent<BlizzardLogic> ().criticalHitDamage = criticalHitDamage;
-		Vector3 blizzardPosition = targetPosition;
-		blizzardPosition.y = 15.5f;
-		blizzard.position = blizzardPosition;
-		Instantiate (blizzard);
+		if (Vector3.Distance (targetPosition, transform.position) <= blizzardRange) {
+			blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.10);
+			blizzard.GetComponent<BlizzardLogic> ().critChance = critChance;
+			blizzard.GetComponent<BlizzardLogic> ().criticalHitDamage = criticalHitDamage;
+			Vector3 blizzardPosition = targetPosition;
+			blizzardPosition.y = 15.5f;
+			blizzard.position = blizzardPosition;
+			Instantiate (blizzard);
+		} else {
+			StartCoroutine(DisplayWarningText("Out of range!"));
+		}
 	}
 	
 	//Casts the Blink skill

@@ -17,6 +17,7 @@ public class EnemyScript : MonoBehaviour
 	public float knockUpSpeed = 30f;
 	public Text currentEnemyText;
 	public Image currentEnemyHealthBar;
+	public Image currentEnemyOuterHealthBar;
 	public int maxHealth = 400;
 	public int currentHealth = 250;
 	private bool inBlizzard = false;
@@ -72,6 +73,7 @@ public class EnemyScript : MonoBehaviour
 		rend.material.color = Color.yellow;
 		currentEnemyText.text = gameObject.name;
 		currentEnemyHealthBar.enabled = true;
+		currentEnemyOuterHealthBar.enabled = true;
 		currentEnemyHealthBar.fillAmount = ((float)currentHealth / (float)maxHealth);
 	}
 	
@@ -81,6 +83,7 @@ public class EnemyScript : MonoBehaviour
 		rend.material.color = originalColor;
 		currentEnemyText.text = "";
 		currentEnemyHealthBar.enabled = false;
+		currentEnemyOuterHealthBar.enabled = false;
 	}
 
 	public void TakeDamage (int damage)
@@ -89,6 +92,7 @@ public class EnemyScript : MonoBehaviour
 		currentEnemyHealthBar.fillAmount = ((float)currentHealth / (float)maxHealth);
 		if (currentHealth <= 0) {
 			currentEnemyText.text = "";
+			currentEnemyOuterHealthBar.enabled = false;
 			Destroy (gameObject);
 		}
 	}
@@ -109,7 +113,6 @@ public class EnemyScript : MonoBehaviour
 
 	void TakeBlizzardDamage () {
 		if (inBlizzard) {
-			Debug.Log ("In Blizzard");
 			TakeDamage(10);
 		}
 	}
