@@ -42,6 +42,7 @@ public class PlayerControl : MonoBehaviour
 	public Image healthGlobe;
 	public Image manaGlobe;
 	public Image blinkIcon;
+	public Image naturesWrathIcon;
 	
 	// Use this for initialization
 	void Start ()
@@ -70,7 +71,13 @@ public class PlayerControl : MonoBehaviour
 		manaGlobe.fillAmount = (float) currentMana / (float) maxMana;
 
 		if (blinkTimeSpan > Time.time) {
-			blinkIcon.fillAmount = (float) Time.time / (float) blinkTimeSpan;
+			Debug.Log("Diff: " + ((float) ((blinkTimeSpan - Time.time))) / blinkCooldown);
+			blinkIcon.fillAmount = 1f - ((float) ((blinkTimeSpan - Time.time)) / blinkCooldown);
+		}
+
+		if (naturesWrathTimeSpan > Time.time) {
+			Debug.Log("Diff: " + ((float) ((naturesWrathTimeSpan - Time.time))) / naturesWrathCooldown);
+			naturesWrathIcon.fillAmount = 1f - ((float) ((naturesWrathTimeSpan - Time.time)) / naturesWrathCooldown);
 		}
 
 		if (Input.GetKeyDown (KeyCode.LeftShift)) {

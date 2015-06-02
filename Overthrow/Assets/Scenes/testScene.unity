@@ -531,6 +531,7 @@ MonoBehaviour:
   healthGlobe: {fileID: 2044297446}
   manaGlobe: {fileID: 1888240056}
   blinkIcon: {fileID: 175153213}
+  naturesWrathIcon: {fileID: 1680844524}
 --- !u!1 &941444462
 GameObject:
   m_ObjectHideFlags: 0
