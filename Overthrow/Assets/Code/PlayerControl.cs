@@ -244,6 +244,7 @@ public class PlayerControl : MonoBehaviour
 		}
 	}
 
+	// Changes the mode, and changes the icons and the power globe accordingly
 	void ChangeMode ()
 	{
 		if (mode == Mode.ARPG) {
