@@ -51,7 +51,7 @@
      <Compile Include="Assets\Code\CameraFollowScript.cs" />
      <Compile Include="Assets\Code\EnemyAI.cs" />
      <Compile Include="Assets\Code\EnemyScript.cs" />
-     <Compile Include="Assets\Code\Flare.cs" />
+     <Compile Include="Assets\Code\FlareLogic.cs" />
      <Compile Include="Assets\Code\GrappleLogic.cs" />
      <Compile Include="Assets\Code\MissileLogic.cs" />
      <Compile Include="Assets\Code\NaturesWrathLogic.cs" />

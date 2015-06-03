@@ -75,18 +75,18 @@ public class PlayerControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		healthGlobe.fillAmount = (float) currentHealth / (float) maxHealth;
+		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
 
-		manaGlobe.fillAmount = (float) currentMana / (float) maxMana;
+		manaGlobe.fillAmount = (float)currentMana / (float)maxMana;
 
 		strengthGlobe.fillAmount = (float)currentStrength / (float)maxStrength;
 
 		if (blinkTimeSpan > Time.time) {
-			blinkIcon.fillAmount = 1f - ((float) ((blinkTimeSpan - Time.time)) / blinkCooldown);
+			blinkIcon.fillAmount = 1f - ((float)((blinkTimeSpan - Time.time)) / blinkCooldown);
 		}
 
 		if (naturesWrathTimeSpan > Time.time) {
-			naturesWrathIcon.fillAmount = 1f - ((float) ((naturesWrathTimeSpan - Time.time)) / naturesWrathCooldown);
+			naturesWrathIcon.fillAmount = 1f - ((float)((naturesWrathTimeSpan - Time.time)) / naturesWrathCooldown);
 		}
 
 		if (Input.GetKeyDown (KeyCode.LeftShift)) {
@@ -113,7 +113,7 @@ public class PlayerControl : MonoBehaviour
 		}
 	
 		if (currentStrength <= 0 && mode == Mode.Stealth) {
-			ChangeMode();
+			ChangeMode ();
 		}
 	}
 	
@@ -171,7 +171,8 @@ public class PlayerControl : MonoBehaviour
 		}
 	}
 
-	IEnumerator DisplayWarningText(string warning) {
+	IEnumerator DisplayWarningText (string warning)
+	{
 		warningText.text = warning;
 		yield return new WaitForSeconds (2f);
 		warningText.text = "";
@@ -192,9 +193,9 @@ public class PlayerControl : MonoBehaviour
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
 			
-			if (shiftDown && Input.GetKeyDown(KeyCode.Alpha1)) {
+			if (shiftDown && Input.GetKeyDown (KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
-					GetMouseWorldPosition();
+					GetMouseWorldPosition ();
 					ElementalMissiles (targetPosition, false);
 				} else {
 					
@@ -207,7 +208,7 @@ public class PlayerControl : MonoBehaviour
 					if (blinkTimeSpan <= Time.time) {
 						Blink ();
 					} else {
-						StartCoroutine(DisplayWarningText("Blink is on cooldown!"));
+						StartCoroutine (DisplayWarningText ("Blink is on cooldown!"));
 					}
 				} else {
 					Grapple ();
@@ -229,21 +230,22 @@ public class PlayerControl : MonoBehaviour
 					if (naturesWrathTimeSpan <= Time.time) {
 						NaturesWrath ();
 					} else {
-						StartCoroutine(DisplayWarningText("Nature's Wrath is on cooldown!"));
+						StartCoroutine (DisplayWarningText ("Nature's Wrath is on cooldown!"));
 					}
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
 			
 			if (Input.GetMouseButtonDown (1)) {
-				ChangeMode();
+				ChangeMode ();
 			}
 		} else {
 			//StartCoroutine(DisplayWarningText("Not ready yet!"));
 		}
 	}
 
-	void ChangeMode () {
+	void ChangeMode ()
+	{
 		if (mode == Mode.ARPG) {
 			mode = Mode.Stealth;
 			manaGlobe.enabled = false;
@@ -299,17 +301,18 @@ public class PlayerControl : MonoBehaviour
 			trap.position = position;
 			Instantiate (trap);
 		} else {
-			StartCoroutine(DisplayWarningText("Out of range!"));
+			StartCoroutine (DisplayWarningText ("Out of range!"));
 		}
 	}
 
 	// Casts the Flare skill
-	void Flare() {
+	void Flare ()
+	{
 		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
 		flare.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
-		flare.GetComponent<Flare>().targetPosition = targetPosition;
-		flare.GetComponent<Flare> ().rotation = transform.rotation.eulerAngles;
+		flare.GetComponent<FlareLogic> ().targetPosition = targetPosition;
+		flare.GetComponent<FlareLogic> ().rotation = transform.rotation.eulerAngles;
 		Instantiate (flare);
 	}
 
@@ -329,10 +332,10 @@ public class PlayerControl : MonoBehaviour
 				Instantiate (blizzard);
 				currentMana -= blizzardManaCost;
 			} else {
-				StartCoroutine(DisplayWarningText("Not enough mana!"));
+				StartCoroutine (DisplayWarningText ("Not enough mana!"));
 			}
 		} else {
-			StartCoroutine(DisplayWarningText("Out of range!"));
+			StartCoroutine (DisplayWarningText ("Out of range!"));
 		}
 	}
 	

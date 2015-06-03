@@ -51,7 +51,7 @@ public class EnemyScript : MonoBehaviour
 			transform.position = Vector3.MoveTowards (transform.position, knockUpPosition, Time.deltaTime * knockUpSpeed);
 			if ((knockUpPosition - transform.position).magnitude < 0.1) {
 				state = EnemyState.KNOCKUPDOWN;
-				knockUpDownPosition = new Vector3 (transform.position.x, transform.position.y-20, transform.position.z);
+				knockUpDownPosition = new Vector3 (transform.position.x, transform.position.y - 20, transform.position.z);
 			}
 			break;
 		case EnemyState.KNOCKUPDOWN:
@@ -104,17 +104,20 @@ public class EnemyScript : MonoBehaviour
 		knockUpPosition = new Vector3 (transform.position.x, transform.position.y + 20, transform.position.z);
 	}
 
-	public void EnterBlizzard () {
+	public void EnterBlizzard ()
+	{
 		inBlizzard = true;
 	}
 
-	public void ExitBlizzard () {
+	public void ExitBlizzard ()
+	{
 		inBlizzard = false;
 	}
 
-	void TakeBlizzardDamage () {
+	void TakeBlizzardDamage ()
+	{
 		if (inBlizzard) {
-			TakeDamage(10);
+			TakeDamage (10);
 		}
 	}
 
