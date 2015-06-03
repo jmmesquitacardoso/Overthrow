@@ -22,10 +22,12 @@ public class PlayerControl : MonoBehaviour
 	public int maxMana = 400;
 	public int currentMana = 200;
 	public int manaPerSecond = 2;
-	public int strength = 100;
+	public int maxStrength = 100;
+	public int currentStrength = 100;
 	public int attackPower = 1000;
 	public int blizzardRange = 30;
 	public int trapRange = 10;
+	public int blizzardManaCost = 100;
 	private Vector3 targetPosition;
 	private Animator anim;
 	private PlayerState state;
@@ -41,8 +43,15 @@ public class PlayerControl : MonoBehaviour
 	private bool shiftDown = false;
 	public Image healthGlobe;
 	public Image manaGlobe;
+	public Image strengthGlobe;
+	public Image missilesIcon;
 	public Image blinkIcon;
+	public Image blizzardIcon;
 	public Image naturesWrathIcon;
+	public Image trapIcon;
+	public Image grappleIcon;
+	public Image flareIcon;
+	public Image mindControlIcon;
 	
 	// Use this for initialization
 	void Start ()
@@ -69,6 +78,8 @@ public class PlayerControl : MonoBehaviour
 		healthGlobe.fillAmount = (float) currentHealth / (float) maxHealth;
 
 		manaGlobe.fillAmount = (float) currentMana / (float) maxMana;
+
+		strengthGlobe.fillAmount = (float)currentStrength / (float)maxStrength;
 
 		if (blinkTimeSpan > Time.time) {
 			blinkIcon.fillAmount = 1f - ((float) ((blinkTimeSpan - Time.time)) / blinkCooldown);
@@ -100,12 +111,14 @@ public class PlayerControl : MonoBehaviour
 		default:
 			break;
 		}
-		
+	
+		if (currentStrength <= 0 && mode == Mode.Stealth) {
+			ChangeMode();
+		}
 	}
 	
 	void FixedUpdate ()
 	{
-		
 		MouseMovement ();
 	}
 	
@@ -223,15 +236,38 @@ public class PlayerControl : MonoBehaviour
 			}
 			
 			if (Input.GetMouseButtonDown (1)) {
-				Debug.Log ("Switching mode!");
-				if (mode == Mode.ARPG) {
-					mode = Mode.Stealth;
-				} else {
-					mode = Mode.ARPG;
-				}
+				ChangeMode();
 			}
 		} else {
 			//StartCoroutine(DisplayWarningText("Not ready yet!"));
+		}
+	}
+
+	void ChangeMode () {
+		if (mode == Mode.ARPG) {
+			mode = Mode.Stealth;
+			manaGlobe.enabled = false;
+			strengthGlobe.enabled = true;
+			missilesIcon.enabled = false;
+			blinkIcon.enabled = false;
+			blizzardIcon.enabled = false;
+			naturesWrathIcon.enabled = false;
+			trapIcon.enabled = true;
+			grappleIcon.enabled = true;
+			flareIcon.enabled = true;
+			mindControlIcon.enabled = true;
+		} else {
+			mode = Mode.ARPG;
+			manaGlobe.enabled = true;
+			strengthGlobe.enabled = false;
+			missilesIcon.enabled = true;
+			blinkIcon.enabled = true;
+			blizzardIcon.enabled = true;
+			naturesWrathIcon.enabled = true;
+			trapIcon.enabled = false;
+			grappleIcon.enabled = false;
+			flareIcon.enabled = false;
+			mindControlIcon.enabled = false;
 		}
 	}
 	
@@ -267,7 +303,7 @@ public class PlayerControl : MonoBehaviour
 		}
 	}
 
-	//casts the flare skill
+	// Casts the Flare skill
 	void Flare() {
 		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
@@ -277,18 +313,24 @@ public class PlayerControl : MonoBehaviour
 		Instantiate (flare);
 	}
 
+	// Casts the Blizzard skill
 	void Blizzard ()
 	{
 		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
 		if (Vector3.Distance (targetPosition, transform.position) <= blizzardRange) {
-			blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.10);
-			blizzard.GetComponent<BlizzardLogic> ().critChance = critChance;
-			blizzard.GetComponent<BlizzardLogic> ().criticalHitDamage = criticalHitDamage;
-			Vector3 blizzardPosition = targetPosition;
-			blizzardPosition.y = 15.5f;
-			blizzard.position = blizzardPosition;
-			Instantiate (blizzard);
+			if (currentMana >= blizzardManaCost) {
+				blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.10);
+				blizzard.GetComponent<BlizzardLogic> ().critChance = critChance;
+				blizzard.GetComponent<BlizzardLogic> ().criticalHitDamage = criticalHitDamage;
+				Vector3 blizzardPosition = targetPosition;
+				blizzardPosition.y = 15.5f;
+				blizzard.position = blizzardPosition;
+				Instantiate (blizzard);
+				currentMana -= blizzardManaCost;
+			} else {
+				StartCoroutine(DisplayWarningText("Not enough mana!"));
+			}
 		} else {
 			StartCoroutine(DisplayWarningText("Out of range!"));
 		}
@@ -314,7 +356,8 @@ public class PlayerControl : MonoBehaviour
 		grapple.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
 		Instantiate (grapple);
 	}
-	
+
+	//Casts the Nature's Wrath skill
 	void NaturesWrath ()
 	{
 		naturesWrathTimeSpan = Time.time + naturesWrathCooldown;

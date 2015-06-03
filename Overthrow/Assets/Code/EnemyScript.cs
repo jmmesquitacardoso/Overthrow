@@ -91,6 +91,7 @@ public class EnemyScript : MonoBehaviour
 		currentHealth -= damage;
 		currentEnemyHealthBar.fillAmount = ((float)currentHealth / (float)maxHealth);
 		if (currentHealth <= 0) {
+			Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
 			currentEnemyText.text = "";
 			currentEnemyOuterHealthBar.enabled = false;
 			Destroy (gameObject);
