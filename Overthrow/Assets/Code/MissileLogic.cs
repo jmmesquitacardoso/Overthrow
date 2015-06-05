@@ -5,8 +5,6 @@ public class MissileLogic : MonoBehaviour {
 
 	public Vector3 targetPosition;
 
-	private bool moving = false;
-
 	public float speed = 3.0f;
 
 	public int damage;
@@ -22,16 +20,15 @@ public class MissileLogic : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		moving = true;
-		
-		if (moving) {
-			transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+		transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+		if ((targetPosition - transform.position).magnitude < 0.01) {
+			Destroy(gameObject);
 		}
 	}
 
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.tag == "Enemy") {
-				collision.gameObject.GetComponent<EnemyScript>().TakeDamage(Utils.Instance.calculateDamage(critChance,criticalHitDamage,damage));
+			collision.gameObject.GetComponent<EnemyScript>().TakeDamage(Utils.Instance.calculateDamage(critChance,criticalHitDamage,damage));
 			Destroy(gameObject);
 		}
 	}

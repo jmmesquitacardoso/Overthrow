@@ -46,9 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\Bezier.cs" />
+     <Compile Include="Assets\Code\BlizzardLogic.cs" />
      <Compile Include="Assets\Code\CameraFollowScript.cs" />
      <Compile Include="Assets\Code\EnemyAI.cs" />
      <Compile Include="Assets\Code\EnemyScript.cs" />
+     <Compile Include="Assets\Code\FlareLogic.cs" />
      <Compile Include="Assets\Code\GrappleLogic.cs" />
      <Compile Include="Assets\Code\MissileLogic.cs" />
      <Compile Include="Assets\Code\NaturesWrathLogic.cs" />
@@ -56,6 +59,7 @@
      <Compile Include="Assets\Code\Utils.cs" />
      <Compile Include="Assets\Elementals\Scripts\OrbitCamera.cs" />
      <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
+     <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Elementals\!Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

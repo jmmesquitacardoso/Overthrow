@@ -11,18 +11,22 @@ public class EnemyScript : MonoBehaviour
 	public Vector3 pulledToPosition;
 	private Vector3 knockUpPosition;
 	private Vector3 knockUpDownPosition;
+	private Vector3 transformPosition2D;
 	public EnemyState state = EnemyState.IDLE;
 	public float pullSpeed = 20f;
 	public float knockUpSpeed = 30f;
 	public Text currentEnemyText;
 	public Image currentEnemyHealthBar;
+	public Image currentEnemyOuterHealthBar;
 	public int maxHealth = 400;
 	public int currentHealth = 250;
+	private bool inBlizzard = false;
 
 	// Use this for initialization
 	void Start ()
 	{
 		rend = GetComponent<Renderer> ();
+		InvokeRepeating ("TakeBlizzardDamage", 0, 1f);
 	}
 	
 	// Update is called once per frame
@@ -47,7 +51,7 @@ public class EnemyScript : MonoBehaviour
 			transform.position = Vector3.MoveTowards (transform.position, knockUpPosition, Time.deltaTime * knockUpSpeed);
 			if ((knockUpPosition - transform.position).magnitude < 0.1) {
 				state = EnemyState.KNOCKUPDOWN;
-				knockUpDownPosition = new Vector3 (transform.position.x, transform.position.y-20, transform.position.z);
+				knockUpDownPosition = new Vector3 (transform.position.x, transform.position.y - 20, transform.position.z);
 			}
 			break;
 		case EnemyState.KNOCKUPDOWN:
@@ -69,6 +73,7 @@ public class EnemyScript : MonoBehaviour
 		rend.material.color = Color.yellow;
 		currentEnemyText.text = gameObject.name;
 		currentEnemyHealthBar.enabled = true;
+		currentEnemyOuterHealthBar.enabled = true;
 		currentEnemyHealthBar.fillAmount = ((float)currentHealth / (float)maxHealth);
 	}
 	
@@ -78,6 +83,7 @@ public class EnemyScript : MonoBehaviour
 		rend.material.color = originalColor;
 		currentEnemyText.text = "";
 		currentEnemyHealthBar.enabled = false;
+		currentEnemyOuterHealthBar.enabled = false;
 	}
 
 	public void TakeDamage (int damage)
@@ -85,7 +91,9 @@ public class EnemyScript : MonoBehaviour
 		currentHealth -= damage;
 		currentEnemyHealthBar.fillAmount = ((float)currentHealth / (float)maxHealth);
 		if (currentHealth <= 0) {
+			Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
 			currentEnemyText.text = "";
+			currentEnemyOuterHealthBar.enabled = false;
 			Destroy (gameObject);
 		}
 	}
@@ -94,6 +102,23 @@ public class EnemyScript : MonoBehaviour
 	{
 		state = EnemyState.KNOCKUP;
 		knockUpPosition = new Vector3 (transform.position.x, transform.position.y + 20, transform.position.z);
+	}
+
+	public void EnterBlizzard ()
+	{
+		inBlizzard = true;
+	}
+
+	public void ExitBlizzard ()
+	{
+		inBlizzard = false;
+	}
+
+	void TakeBlizzardDamage ()
+	{
+		if (inBlizzard) {
+			TakeDamage (10);
+		}
 	}
 
 	void OnCollisionEnter (Collision collision)
