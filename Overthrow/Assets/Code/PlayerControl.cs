@@ -75,12 +75,10 @@ public class PlayerControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-<<<<<<< HEAD
 		if (currentHealth <= 0f) {
 			EnemyAI.isPlayerAlive = false;
 			Destroy (gameObject);
 		}
-=======
 		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
 
 		manaGlobe.fillAmount = (float)currentMana / (float)maxMana;
@@ -103,7 +101,6 @@ public class PlayerControl : MonoBehaviour
 			shiftDown = false;
 		}
 
->>>>>>> origin/master
 		PlayerSkills ();
 		
 		UpdateCurrentTarget ();

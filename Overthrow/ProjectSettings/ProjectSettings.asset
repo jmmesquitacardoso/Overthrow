@@ -14,14 +14,8 @@ PlayerSettings:
   companyName: DefaultCompany
   productName: Overthrow
   cloudProjectId: 
-<<<<<<< HEAD
-  defaultCursor: {fileID: 2800000, guid: 79b7ff80f0fbde84880cf0f6c4f727fd, type: 3}
-  cursorHotspot: {x: 15, y: 0}
-=======
-  defaultCursor: {fileID: 2800000, guid: edae256cbe70cfd4681944b5843babe6, type: 3}
-  cursorHotspot: {x: 52, y: 0}
-  m_ShowUnitySplashScreen: 1
->>>>>>> origin/master
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
@@ -86,7 +80,7 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
-  productGUID: 128a0b4068cef204a94569615d5d2161
+  productGUID: d6dc1b7ae8a504f6290c6dbcaaaef7a2
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -122,8 +116,8 @@ PlayerSettings:
   iOSLaunchScreenLandscape: {fileID: 0}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
-    rgba: 0
-  iOSLaunchScreenFillPct: 100
+    rgba: 3974685948
+  iOSLaunchScreenFillPct: 1
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
@@ -137,11 +131,7 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: 
-    m_Icons:
-    - m_Icon: {fileID: 0}
-      m_Size: 128
+  m_BuildTargetIcons: []
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
@@ -204,7 +194,7 @@ PlayerSettings:
   ps4ApplicationParam2: 0
   ps4ApplicationParam3: 0
   ps4ApplicationParam4: 0
-  ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
+  ps4Passcode: uawy8Y974KbGkVhMFbK4PcmLFjhxRRET
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -227,7 +217,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: F69AzBlax3CF3EDNhm3soLBPh71Yexui
+  psp2PackagePassword: AS8vVS63ZpgkAoVKdtyFh8gqih4Tkdr0
   psp2KeystoneFile: 
   psp2DRMType: 0
   psp2StorageType: 0
@@ -372,16 +362,12 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
-  - Metro::ScriptingBackend
-  - WP8::ScriptingBackend
   - WebGL::ScriptingBackend
   - WebGL::audioCompressionFormat
   - WebGL::exceptionSupport
   - WebGL::memorySize
   - iOS::Architecture
   - iOS::ScriptingBackend
-  Metro::ScriptingBackend: 2
-  WP8::ScriptingBackend: 2
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
   WebGL::exceptionSupport: 0
