@@ -7,6 +7,8 @@ public class EnemyAI : MonoBehaviour {
 	public float playerDistance;
 	public float rotationDamping;
 	public float moveSpeed;
+	public static bool isPlayerAlive = true;
+	private string hitobject;
 
 	// Use this for initialization
 	void Start () {
@@ -15,19 +17,20 @@ public class EnemyAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-		playerDistance = Vector3.Distance (player.position, transform.position);
+		if (isPlayerAlive) {
+			playerDistance = Vector3.Distance (player.position, transform.position);
 
-		if (playerDistance < 15f) {
-			lookAtPlayer ();
-		}
-		if (playerDistance < 12f) {
-			if(playerDistance > 2f){
-				chase();
+			if (playerDistance < 18f) {
+				lookAtPlayer ();
 			}
-			/*else if (playerDistance < 2f){
-				attack ();
-			}*/
+			if (playerDistance < 16f) {
+				if (playerDistance > 3f) {
+					chase ();
+				} 
+				else if (playerDistance < 3f) {
+					attack ();
+				}
+			}
 		}
 	}
 
@@ -40,13 +43,20 @@ public class EnemyAI : MonoBehaviour {
 	void chase(){
 		transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 	}
-	/*
+
+	void OnCollisionEnter(Collision collision)
+	{
+	
+	}
 	void attack(){
-		RaycastHit hiy;
-		if (Physics.Raycast (transform.position, transform.forward, out WheelHit)){
-			if(hit.collider.gameObject.tag == "Player")
+		RaycastHit hit;
+		Debug.Log("tou aqui");
+		if (Physics.Raycast (transform.position, transform.forward ,out hit)){
+			Debug.Log("tou aqui1");
+			if(hit.collider.gameObject.tag == "Player"){
+				Debug.Log("tou aqui2");
+				hit.collider.gameObject.GetComponent<PlayerControl>().currentHealth -= 20f;
+			}
 		}
-	}*/
-
+	}
 }
-

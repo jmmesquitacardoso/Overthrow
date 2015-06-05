@@ -762,8 +762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 926969021}
   playerDistance: 0
-  rotationDamping: 10
-  moveSpeed: 3
+  rotationDamping: 15
+  moveSpeed: 4
 --- !u!23 &798667532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -965,7 +965,7 @@ Transform:
   - {fileID: 1816174552}
   m_Father: {fileID: 1815944218}
   m_RootOrder: 0
---- !u!4 &921317783 stripped
+--- !u!4 &921317783
 Transform:
   m_PrefabParentObject: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
   m_PrefabInternal: {fileID: 1458997215}
@@ -1535,6 +1535,8 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
+  m_UseDefaultSmoothness: 1
+  m_DefaultSmoothness: 0
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987

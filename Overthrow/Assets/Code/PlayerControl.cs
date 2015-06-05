@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour
 	private float globalCooldown;
 	private float globalCooldownTimeSpan;
 	public int maxHealth = 400;
-	public int currentHealth = 200;
+	public float currentHealth = 200;
 	public int healthPerSecond = 2;
 	public int maxMana = 400;
 	public int currentMana = 200;
@@ -55,7 +55,10 @@ public class PlayerControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		
+		if (currentHealth <= 0f) {
+			EnemyAI.isPlayerAlive = false;
+			Destroy (gameObject);
+		}
 		PlayerSkills ();
 		
 		UpdateCurrentTarget ();
