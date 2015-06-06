@@ -581,6 +581,7 @@ GameObject:
   - 136: {fileID: 798667533}
   - 23: {fileID: 798667532}
   - 114: {fileID: 798667531}
+  - 114: {fileID: 798667536}
   m_Layer: 0
   m_Name: Enemy(capsule)
   m_TagString: Untagged
@@ -660,7 +661,34 @@ Transform:
   - {fileID: 1494452277}
   m_Father: {fileID: 0}
   m_RootOrder: 16
---- !u!4 &921317783 stripped
+--- !u!114 &798667536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 798667530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd5e26aba79f47e58b1d0095f8e0cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frame: {fileID: 2800000, guid: c4b02b8d5230b40c983eda58207c97a9, type: 3}
+  framePosition:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 500
+    height: 50
+  horizontalDistance: 0
+  verticalDistance: 0
+  healthBar: {fileID: 2800000, guid: 56ce76d23e2be49e1965fdec208708be, type: 3}
+  healthBarPosition:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+--- !u!4 &921317783
 Transform:
   m_PrefabParentObject: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
   m_PrefabInternal: {fileID: 1458997215}
@@ -1072,6 +1100,8 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
+  m_UseDefaultSmoothness: 1
+  m_DefaultSmoothness: 0
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987
