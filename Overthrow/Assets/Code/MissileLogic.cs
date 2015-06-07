@@ -28,7 +28,7 @@ public class MissileLogic : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.tag == "Enemy") {
-			collision.gameObject.GetComponent<EnemyScript>().TakeDamage(Utils.Instance.calculateDamage(critChance,criticalHitDamage,damage));
+			collision.gameObject.GetComponent<EnemyScript>().TakeDamage(Utils.Instance.CalculateDamage(critChance,criticalHitDamage,damage));
 			Destroy(gameObject);
 		}
 	}

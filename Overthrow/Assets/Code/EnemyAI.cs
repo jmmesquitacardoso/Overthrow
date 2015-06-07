@@ -55,7 +55,7 @@ public class EnemyAI : MonoBehaviour {
 			Debug.Log("tou aqui1");
 			if(hit.collider.gameObject.tag == "Player"){
 				Debug.Log("tou aqui2");
-				hit.collider.gameObject.GetComponent<PlayerControl>().currentHealth -= 20f;
+				hit.collider.gameObject.GetComponent<PlayerControl>().currentHealth -= 20;
 			}
 		}
 	}

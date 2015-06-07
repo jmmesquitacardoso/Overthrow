@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour
 	private float globalCooldown;
 	private float globalCooldownTimeSpan;
 	public int maxHealth = 400;
-	public float currentHealth = 200;
+	public int currentHealth = 200;
 	public int healthPerSecond = 2;
 	public int maxMana = 400;
 	public int currentMana = 200;
@@ -62,7 +62,7 @@ public class PlayerControl : MonoBehaviour
 		globalCooldown = 1f / attackSpeed;
 		globalCooldownTimeSpan = Time.time;
 		anim = gameObject.GetComponentInChildren<Animator> ();
-		state = PlayerState.Idle;
+		state = PlayerState.IDLE;
 		InvokeRepeating ("ManaRegen", 0, 1f);
 		InvokeRepeating ("HealthRegen", 0, 1f);
 	}
@@ -75,23 +75,14 @@ public class PlayerControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (currentHealth <= 0f) {
-			EnemyAI.isPlayerAlive = false;
-			Destroy (gameObject);
-		}
+
 		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
 
 		manaGlobe.fillAmount = (float)currentMana / (float)maxMana;
 
 		strengthGlobe.fillAmount = (float)currentStrength / (float)maxStrength;
 
-		if (blinkTimeSpan > Time.time) {
-			blinkIcon.fillAmount = 1f - ((float)((blinkTimeSpan - Time.time)) / blinkCooldown);
-		}
-
-		if (naturesWrathTimeSpan > Time.time) {
-			naturesWrathIcon.fillAmount = 1f - ((float)((naturesWrathTimeSpan - Time.time)) / naturesWrathCooldown);
-		}
+		SpellIconsHandler ();
 
 		if (Input.GetKeyDown (KeyCode.LeftShift)) {
 			shiftDown = true;
@@ -106,11 +97,14 @@ public class PlayerControl : MonoBehaviour
 		UpdateCurrentTarget ();
 		
 		switch (state) {
-		case PlayerState.Idle:
+		case PlayerState.IDLE:
 			anim.Play ("Idle");
 			break;
-		case PlayerState.Moving:
+		case PlayerState.MOVING:
 			anim.Play ("Run");
+			break;
+		case PlayerState.BLINK:
+			anim.Play ("Blink");
 			break;
 		default:
 			break;
@@ -125,6 +119,31 @@ public class PlayerControl : MonoBehaviour
 	{
 		MouseMovement ();
 	}
+
+	void SpellIconsHandler() {
+		if (blinkTimeSpan > Time.time) {
+			blinkIcon.fillAmount = 1f - ((float)((blinkTimeSpan - Time.time)) / blinkCooldown);
+		}
+		
+		if (naturesWrathTimeSpan > Time.time) {
+			naturesWrathIcon.fillAmount = 1f - ((float)((naturesWrathTimeSpan - Time.time)) / naturesWrathCooldown);
+		}
+
+		if (currentMana < blizzardManaCost) {
+			blizzardIcon.SetMaterialDirty();
+		}
+	}
+
+	public void TakeDamage(int damage) {
+		if (!Utils.Instance.Dodge(dodgeChance)) {
+			currentHealth -= damage;
+		}
+
+		if (currentHealth <= 0) {
+			EnemyAI.isPlayerAlive = false;
+			Destroy (gameObject);
+		}
+	}
 	
 	//Displays the current frames per second
 	void OnGUI ()
@@ -134,8 +153,8 @@ public class PlayerControl : MonoBehaviour
 	
 	void OnCollisionEnter (Collision collision)
 	{
-		if (state == PlayerState.Moving) {
-			state = PlayerState.Idle;
+		if (state == PlayerState.MOVING) {
+			state = PlayerState.IDLE;
 		}
 	}
 	
@@ -210,7 +229,7 @@ public class PlayerControl : MonoBehaviour
 				if (mode == Mode.ARPG) {
 					//if blink is not on cooldown
 					if (blinkTimeSpan <= Time.time) {
-						Blink ();
+						StartCoroutine(Blink());
 					} else {
 						StartCoroutine (DisplayWarningText ("Blink is on cooldown!"));
 					}
@@ -283,7 +302,7 @@ public class PlayerControl : MonoBehaviour
 	void ElementalMissiles (Vector3 targetPosition, bool targeted)
 	{
 		if (currentTarget.tag == "Enemy" && targeted || !targeted) {
-			state = PlayerState.Idle;
+			state = PlayerState.IDLE;
 			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = targetPosition;
 			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);
 			elementalMissiles.GetComponent<MissileLogic> ().critChance = critChance;
@@ -297,7 +316,7 @@ public class PlayerControl : MonoBehaviour
 	//Casts the Trap skill
 	void Trap ()
 	{
-		state = PlayerState.Idle;
+		state = PlayerState.IDLE;
 		GetMouseWorldPosition ();
 		if (Vector3.Distance (targetPosition, transform.position) <= trapRange) {
 			trap.position = targetPosition;
@@ -313,7 +332,7 @@ public class PlayerControl : MonoBehaviour
 	// Casts the Flare skill
 	void Flare ()
 	{
-		state = PlayerState.Idle;
+		state = PlayerState.IDLE;
 		GetMouseWorldPosition ();
 		flare.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
 		flare.GetComponent<FlareLogic> ().targetPosition = targetPosition;
@@ -324,7 +343,7 @@ public class PlayerControl : MonoBehaviour
 	// Casts the Blizzard skill
 	void Blizzard ()
 	{
-		state = PlayerState.Idle;
+		state = PlayerState.IDLE;
 		GetMouseWorldPosition ();
 		if (Vector3.Distance (targetPosition, transform.position) <= blizzardRange) {
 			if (currentMana >= blizzardManaCost) {
@@ -345,18 +364,20 @@ public class PlayerControl : MonoBehaviour
 	}
 	
 	//Casts the Blink skill
-	void Blink ()
+	IEnumerator Blink ()
 	{
 		blinkTimeSpan = Time.time + blinkCooldown;
-		state = PlayerState.Idle;
 		GetMouseWorldPosition ();
+		state = PlayerState.BLINK;
+		yield return new WaitForSeconds (0.65f);
 		transform.position = targetPosition;
+		state = PlayerState.IDLE;
 	}
 	
 	//Casts the Grapple skill
 	void Grapple ()
 	{
-		state = PlayerState.Idle;
+		state = PlayerState.IDLE;
 		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
 		GetMouseWorldPosition ();
 		grapple.GetComponent<GrappleLogic> ().targetPosition = targetPosition;
@@ -369,7 +390,7 @@ public class PlayerControl : MonoBehaviour
 	void NaturesWrath ()
 	{
 		naturesWrathTimeSpan = Time.time + naturesWrathCooldown;
-		state = PlayerState.Idle;
+		state = PlayerState.IDLE;
 		GetMouseWorldPosition ();
 		naturesWrath.GetComponent<NaturesWrathLogic> ().targetPosition = targetPosition;
 		naturesWrath.GetComponent<NaturesWrathLogic> ().damage = (int)(attackPower * 0.10);
@@ -383,14 +404,14 @@ public class PlayerControl : MonoBehaviour
 	void MouseMovement ()
 	{
 		if (Input.GetMouseButtonDown (0)) {
-			state = PlayerState.Moving;
+			state = PlayerState.MOVING;
 			GetMouseWorldPosition ();
 		}
 		
-		if (state == PlayerState.Moving) {
+		if (state == PlayerState.MOVING) {
 			transform.position = Vector3.MoveTowards (transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
-				state = PlayerState.Idle;
+				state = PlayerState.IDLE;
 			}
 		}
 	}
@@ -401,7 +422,8 @@ public class PlayerControl : MonoBehaviour
 		var targetRotation = Quaternion.LookRotation (targetPosition - transform.position);
 		transform.rotation = targetRotation;
 		var rotation = transform.rotation.eulerAngles;
-		rotation.x = 270;
+		rotation.x = 0;
+		rotation.y += 180;
 		rotation.z = 0;
 		transform.rotation = Quaternion.Euler (rotation);
 	}

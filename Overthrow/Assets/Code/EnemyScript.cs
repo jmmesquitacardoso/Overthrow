@@ -21,6 +21,9 @@ public class EnemyScript : MonoBehaviour
 	public int maxHealth = 400;
 	public int currentHealth = 250;
 	private bool inBlizzard = false;
+	private float blizzardCritChance;
+	private float blizzardCriticialHitDamage;
+	private int blizzardDamage;
 
 	// Use this for initialization
 	void Start ()
@@ -104,9 +107,12 @@ public class EnemyScript : MonoBehaviour
 		knockUpPosition = new Vector3 (transform.position.x, transform.position.y + 20, transform.position.z);
 	}
 
-	public void EnterBlizzard ()
+	public void EnterBlizzard (float blizzardCritChance, float blizzardCriticialHitDamage, int blizzardDamage)
 	{
 		inBlizzard = true;
+		this.blizzardCritChance = blizzardCritChance;
+		this.blizzardCriticialHitDamage = blizzardCriticialHitDamage;
+		this.blizzardDamage = blizzardDamage;
 	}
 
 	public void ExitBlizzard ()
@@ -117,7 +123,7 @@ public class EnemyScript : MonoBehaviour
 	void TakeBlizzardDamage ()
 	{
 		if (inBlizzard) {
-			TakeDamage (10);
+			TakeDamage (Utils.Instance.CalculateDamage(blizzardCritChance,blizzardCriticialHitDamage,blizzardDamage));
 		}
 	}
 
