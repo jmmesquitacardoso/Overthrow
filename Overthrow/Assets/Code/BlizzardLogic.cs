@@ -27,7 +27,6 @@ public class BlizzardLogic : MonoBehaviour
 	void OnCollisionEnter (Collision collision)
 	{
 		if (collision.gameObject.tag == "Enemy") {
-			Debug.Log ("Collided with " + collision.gameObject.name);
 			collision.gameObject.GetComponent<EnemyScript> ().EnterBlizzard (critChance,criticalHitDamage,damage);
 			collidedEnemies.Add (collision.gameObject);
 		}
@@ -36,7 +35,6 @@ public class BlizzardLogic : MonoBehaviour
 	void OnCollisionExit (Collision collision)
 	{
 		if (collision.gameObject.tag == "Enemy") {
-			Debug.Log ("Collided with " + collision.gameObject.name);
 			collision.gameObject.GetComponent<EnemyScript> ().ExitBlizzard ();
 		}
 	}

@@ -509,7 +509,7 @@ RectTransform:
   - {fileID: 2089794434}
   - {fileID: 500401135}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a33f0b7f95b40c7959c2c2aeeca2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 926969021}
+  player: {fileID: 1453769302}
   playerDistance: 0
   rotationDamping: 10
   moveSpeed: 3
@@ -660,7 +660,7 @@ Transform:
   m_Children:
   - {fileID: 1494452277}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!114 &798667536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,10 +688,6 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
---- !u!4 &921317783 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-  m_PrefabInternal: {fileID: 1458997215}
 --- !u!1 &921686724
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,83 +749,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921686724}
---- !u!1 &926969020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 926969021}
-  - 114: {fileID: 926969022}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &926969021
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 926969020}
-  m_LocalRotation: {x: .70710659, y: 0, z: 0, w: -.707106948}
-  m_LocalPosition: {x: -4.5999999, y: 4.07000017, z: -6.98000002}
-  m_LocalScale: {x: .150000006, y: .150000006, z: .150000006}
-  m_Children:
-  - {fileID: 921317783}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
---- !u!114 &926969022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 926969020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8c319b77e4f46d40b87f4c0d0c26c36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  blinkCooldown: 15
-  naturesWrathCooldown: 15
-  attackSpeed: 1
-  dodgeChance: 15
-  critChance: 15.6999998
-  criticalHitDamage: 2
-  maxHealth: 400
-  currentHealth: 200
-  healthPerSecond: 2
-  maxMana: 400
-  currentMana: 200
-  manaPerSecond: 30
-  maxStrength: 100
-  currentStrength: 100
-  attackPower: 1000
-  blizzardRange: 40
-  trapRange: 10
-  blizzardManaCost: 100
-  elementalMissiles: {fileID: 416032, guid: 69486f405a39aeb4e89e253f09436b2f, type: 2}
-  grapple: {fileID: 422668, guid: e22e24f276306c247b766b3d07b67c59, type: 2}
-  trap: {fileID: 403356, guid: e5f6d9508becedd4fa64a641b323270f, type: 2}
-  flare: {fileID: 470870, guid: 375c87d04e1766047ae66d32c94a9e1a, type: 2}
-  naturesWrath: {fileID: 401072, guid: fa1260828ea4c0945918e5ad391e1cb1, type: 2}
-  blizzard: {fileID: 490956, guid: 93a2780b3eab5ac478877f4c8ce49e64, type: 2}
-  warningText: {fileID: 2038471471}
-  healthGlobe: {fileID: 2044297446}
-  manaGlobe: {fileID: 1888240056}
-  strengthGlobe: {fileID: 1897279736}
-  missilesIcon: {fileID: 222138835}
-  blinkIcon: {fileID: 175153213}
-  blizzardIcon: {fileID: 1977540209}
-  naturesWrathIcon: {fileID: 1680844524}
-  trapIcon: {fileID: 921686726}
-  grappleIcon: {fileID: 2116779844}
-  flareIcon: {fileID: 2089794435}
-  mindControlIcon: {fileID: 500401136}
 --- !u!1 &941444462
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,7 +821,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!1001 &956238279
 Prefab:
   m_ObjectHideFlags: 0
@@ -1115,7 +1034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1001 &1145643982
 Prefab:
   m_ObjectHideFlags: 0
@@ -1381,7 +1300,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: d151966b05f5dfd448b5fcb3a27b1bf9, type: 2}
     - target: {fileID: 100116, guid: e92780e8c4c545941ad512340054bd65, type: 3}
       propertyPath: m_Name
-      value: PlayerCenas
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e92780e8c4c545941ad512340054bd65, type: 3}
@@ -1406,14 +1325,14 @@ MonoBehaviour:
   naturesWrathCooldown: 15
   attackSpeed: 1
   dodgeChance: 15
-  critChance: 15
+  critChance: 0
   criticalHitDamage: 1
   maxHealth: 400
   currentHealth: 200
   healthPerSecond: 2
   maxMana: 400
   currentMana: 200
-  manaPerSecond: 2
+  manaPerSecond: 20
   maxStrength: 100
   currentStrength: 100
   attackPower: 1000
@@ -1442,56 +1361,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400116, guid: e92780e8c4c545941ad512340054bd65, type: 3}
   m_PrefabInternal: {fileID: 1453769299}
---- !u!1001 &1458997215
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 926969021}
-    m_Modifications:
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100036, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_Name
-      value: animator
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d151966b05f5dfd448b5fcb3a27b1bf9, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 223d348d1e20ceb48980a836a5185af5, type: 3}
-  m_IsPrefabParent: 0
 --- !u!1 &1494452276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,7 +1452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1508597156
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1832,7 +1701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 66713ad980dfe074c9241506231bcdd2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac7393ff36613e3448f112bf49001aa2, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

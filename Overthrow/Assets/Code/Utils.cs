@@ -74,14 +74,14 @@ public class Utils
 	public bool Dodge (float dodgeChance)
 	{
 		var random = Random.Range (1, 100);
-		// If it's an integer crit chance, i.e 15%
+		// If it's an integer dodge chance, i.e 15%
 		if (Mathf.Floor (dodgeChance) == dodgeChance) {
 			if (random <= dodgeChance) {
 				return true;
 			} else {
 				return false;
 			}
-		} else { // If it's a float crit chance, i.e 15.7%
+		} else { // If it's a float dodge chance, i.e 15.7%
 			int percentileCritChance = (int)Mathf.Ceil (((dodgeChance - Mathf.Floor (dodgeChance))) * 100);
 			var percentileRandom = Random.Range (1, 100);
 			if (percentileRandom <= percentileCritChance) {

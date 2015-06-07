@@ -52,6 +52,7 @@ public class PlayerControl : MonoBehaviour
 	public Image grappleIcon;
 	public Image flareIcon;
 	public Image mindControlIcon;
+	private Color blizzardIconColor;
 	
 	// Use this for initialization
 	void Start ()
@@ -63,6 +64,7 @@ public class PlayerControl : MonoBehaviour
 		globalCooldownTimeSpan = Time.time;
 		anim = gameObject.GetComponentInChildren<Animator> ();
 		state = PlayerState.IDLE;
+		blizzardIconColor = blizzardIcon.color;
 		InvokeRepeating ("ManaRegen", 0, 1f);
 		InvokeRepeating ("HealthRegen", 0, 1f);
 	}
@@ -130,7 +132,9 @@ public class PlayerControl : MonoBehaviour
 		}
 
 		if (currentMana < blizzardManaCost) {
-			blizzardIcon.SetMaterialDirty();
+			blizzardIcon.color = Color.Lerp (Color.black, Color.gray, Time.time * 5f);
+		} else {
+			blizzardIcon.color = blizzardIconColor;
 		}
 	}
 
@@ -347,7 +351,7 @@ public class PlayerControl : MonoBehaviour
 		GetMouseWorldPosition ();
 		if (Vector3.Distance (targetPosition, transform.position) <= blizzardRange) {
 			if (currentMana >= blizzardManaCost) {
-				blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.10);
+				blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.01);
 				blizzard.GetComponent<BlizzardLogic> ().critChance = critChance;
 				blizzard.GetComponent<BlizzardLogic> ().criticalHitDamage = criticalHitDamage;
 				Vector3 blizzardPosition = targetPosition;
@@ -369,7 +373,7 @@ public class PlayerControl : MonoBehaviour
 		blinkTimeSpan = Time.time + blinkCooldown;
 		GetMouseWorldPosition ();
 		state = PlayerState.BLINK;
-		yield return new WaitForSeconds (0.65f);
+		yield return new WaitForSeconds (0.60f);
 		transform.position = targetPosition;
 		state = PlayerState.IDLE;
 	}
