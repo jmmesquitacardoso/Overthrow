@@ -344,24 +344,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 798667530}
+  enemyAi: {fileID: 0}
   frame: {fileID: 2800000, guid: c4b02b8d5230b40c983eda58207c97a9, type: 3}
-  framePosition:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
   horizontalDistance: .104000002
   verticalDistance: .270000011
   width: .783999979
   height: .432999998
   healthBar: {fileID: 2800000, guid: 56ce76d23e2be49e1965fdec208708be, type: 3}
-  healthBarPosition:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
+  healthPercentage: 0
 --- !u!4 &229720712
 Transform:
   m_ObjectHideFlags: 0
@@ -661,6 +651,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 4
+  maxHealth: 400
+  health: 0
 --- !u!23 &798667532
 MeshRenderer:
   m_ObjectHideFlags: 0
