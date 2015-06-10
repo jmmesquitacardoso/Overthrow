@@ -2,17 +2,19 @@
 using System.Collections;
 
 public class EnemyAI : MonoBehaviour {
-
+	
 	public Transform player;
 	public float playerDistance;
 	public float rotationDamping;
 	public float moveSpeed;
 	public static bool isPlayerAlive = true;
 	private string hitobject;
+	public int maxHealth;
+	public int health;
 
 	// Use this for initialization
 	void Start () {
-	
+		health = maxHealth;
 	}
 	
 	// Update is called once per frame
@@ -50,13 +52,14 @@ public class EnemyAI : MonoBehaviour {
 	}
 	void attack(){
 		RaycastHit hit;
-		Debug.Log("tou aqui");
+		health -= 1;
+		/*Debug.Log("tou aqui");
 		if (Physics.Raycast (transform.position, transform.forward ,out hit)){
 			Debug.Log("tou aqui1");
 			if(hit.collider.gameObject.tag == "Player"){
 				Debug.Log("tou aqui2");
 				hit.collider.gameObject.GetComponent<PlayerControl>().currentHealth -= 20;
 			}
-		}
+		}*/
 	}
 }

@@ -2,25 +2,26 @@
 using System.Collections;
 
 public class EnemyHealth : MonoBehaviour {
-
+	
 	public GameObject enemy;
+	public EnemyAI enemyAi;
 	public Texture2D frame;
-	public Rect framePosition;
+	private Rect framePosition;
 	public float horizontalDistance;
 	public float verticalDistance;
 	public float width;
 	public float height;
 	public Texture2D healthBar;
-	public Rect healthBarPosition;
+	private Rect healthBarPosition;
+	public float healthPercentage;
 	// Use this for initialization
 	void Start () {
-	
+		healthPercentage = 1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		var wantedPos = Camera.main.WorldToViewportPoint (enemy.transform.position);
-		transform.position = wantedPos; 
+		healthPercentage = (float) enemyAi.health / (float) enemyAi.maxHealth;
 	}
 
 	void OnGUI(){
@@ -40,7 +41,7 @@ public class EnemyHealth : MonoBehaviour {
 	void drawBar(){
 		healthBarPosition.x = framePosition.x + framePosition.width * horizontalDistance;
 		healthBarPosition.y = framePosition.y + framePosition.height * verticalDistance;
-		healthBarPosition.width = framePosition.width * width;
+		healthBarPosition.width = framePosition.width * width * healthPercentage;
 		healthBarPosition.height = framePosition.height * height;
 
 		GUI.DrawTexture (healthBarPosition, healthBar);
