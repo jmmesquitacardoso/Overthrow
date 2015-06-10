@@ -19,7 +19,10 @@ public class EnemyAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isPlayerAlive) {
+		if (health < 0) {
+			Destroy(gameObject);
+		}
+		else {
 			playerDistance = Vector3.Distance (player.position, transform.position);
 
 			if (playerDistance < 18f) {

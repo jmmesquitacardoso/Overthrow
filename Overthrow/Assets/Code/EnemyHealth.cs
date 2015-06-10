@@ -21,7 +21,11 @@ public class EnemyHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		healthPercentage = (float) enemyAi.health / (float) enemyAi.maxHealth;
+		if (healthPercentage >= 0) {
+			healthPercentage = (float)enemyAi.health / (float)enemyAi.maxHealth;
+		} else {
+			Destroy(gameObject);
+		}
 	}
 
 	void OnGUI(){
