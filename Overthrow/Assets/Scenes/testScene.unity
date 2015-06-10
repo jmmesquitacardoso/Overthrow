@@ -351,15 +351,17 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  horizontalDistance: 0
-  verticalDistance: 0
+  horizontalDistance: .104000002
+  verticalDistance: .270000011
+  width: .783999979
+  height: .432999998
   healthBar: {fileID: 2800000, guid: 56ce76d23e2be49e1965fdec208708be, type: 3}
   healthBarPosition:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 250
-    height: 25
+    width: 0
+    height: 0
 --- !u!4 &229720712
 Transform:
   m_ObjectHideFlags: 0
@@ -367,11 +369,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229720710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 10, y: -1, z: -1.66666675}
+  m_LocalScale: {x: .333333343, y: .333333343, z: .333333343}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 798667535}
+  m_RootOrder: 1
 --- !u!1 &500401134
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +716,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1494452277}
+  - {fileID: 229720712}
   m_Father: {fileID: 0}
   m_RootOrder: 16
 --- !u!1 &921686724
