@@ -307,11 +307,11 @@ public class PlayerControl : MonoBehaviour
 	{
 		if (currentTarget.tag == "Enemy" && targeted || !targeted) {
 			state = PlayerState.IDLE;
-			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = targetPosition;
+			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
 			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);
 			elementalMissiles.GetComponent<MissileLogic> ().critChance = critChance;
 			elementalMissiles.GetComponent<MissileLogic> ().criticalHitDamage = criticalHitDamage;
-			elementalMissiles.position = new Vector3 (transform.position.x + 1, transform.position.y, transform.position.z + 1);
+			elementalMissiles.position = new Vector3 (transform.position.x + 1, transform.position.y+3, transform.position.z + 1);
 			RotateTowardsTargetPosition (targetPosition);
 			Instantiate (elementalMissiles);
 		}

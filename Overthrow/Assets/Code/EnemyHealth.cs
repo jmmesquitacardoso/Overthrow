@@ -5,7 +5,6 @@ public class EnemyHealth : MonoBehaviour {
 	
 	public GameObject enemy;
 	public EnemyAI enemyAi;
-	public Texture2D frame;
 	private Rect framePosition;
 	public float horizontalDistance;
 	public float verticalDistance;
@@ -29,20 +28,15 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		drawFrame ();
 		drawBar ();
 	}
 
-	void drawFrame(){
+	void drawBar(){
 		Vector3 screenPosition =
 			Camera.current.WorldToScreenPoint(enemy.transform.position);// gets screen position.
 		screenPosition.y = Screen.height - (screenPosition.y + 1);// inverts y
 		framePosition = new Rect(screenPosition.x  - 50,
-		                     screenPosition.y  - 50, 100, 24);// makes a rect centered at the player ( 100x24 )
-		GUI.DrawTexture (framePosition, frame);
-	}
-
-	void drawBar(){
+		                         screenPosition.y  - 50, 100, 24);// makes a rect centered at the player ( 100x24 )
 		healthBarPosition.x = framePosition.x + framePosition.width * horizontalDistance;
 		healthBarPosition.y = framePosition.y + framePosition.height * verticalDistance;
 		healthBarPosition.width = framePosition.width * width * healthPercentage;
