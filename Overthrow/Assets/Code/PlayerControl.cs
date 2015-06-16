@@ -16,6 +16,7 @@ public class PlayerControl : MonoBehaviour
 	private float naturesWrathTimeSpan;
 	private float globalCooldown;
 	private float globalCooldownTimeSpan;
+	private float oldY;
 	public int maxHealth = 400;
 	public int currentHealth = 200;
 	public int healthPerSecond = 2;
@@ -41,6 +42,7 @@ public class PlayerControl : MonoBehaviour
 	private Mode mode;
 	public Text warningText;
 	private bool shiftDown = false;
+	private bool blinkBack = false;
 	public Image healthGlobe;
 	public Image manaGlobe;
 	public Image strengthGlobe;
@@ -53,11 +55,12 @@ public class PlayerControl : MonoBehaviour
 	public Image flareIcon;
 	public Image mindControlIcon;
 	private Color blizzardIconColor;
-	private float oldY;
+	private Vector3 positionBeforeBlink;
 	
 	// Use this for initialization
 	void Start ()
 	{
+		oldY = transform.position.y;
 		blinkTimeSpan = Time.time;
 		naturesWrathTimeSpan = Time.time;
 		mode = Mode.ARPG;
@@ -68,15 +71,11 @@ public class PlayerControl : MonoBehaviour
 		blizzardIconColor = blizzardIcon.color;
 		InvokeRepeating ("ManaRegen", 0, 1f);
 		InvokeRepeating ("HealthRegen", 0, 1f);
-
-		oldY = transform.position.y;
-
 	}
 	
 	void Awake ()
 	{
 		Application.targetFrameRate = 60;
-
 	}
 	
 	// Update is called once per frame
@@ -86,11 +85,10 @@ public class PlayerControl : MonoBehaviour
 		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
 		
 		var position = transform.position;
-		if (oldY + 1 > position.y) {
+		if (oldY + 0.35f > position.y) {
 			//oldY = position.y;
-			position.y = oldY + 1;
+			position.y = oldY + 0.35f;
 			transform.position = position;
-
 		}
 		
 		manaGlobe.fillAmount = (float)currentMana / (float)maxMana;
@@ -242,7 +240,7 @@ public class PlayerControl : MonoBehaviour
 				}
 			}
 			
-			if (Input.GetKeyDown (KeyCode.Alpha2)) {
+			if (!blinkBack && Input.GetKeyDown (KeyCode.Alpha2)) {
 				if (mode == Mode.ARPG) {
 					//if blink is not on cooldown
 					if (blinkTimeSpan <= Time.time) {
@@ -254,6 +252,15 @@ public class PlayerControl : MonoBehaviour
 					Grapple ();
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
+			} else if (blinkBack && Input.GetKeyDown (KeyCode.Alpha2)) {
+				if (mode == Mode.ARPG) {
+					//if blink is not on cooldown
+					if (blinkTimeSpan <= Time.time) {
+						transform.position = positionBeforeBlink;
+					} else {
+						StartCoroutine (DisplayWarningText ("Blink is on cooldown!"));
+					}
+				}
 			}
 			
 			if (Input.GetKeyDown (KeyCode.Alpha3)) {
@@ -383,12 +390,15 @@ public class PlayerControl : MonoBehaviour
 	//Casts the Blink skill
 	IEnumerator Blink ()
 	{
-		blinkTimeSpan = Time.time + blinkCooldown;
+		positionBeforeBlink = transform.position;
+		blinkBack = true;
 		GetMouseWorldPosition ();
-		state = PlayerState.BLINK;
-		yield return new WaitForSeconds (0.60f);
 		transform.position = targetPosition;
-		state = PlayerState.IDLE;
+		//state = PlayerState.BLINK;
+		yield return new WaitForSeconds (3f);
+		blinkBack = false;
+		blinkTimeSpan = Time.time + blinkCooldown;
+		//state = PlayerState.IDLE;
 	}
 	
 	//Casts the Grapple skill

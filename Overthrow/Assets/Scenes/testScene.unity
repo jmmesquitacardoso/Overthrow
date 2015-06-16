@@ -912,7 +912,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 218234903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 214.699997, y: 2.5, z: -68.1999969}
+  m_LocalPosition: {x: 214.699997, y: 0, z: -68.1999969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 597042246}
@@ -8823,7 +8823,7 @@ GameObject:
   - 218: {fileID: 1711558419}
   - 154: {fileID: 1711558418}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: BossAreaTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
