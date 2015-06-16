@@ -32,6 +32,8 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void drawBar(){
+		try {
+
 		Vector3 screenPosition =
 			Camera.current.WorldToScreenPoint(enemy.transform.position);// gets screen position.
 		screenPosition.y = Screen.height - (screenPosition.y + 1);// inverts y
@@ -43,6 +45,9 @@ public class EnemyHealth : MonoBehaviour {
 		healthBarPosition.height = framePosition.height * height;
 
 		GUI.DrawTexture (healthBarPosition, healthBar);
+		}
+		catch {
+		}
 	}
 }
 
