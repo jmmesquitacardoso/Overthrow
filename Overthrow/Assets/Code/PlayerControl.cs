@@ -53,6 +53,7 @@ public class PlayerControl : MonoBehaviour
 	public Image flareIcon;
 	public Image mindControlIcon;
 	private Color blizzardIconColor;
+	private float oldY;
 	
 	// Use this for initialization
 	void Start ()
@@ -67,11 +68,15 @@ public class PlayerControl : MonoBehaviour
 		blizzardIconColor = blizzardIcon.color;
 		InvokeRepeating ("ManaRegen", 0, 1f);
 		InvokeRepeating ("HealthRegen", 0, 1f);
+
+		oldY = transform.position.y;
+
 	}
 	
 	void Awake ()
 	{
 		Application.targetFrameRate = 60;
+
 	}
 	
 	// Update is called once per frame
@@ -79,7 +84,15 @@ public class PlayerControl : MonoBehaviour
 	{
 
 		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
+		
+		var position = transform.position;
+		if (oldY + 1 > position.y) {
+			//oldY = position.y;
+			position.y = oldY + 1;
+			transform.position = position;
 
+		}
+		
 		manaGlobe.fillAmount = (float)currentMana / (float)maxMana;
 
 		strengthGlobe.fillAmount = (float)currentStrength / (float)maxStrength;
@@ -211,7 +224,7 @@ public class PlayerControl : MonoBehaviour
 		//if the global cooldown is over
 		if (globalCooldownTimeSpan <= Time.time) {
 			
-			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+			if (!shiftDown && Input.GetKeyDown (KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
 					ElementalMissiles (currentTarget.position, true);
 				} else {
@@ -305,7 +318,7 @@ public class PlayerControl : MonoBehaviour
 	// Player stops moving and rotates in the direction of the missiles
 	void ElementalMissiles (Vector3 targetPosition, bool targeted)
 	{
-		if (currentTarget.tag == "Enemy" && targeted || !targeted) {
+		if (currentTarget != null && currentTarget.tag == "Enemy" && targeted || !targeted) {
 			state = PlayerState.IDLE;
 			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
 			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);

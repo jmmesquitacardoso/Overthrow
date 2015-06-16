@@ -85,11 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 9.66119385, y: 15.5, z: -19.2783203}
-=======
-  m_LocalPosition: {x: -9.01293945, y: 15.5, z: 96.5582886}
->>>>>>> origin/master
+  m_LocalPosition: {x: 191.509766, y: 15.5, z: -52.0415649}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 478280}
@@ -1094,7 +1090,7 @@ ParticleSystem:
       minMaxState: 1
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     type: 1
     plane0: {fileID: 0}
     plane1: {fileID: 0}
