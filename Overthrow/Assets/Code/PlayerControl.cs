@@ -8,12 +8,14 @@ public class PlayerControl : MonoBehaviour
 	public float speed = 3.0f;
 	public float blinkCooldown = 15f;
 	public float naturesWrathCooldown = 15f;
+	public float grappleCooldown = 15f;
 	public float attackSpeed = 1f;
 	public float dodgeChance = 15f;
 	public float critChance = 15f;
 	public float criticalHitDamage = 1;
 	private float blinkTimeSpan;
 	private float naturesWrathTimeSpan;
+	private float grappleTimeSpan;
 	private float globalCooldown;
 	private float globalCooldownTimeSpan;
 	private float oldY;
@@ -28,6 +30,7 @@ public class PlayerControl : MonoBehaviour
 	public int attackPower = 1000;
 	public int blizzardRange = 30;
 	public int trapRange = 10;
+	public int grappleRange = 40;
 	public int blizzardManaCost = 100;
 	private Vector3 targetPosition;
 	private Animator anim;
@@ -64,6 +67,7 @@ public class PlayerControl : MonoBehaviour
 		oldY = transform.position.y;
 		blinkTimeSpan = Time.time;
 		naturesWrathTimeSpan = Time.time;
+		grappleTimeSpan = Time.time;
 		mode = Mode.ARPG;
 		globalCooldown = 1f / attackSpeed;
 		globalCooldownTimeSpan = Time.time;
@@ -121,6 +125,12 @@ public class PlayerControl : MonoBehaviour
 		case PlayerState.BLINK:
 			anim.Play ("Blink");
 			break;
+		case PlayerState.BLIZZNATURE:
+			anim.Play ("Blizzard");
+			break;
+		case PlayerState.GRAPPLE:
+			anim.Play("Grapple");
+			break;
 		default:
 			break;
 		}
@@ -132,7 +142,9 @@ public class PlayerControl : MonoBehaviour
 	
 	void FixedUpdate ()
 	{
-		MouseMovement ();
+		if (state == PlayerState.IDLE || state == PlayerState.MOVING) {
+			MouseMovement ();
+		}
 	}
 
 	void SpellIconsHandler() {
@@ -296,7 +308,11 @@ public class PlayerControl : MonoBehaviour
 						StartCoroutine (DisplayWarningText ("Blink is on cooldown!"));
 					}
 				} else {
-					Grapple ();
+					if (grappleTimeSpan <= Time.time) {
+						StartCoroutine(Grapple());
+					} else {
+						StartCoroutine (DisplayWarningText ("Grapple is on cooldown!"));
+					}
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			} else if (blinkBack && Input.GetKeyDown (KeyCode.Alpha2)) {
@@ -312,7 +328,7 @@ public class PlayerControl : MonoBehaviour
 			
 			if (Input.GetKeyDown (KeyCode.Alpha3)) {
 				if (mode == Mode.ARPG) {
-					Blizzard ();
+					StartCoroutine(Blizzard());
 				} else {
 					Flare ();
 				}
@@ -322,7 +338,7 @@ public class PlayerControl : MonoBehaviour
 			if (Input.GetKeyDown (KeyCode.Alpha4)) {
 				if (mode == Mode.ARPG) {
 					if (naturesWrathTimeSpan <= Time.time) {
-						NaturesWrath ();
+						StartCoroutine(NaturesWrath());
 					} else {
 						StartCoroutine (DisplayWarningText ("Nature's Wrath is on cooldown!"));
 					}
@@ -412,26 +428,31 @@ public class PlayerControl : MonoBehaviour
 	}
 
 	// Casts the Blizzard skill
-	void Blizzard ()
+	IEnumerator Blizzard ()
 	{
-		state = PlayerState.IDLE;
 		GetMouseWorldPosition ();
 		if (Vector3.Distance (targetPosition, transform.position) <= blizzardRange) {
 			if (currentMana >= blizzardManaCost) {
+				anim.speed = 2.5f;
+				state = PlayerState.BLIZZNATURE;
 				blizzard.GetComponent<BlizzardLogic> ().damage = (int)(attackPower * 0.01);
 				blizzard.GetComponent<BlizzardLogic> ().critChance = critChance;
 				blizzard.GetComponent<BlizzardLogic> ().criticalHitDamage = criticalHitDamage;
 				Vector3 blizzardPosition = targetPosition;
 				blizzardPosition.y = 15.5f;
 				blizzard.position = blizzardPosition;
+				yield return new WaitForSeconds(1f);
 				Instantiate (blizzard);
 				currentMana -= blizzardManaCost;
+				anim.speed = 1;
+				state = PlayerState.IDLE;
 			} else {
 				StartCoroutine (DisplayWarningText ("Not enough mana!"));
 			}
 		} else {
 			StartCoroutine (DisplayWarningText ("Out of range!"));
 		}
+		yield return null;
 	}
 	
 	//Casts the Blink skill
@@ -449,29 +470,36 @@ public class PlayerControl : MonoBehaviour
 	}
 	
 	//Casts the Grapple skill
-	void Grapple ()
+	IEnumerator Grapple ()
 	{
-		state = PlayerState.IDLE;
-		grapple.GetComponent<GrappleLogic> ().playerPosition = transform.position;
 		GetMouseWorldPosition ();
-		grapple.GetComponent<GrappleLogic> ().targetPosition = targetPosition;
-		grapple.GetComponent<GrappleLogic> ().playerRotation = transform.rotation.eulerAngles;
-		grapple.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
-		Instantiate (grapple);
+		if (Vector3.Distance (targetPosition, transform.position) <= grappleRange) {
+			state = PlayerState.GRAPPLE;
+			anim.speed = 2.5f;
+			grapple.position = new Vector3 (targetPosition.x, 1, targetPosition.z);
+			yield return new WaitForSeconds(1.5f);
+			anim.speed = 1;
+			Instantiate (grapple);
+			state = PlayerState.IDLE;
+		}
 	}
 
 	//Casts the Nature's Wrath skill
-	void NaturesWrath ()
+	IEnumerator NaturesWrath ()
 	{
-		naturesWrathTimeSpan = Time.time + naturesWrathCooldown;
-		state = PlayerState.IDLE;
+		anim.speed = 2.5f;
+		state = PlayerState.BLIZZNATURE;
 		GetMouseWorldPosition ();
+		naturesWrathTimeSpan = Time.time + naturesWrathCooldown;
 		naturesWrath.GetComponent<NaturesWrathLogic> ().targetPosition = targetPosition;
 		naturesWrath.GetComponent<NaturesWrathLogic> ().damage = (int)(attackPower * 0.10);
 		naturesWrath.GetComponent<NaturesWrathLogic> ().critChance = critChance;
 		naturesWrath.GetComponent<NaturesWrathLogic> ().criticalHitDamage = criticalHitDamage;
 		naturesWrath.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), transform.position.y, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
+		yield return new WaitForSeconds (1f);
 		Instantiate (naturesWrath);
+		anim.speed = 1f;
+		state = PlayerState.IDLE;
 	}
 	
 	//Handles the movement based on mouse clicks

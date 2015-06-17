@@ -3,33 +3,30 @@ using System.Collections;
 
 public class GrappleLogic : MonoBehaviour {
 
-	public Vector3 playerPosition;
-	public Vector3 targetPosition;
+	public Transform enemiesRootElement;
 
-	public float grappleSpeed = 10f;
-
-	public Vector3 playerRotation;
+	public int duration = 6;
 
 	// Use this for initialization
 	void Start () {
-		transform.rotation = Quaternion.Euler(playerRotation);
+		StartCoroutine (Duration ());
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * grappleSpeed);
-		var scale = transform.localScale;
-		scale.y += 0.2f;
-		transform.localScale = scale;
-		if ((targetPosition - transform.position).magnitude < 0.1) {
-			Destroy(gameObject);
+		foreach (Transform golem in enemiesRootElement) {
+			golem.GetComponent<EnemyScript>().pulledToPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+			golem.GetComponent<EnemyScript>().state = EnemyState.PULLED;
 		}
+	}
+
+	IEnumerator Duration() {
+		yield return new WaitForSeconds (duration);
+		Destroy (gameObject);
 	}
 
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.tag == "Enemy") {
-			collision.gameObject.GetComponent<EnemyScript>().pulledToPosition = new Vector3(playerPosition.x, collision.transform.position.y, playerPosition.z);
-			collision.gameObject.GetComponent<EnemyScript>().state = EnemyState.PULLED;
 		}
 	}
 }

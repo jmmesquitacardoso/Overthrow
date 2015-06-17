@@ -20,7 +20,12 @@ enum PlayerState
 {
 	IDLE,
 	MOVING,
-	BLINK}
+	BLINK,
+	MISSILES,
+	BLIZZNATURE,
+	GRAPPLE,
+	FLARE,
+	MINDCONTROL}
 ;
 
 public enum PlayerBuffs {
