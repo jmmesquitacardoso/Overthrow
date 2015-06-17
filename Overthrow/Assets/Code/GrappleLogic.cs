@@ -4,6 +4,7 @@ using System.Collections;
 public class GrappleLogic : MonoBehaviour {
 
 	public int duration = 6;
+	public int pullRange = 40;
 
 	// Use this for initialization
 	void Start () {
@@ -13,9 +14,10 @@ public class GrappleLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		foreach (Transform golem in GameObject.Find("Golems").transform) {
-			Debug.Log ("sdasdasdsad");
-			golem.GetComponent<EnemyScript>().pulledToPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-			golem.GetComponent<EnemyScript>().state = EnemyState.PULLED;
+			if (Vector3.Distance (golem.position, transform.position) <= pullRange) {
+				golem.GetComponent<EnemyScript>().pulledToPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+				golem.GetComponent<EnemyScript>().state = EnemyState.PULLED;
+			}
 		}
 	}
 

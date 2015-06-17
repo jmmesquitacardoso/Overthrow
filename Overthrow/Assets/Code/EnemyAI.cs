@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyAI : MonoBehaviour {
+public class EnemyAI : MonoBehaviour
+{
 	
 	public Transform player;
 	public float playerDistance;
@@ -9,61 +10,56 @@ public class EnemyAI : MonoBehaviour {
 	public float moveSpeed;
 	public static bool isPlayerAlive = true;
 	private string hitobject;
-	public int maxHealth;
-	public int health;
 
 	// Use this for initialization
-	void Start () {
-		health = maxHealth;
+	void Start ()
+	{
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (health < 0) {
-			Destroy(gameObject);
+	void Update ()
+	{
+		playerDistance = Vector3.Distance (player.position, transform.position);
+
+		if (playerDistance < 90f) {
+			//transform.Rotate(0,20*Time.deltaTime,0);
+			//transform.rotation = new Quaternion(transform.rotation.x,180,transform.rotation.z,transform.rotation.w);
+			lookAtPlayer ();
 		}
-		else {
-			playerDistance = Vector3.Distance (player.position, transform.position);
-			if (playerDistance < 30f){
-				//transform.Rotate(0,20*Time.deltaTime,0);
-				//transform.rotation = new Quaternion(transform.rotation.x,180,transform.rotation.z,transform.rotation.w);
-				lookAtPlayer ();
-			}
-			if (playerDistance < 25f) { 
-				if (playerDistance > 3f) {
-					chase ();
-				} 
-				else if (playerDistance < 3f) {
-					attack ();
-				}
+
+		if (playerDistance < 85f) { 
+			if (playerDistance > 3f) {
+				chase ();
+			} else if (playerDistance < 3f) {
+				attack ();
 			}
 		}
 	}
 
-	void lookAtPlayer(){
+	void lookAtPlayer ()
+	{
 		Quaternion rotation = Quaternion.LookRotation (player.position - transform.position);
 		transform.rotation = Quaternion.Slerp (transform.rotation, rotation, Time.deltaTime * rotationDamping);
-		//transform.rotation.y += 180;
-
 	}
 
-	void chase(){
+	void chase ()
+	{
+		gameObject.GetComponent<EnemyScript> ().state = EnemyState.WALKING;
 		transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 	}
 
-	void OnCollisionEnter(Collision collision)
+	void OnCollisionEnter (Collision collision)
 	{
 	
 	}
-	void attack(){
+
+	void attack ()
+	{
+		gameObject.GetComponent<EnemyScript> ().state = EnemyState.MELEEATTACKING;
 		RaycastHit hit;
-		health -= 5;
-		Debug.Log("tou aqui");
-		if (Physics.Raycast (transform.position, transform.forward ,out hit)){
-			Debug.Log("tou aqui1");
-			if(hit.collider.gameObject.name == "Teste"){
-				Debug.Log("tou aqui2");
-				hit.collider.gameObject.GetComponent<PlayerControl>().TakeDamage(2);
+		if (Physics.Raycast (transform.position, transform.forward, out hit)) {
+			if (hit.collider.gameObject.name == "Player") {
+				hit.collider.gameObject.GetComponent<PlayerControl> ().TakeDamage (1);
 			}
 		}
 	}

@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 411210}
   - 108: {fileID: 10899468}
   - 114: {fileID: 11463506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 464534}
   - 198: {fileID: 19824354}
   - 199: {fileID: 19971912}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KYcircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 461744}
   - 198: {fileID: 19848412}
   - 199: {fileID: 19912682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KYflash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 480620}
   - 108: {fileID: 10842578}
   - 114: {fileID: 11453206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 4: {fileID: 481438}
   - 198: {fileID: 19864246}
   - 199: {fileID: 19902196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KYexplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 481990}
   - 198: {fileID: 19804844}
   - 199: {fileID: 19936072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KYdustB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - 198: {fileID: 19848752}
   - 199: {fileID: 19999984}
   - 114: {fileID: 11490662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grapple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184898}
   m_LocalRotation: {x: -.492438167, y: -.50744915, z: .50744915, w: .492438167}
-  m_LocalPosition: {x: 86.6989136, y: 1, z: -46.6937256}
+  m_LocalPosition: {x: 229.658203, y: 1, z: -18.9780884}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 481438}
@@ -333,8 +333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8296db5434a59ba409b8e3106651f6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemiesRootElement: {fileID: 0}
   duration: 6
+  pullRange: 40
 --- !u!198 &19804844
 ParticleSystem:
   m_ObjectHideFlags: 1

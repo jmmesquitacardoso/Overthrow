@@ -24,23 +24,26 @@ public class EnemyScript : MonoBehaviour
 	private float blizzardCritChance;
 	private float blizzardCriticialHitDamage;
 	private int blizzardDamage;
+	private Animator anim;
 
 	// Use this for initialization
 	void Start ()
 	{
-		rend = GetComponent<Renderer> ();
+		anim = gameObject.GetComponent<Animator> ();
+		rend = GetComponentInChildren<Renderer> ();
 		InvokeRepeating ("TakeBlizzardDamage", 0, 1f);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-
+		if (currentHealth <= 0) {
+			Destroy(gameObject);
+		}
 	}
 
 	void FixedUpdate ()
 	{
-
 		switch (state) {
 		case EnemyState.IDLE:
 			break;
@@ -62,6 +65,12 @@ public class EnemyScript : MonoBehaviour
 			if ((knockUpDownPosition - transform.position).magnitude < 0.1) {
 				state = EnemyState.IDLE;
 			}
+			break;
+		case EnemyState.WALKING:
+			anim.Play("Walk");
+			break;
+		case EnemyState.MELEEATTACKING:
+			anim.Play("MeleeAttack");
 			break;
 		default:
 			break;

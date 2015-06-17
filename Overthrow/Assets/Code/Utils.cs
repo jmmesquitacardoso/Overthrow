@@ -4,6 +4,8 @@ using System.Collections;
 public enum EnemyState
 {
 	IDLE,
+	WALKING,
+	MELEEATTACKING,
 	PULLED,
 	KNOCKUP,
 	KNOCKUPDOWN,

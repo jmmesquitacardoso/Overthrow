@@ -157,6 +157,10 @@ public class PlayerControl : MonoBehaviour
 			naturesWrathIcon.fillAmount = 1f - ((float)((naturesWrathTimeSpan - Time.time)) / naturesWrathCooldown);
 		}
 
+		if (grappleTimeSpan > Time.time) {
+			grappleIcon.fillAmount = 1f - ((float)((grappleTimeSpan - Time.time)) / grappleCooldown);
+		}
+
 		if (currentMana < blizzardManaCost) {
 			blizzardIcon.color = Color.Lerp (Color.black, Color.gray, Time.time * 5f);
 		} else {
@@ -303,6 +307,7 @@ public class PlayerControl : MonoBehaviour
 				} else {
 					
 				}
+				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
 			
 			if (!blinkBack && Input.GetKeyDown (KeyCode.Alpha2)) {
@@ -330,6 +335,7 @@ public class PlayerControl : MonoBehaviour
 						StartCoroutine (DisplayWarningText ("Blink is on cooldown!"));
 					}
 				}
+				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
 			
 			if (Input.GetKeyDown (KeyCode.Alpha3)) {
@@ -484,6 +490,7 @@ public class PlayerControl : MonoBehaviour
 			anim.speed = 2.5f;
 			grapple.position = new Vector3 (targetPosition.x, 1, targetPosition.z);
 			yield return new WaitForSeconds(1.5f);
+			grappleTimeSpan = Time.time + grappleCooldown;
 			anim.speed = 1;
 			Instantiate (grapple);
 			state = PlayerState.IDLE;

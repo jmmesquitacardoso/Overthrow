@@ -96,17 +96,513 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
-    animationImportWarnings: 
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine
+        weight: 1
+      - path: Armature/Spine/Chest
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Head
+        weight: 1
+      - path: Armature/Spine/Pelvis
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ataque_cabe_a
+      takeName: ataque_cabe_a
+      firstFrame: -1
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine
+        weight: 1
+      - path: Armature/Spine/Chest
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Head
+        weight: 1
+      - path: Armature/Spine/Pelvis
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Combo
+      takeName: Combo
+      firstFrame: -1
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine
+        weight: 1
+      - path: Armature/Spine/Chest
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Head
+        weight: 1
+      - path: Armature/Spine/Pelvis
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Golem_Melee_Attack
+      takeName: Golem_Melee_Attack
+      firstFrame: -1
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine
+        weight: 1
+      - path: Armature/Spine/Chest
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Head
+        weight: 1
+      - path: Armature/Spine/Pelvis
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_cycle
+      takeName: Walk_cycle
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine
+        weight: 1
+      - path: Armature/Spine/Chest
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature/Spine/Chest/Head
+        weight: 1
+      - path: Armature/Spine/Pelvis
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

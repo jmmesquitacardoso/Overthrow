@@ -12,7 +12,7 @@ GameObject:
   - 135: {fileID: 13552812}
   - 23: {fileID: 2382854}
   - 54: {fileID: 5452586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trap
   m_TagString: Trap
   m_Icon: {fileID: 0}
