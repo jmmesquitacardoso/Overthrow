@@ -56,6 +56,7 @@ public class PlayerControl : MonoBehaviour
 	public Image mindControlIcon;
 	private Color blizzardIconColor;
 	private Vector3 positionBeforeBlink;
+	private ArrayList currentBuffs;
 	
 	// Use this for initialization
 	void Start ()
@@ -69,6 +70,7 @@ public class PlayerControl : MonoBehaviour
 		anim = gameObject.GetComponentInChildren<Animator> ();
 		state = PlayerState.IDLE;
 		blizzardIconColor = blizzardIcon.color;
+		currentBuffs = new ArrayList ();
 		InvokeRepeating ("ManaRegen", 0, 1f);
 		InvokeRepeating ("HealthRegen", 0, 1f);
 	}
@@ -85,9 +87,9 @@ public class PlayerControl : MonoBehaviour
 		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
 		
 		var position = transform.position;
-		if (oldY + 0.35f > position.y) {
+		if (oldY + 1f > position.y) {
 			//oldY = position.y;
-			position.y = oldY + 0.35f;
+			position.y = oldY + 1f;
 			transform.position = position;
 		}
 		
@@ -146,6 +148,51 @@ public class PlayerControl : MonoBehaviour
 			blizzardIcon.color = Color.Lerp (Color.black, Color.gray, Time.time * 5f);
 		} else {
 			blizzardIcon.color = blizzardIconColor;
+		}
+	}
+
+	public void AddBuff(PlayerBuffs buff) {
+		bool valid = true;
+		for (int i = 0, l = currentBuffs.Count; i < l; i++) {
+			if ((PlayerBuffs) currentBuffs[i] == buff) {
+				valid = false;
+				break;
+			}
+		}
+
+		if (valid) {
+			currentBuffs.Add(buff);
+			StartCoroutine(BuffDuration(buff));
+		}
+	}
+
+	IEnumerator BuffDuration(PlayerBuffs buff) {
+		switch (buff) {
+		case PlayerBuffs.CRITICAL:
+			critChance += 25f;
+			break;
+		case PlayerBuffs.DESTRUCTION:
+			attackPower += 2000;
+			break;
+		case PlayerBuffs.SWIFT:
+			speed += 15;
+			break;
+		default:
+			break;
+		}
+		yield return new WaitForSeconds (120f);
+		switch (buff) {
+		case PlayerBuffs.CRITICAL:
+			critChance -= 25f;
+			break;
+		case PlayerBuffs.DESTRUCTION:
+			attackPower -= 2000;
+			break;
+		case PlayerBuffs.SWIFT:
+			speed -= 15;
+			break;
+		default:
+			break;
 		}
 	}
 

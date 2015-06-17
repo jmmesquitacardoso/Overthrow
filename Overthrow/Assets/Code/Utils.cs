@@ -23,6 +23,12 @@ enum PlayerState
 	BLINK}
 ;
 
+public enum PlayerBuffs {
+	DESTRUCTION,
+	CRITICAL,
+	SWIFT
+};
+
 public class Utils
 {
 	private static Utils instance;
@@ -99,5 +105,12 @@ public class Utils
 				}
 			}
 		}
+	}
+
+	public T GetRandomEnum<T>()
+	{
+		System.Array A = System.Enum.GetValues(typeof(T));
+		T V = (T)A.GetValue(UnityEngine.Random.Range(0,A.Length));
+		return V;
 	}
 }

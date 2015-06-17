@@ -73,7 +73,7 @@ public class EnemyScript : MonoBehaviour
 	{
 		Cursor.SetCursor (mouseTexture, new Vector2 (0, 0), CursorMode.Auto);
 		originalColor = rend.material.color;
-		rend.material.color = Color.yellow;
+		rend.material.color = Color.Lerp (Color.black, Color.yellow, Time.time * 5f);
 		currentEnemyText.text = gameObject.name;
 		currentEnemyHealthBar.enabled = true;
 		currentEnemyOuterHealthBar.enabled = true;
