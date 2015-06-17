@@ -7,6 +7,7 @@ TagManager:
   - Trap
   - New Tag
   - Enemy
+  - Terrain
   layers:
   - Default
   - TransparentFX
