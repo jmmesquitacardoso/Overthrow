@@ -56,13 +56,13 @@ public class EnemyAI : MonoBehaviour {
 	void attack(){
 		RaycastHit hit;
 		health -= 1;
-		/*Debug.Log("tou aqui");
+		Debug.Log("tou aqui");
 		if (Physics.Raycast (transform.position, transform.forward ,out hit)){
 			Debug.Log("tou aqui1");
-			if(hit.collider.gameObject.tag == "Player"){
+			if(hit.collider.gameObject.name == "Teste"){
 				Debug.Log("tou aqui2");
-				hit.collider.gameObject.GetComponent<PlayerControl>().currentHealth -= 20;
+				hit.collider.gameObject.GetComponent<PlayerControl>().TakeDamage(20);
 			}
-		}*/
+		}
 	}
 }

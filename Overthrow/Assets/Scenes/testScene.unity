@@ -912,7 +912,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 218234903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 214.699997, y: 0, z: -68.1999969}
+  m_LocalPosition: {x: 94.3000031, y: 12.8000002, z: -68.1999969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 597042246}
@@ -1118,7 +1118,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 229720712}
   - 114: {fileID: 229720711}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1308,7 +1308,7 @@ GameObject:
   - 33: {fileID: 272331635}
   - 135: {fileID: 272331634}
   - 23: {fileID: 272331633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1410,7 @@ GameObject:
   - 136: {fileID: 290680706}
   - 23: {fileID: 290680705}
   - 114: {fileID: 290680703}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy(capsule) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a33f0b7f95b40c7959c2c2aeeca2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1453769302}
+  player: {fileID: 218234904}
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 4
@@ -1441,7 +1441,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 290680702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12, y: 3, z: 2}
+  m_LocalPosition: {x: -12, y: 14.1000004, z: 2}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1085624355}
@@ -4511,7 +4511,7 @@ GameObject:
   - 136: {fileID: 798667533}
   - 23: {fileID: 798667532}
   - 114: {fileID: 798667531}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy(capsule)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4529,7 +4529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a33f0b7f95b40c7959c2c2aeeca2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1453769302}
+  player: {fileID: 218234904}
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 4
@@ -4586,7 +4586,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 798667530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.2999992, y: 3, z: 5}
+  m_LocalPosition: {x: 19.2999992, y: 16.3999996, z: -14}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1494452277}
@@ -5011,6 +5011,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &941444465
 MonoBehaviour:
@@ -5047,7 +5048,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 946184840}
   - 114: {fileID: 946184839}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5457,6 +5458,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1074777314
 Transform:
   m_ObjectHideFlags: 0
@@ -5490,7 +5492,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1082733299}
   - 114: {fileID: 1082733300}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5539,7 +5541,7 @@ GameObject:
   - 33: {fileID: 1085624358}
   - 135: {fileID: 1085624357}
   - 23: {fileID: 1085624356}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7632,7 +7634,7 @@ GameObject:
   - 33: {fileID: 1494452280}
   - 135: {fileID: 1494452279}
   - 23: {fileID: 1494452278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8894,7 +8896,7 @@ GameObject:
   - 136: {fileID: 1712475429}
   - 23: {fileID: 1712475428}
   - 114: {fileID: 1712475427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy(capsule) 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8912,7 +8914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a33f0b7f95b40c7959c2c2aeeca2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1453769302}
+  player: {fileID: 218234904}
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 4
@@ -8969,7 +8971,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712475426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 3, z: -14}
+  m_LocalPosition: {x: 4, y: 16.3999996, z: -14}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 272331632}
