@@ -44,6 +44,7 @@ public class PlayerControl : MonoBehaviour
 	private Transform currentTarget;
 	private Mode mode;
 	public Text warningText;
+	public bool hoveringShrine = false;
 	private bool shiftDown = false;
 	private bool blinkBack = false;
 	public Image healthGlobe;
@@ -143,9 +144,7 @@ public class PlayerControl : MonoBehaviour
 	
 	void FixedUpdate ()
 	{
-		if (state == PlayerState.IDLE || state == PlayerState.MOVING) {
-			MouseMovement ();
-		}
+		MouseMovement ();
 	}
 
 	void SpellIconsHandler() {
@@ -331,6 +330,7 @@ public class PlayerControl : MonoBehaviour
 					//if blink is not on cooldown
 					if (blinkTimeSpan <= Time.time) {
 						transform.position = positionBeforeBlink;
+						blinkBack = false;
 					} else {
 						StartCoroutine (DisplayWarningText ("Blink is on cooldown!"));
 					}
@@ -518,11 +518,11 @@ public class PlayerControl : MonoBehaviour
 	//Handles the movement based on mouse clicks
 	void MouseMovement ()
 	{
-		if (Input.GetMouseButtonDown (0)) {
+		if ((Input.GetMouseButtonDown (0) && state == PlayerState.IDLE && !hoveringShrine) || (Input.GetMouseButtonDown (0) && state == PlayerState.MOVING && !hoveringShrine)) {
 			state = PlayerState.MOVING;
 			GetMouseWorldPosition ();
 		}
-		
+
 		if (state == PlayerState.MOVING) {
 
 			transform.position = Vector3.MoveTowards (transform.position, targetPosition, Time.deltaTime * speed);

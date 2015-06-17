@@ -19,7 +19,7 @@ public class EnemyScript : MonoBehaviour
 	public Image currentEnemyHealthBar;
 	public Image currentEnemyOuterHealthBar;
 	public int maxHealth = 400;
-	public int currentHealth = 250;
+	public int currentHealth = 400;
 	private bool inBlizzard = false;
 	private float blizzardCritChance;
 	private float blizzardCriticialHitDamage;

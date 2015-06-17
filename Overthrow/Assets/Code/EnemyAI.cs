@@ -9,7 +9,9 @@ public class EnemyAI : MonoBehaviour
 	public float rotationDamping;
 	public float moveSpeed;
 	public static bool isPlayerAlive = true;
+	public bool attacking = false;
 	private string hitobject;
+	public int enemyDamage = 2;
 
 	// Use this for initialization
 	void Start ()
@@ -29,9 +31,14 @@ public class EnemyAI : MonoBehaviour
 
 		if (playerDistance < 85f) { 
 			if (playerDistance > 3f) {
+				attacking = false;
 				chase ();
 			} else if (playerDistance < 3f) {
-				attack ();
+				if (!attacking) {
+					Debug.Log("asdasd");
+					attacking = true;
+					StartCoroutine(Attack ());
+				}
 			}
 		}
 	}
@@ -50,16 +57,22 @@ public class EnemyAI : MonoBehaviour
 
 	void OnCollisionEnter (Collision collision)
 	{
-	
 	}
 
-	void attack ()
+	IEnumerator Attack ()
 	{
-		gameObject.GetComponent<EnemyScript> ().state = EnemyState.MELEEATTACKING;
 		RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward, out hit)) {
 			if (hit.collider.gameObject.name == "Player") {
-				hit.collider.gameObject.GetComponent<PlayerControl> ().TakeDamage (1);
+				if (gameObject.GetComponent<EnemyScript> ().state != EnemyState.MELEEATTACKING) {
+					gameObject.GetComponent<EnemyScript> ().state = EnemyState.MELEEATTACKING;
+				}
+				if (attacking) {
+					Debug.Log ("attack");
+					player.GetComponent<PlayerControl> ().TakeDamage (enemyDamage);
+					yield return new WaitForSeconds (2f);
+					StartCoroutine(Attack());
+				}
 			}
 		}
 	}

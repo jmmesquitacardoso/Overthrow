@@ -18,16 +18,22 @@ public class RunestoneLogic : MonoBehaviour {
 	//When the mouse hovers on the enemy, the enemy is highlighted and the cursor changes
 	void OnMouseEnter ()
 	{
-		Cursor.SetCursor (mouseTexture, new Vector2 (0, 0), CursorMode.Auto);
+		if (Vector3.Distance (GameObject.Find ("Player").transform.position, transform.position) <= 40) {
+			GameObject.Find ("Player").GetComponent<PlayerControl> ().hoveringShrine = true;
+			Cursor.SetCursor (mouseTexture, new Vector2 (0, 0), CursorMode.Auto);
+		}
 	}
 	
 	void OnMouseExit ()
 	{
+		GameObject.Find ("Player").GetComponent<PlayerControl> ().hoveringShrine = false;
 		Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
 	}
 
 	void OnMouseDown () {
-		PlayerBuffs buff = Utils.Instance.GetRandomEnum<PlayerBuffs> ();
-		GameObject.Find ("Teste").GetComponent<PlayerControl> ().AddBuff (buff);
+		if (Vector3.Distance (GameObject.Find ("Player").transform.position, transform.position) <= 40) {
+			PlayerBuffs buff = Utils.Instance.GetRandomEnum<PlayerBuffs> ();
+			GameObject.Find ("Player").GetComponent<PlayerControl> ().AddBuff (buff);
+		}
 	}
 }

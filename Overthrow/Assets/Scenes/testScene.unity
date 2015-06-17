@@ -644,6 +644,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
@@ -774,6 +778,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &169933211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -807,7 +813,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1 &175153211
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 10540ca8becf1dd4b9c5cf99150f4578, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5e5ab5205d73a34fafd5c767a60b472, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1128,10 +1134,10 @@ MonoBehaviour:
   critChance: 15
   criticalHitDamage: 1
   maxHealth: 400
-  currentHealth: 200
+  currentHealth: 400
   healthPerSecond: 2
   maxMana: 400
-  currentMana: 200
+  currentMana: 400
   manaPerSecond: 2
   maxStrength: 100
   currentStrength: 100
@@ -1147,6 +1153,7 @@ MonoBehaviour:
   naturesWrath: {fileID: 401072, guid: fa1260828ea4c0945918e5ad391e1cb1, type: 2}
   blizzard: {fileID: 490956, guid: 93a2780b3eab5ac478877f4c8ce49e64, type: 2}
   warningText: {fileID: 2038471471}
+  hoveringShrine: 0
   healthGlobe: {fileID: 2044297446}
   manaGlobe: {fileID: 1888240056}
   strengthGlobe: {fileID: 1897279736}
@@ -1742,6 +1749,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
@@ -1768,6 +1779,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &464734391
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1801,7 +1814,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1 &470057451 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
@@ -1825,6 +1838,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &470057454
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1858,7 +1873,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1 &500401134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2020,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &506299474
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2038,7 +2055,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1 &507759786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3021,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &676592486
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3037,7 +3056,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1001 &708629098
 Prefab:
   m_ObjectHideFlags: 0
@@ -3227,6 +3246,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &775931070
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3260,7 +3281,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1 &785816704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,6 +4161,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
@@ -4480,6 +4505,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &1408435794
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4513,7 +4540,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!4 &1417734103 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a74d6c1e0c291b64db4bad3a3b342144, type: 2}
@@ -4654,6 +4681,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 10
 --- !u!136 &1461834513
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4687,7 +4716,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!4 &1465830509 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 20a1eaca4a6b8364badf4eee56be445e, type: 2}
@@ -4915,6 +4944,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
@@ -5141,6 +5174,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
@@ -5191,6 +5228,7 @@ MonoBehaviour:
   naturesWrath: {fileID: 401072, guid: fa1260828ea4c0945918e5ad391e1cb1, type: 2}
   blizzard: {fileID: 490956, guid: 93a2780b3eab5ac478877f4c8ce49e64, type: 2}
   warningText: {fileID: 2038471471}
+  hoveringShrine: 0
   healthGlobe: {fileID: 2044297446}
   manaGlobe: {fileID: 1888240056}
   strengthGlobe: {fileID: 1897279736}
@@ -5728,6 +5766,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
@@ -5754,6 +5796,8 @@ MonoBehaviour:
   playerDistance: 0
   rotationDamping: 15
   moveSpeed: 10
+  attacking: 0
+  enemyDamage: 2
 --- !u!136 &1821970876
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5787,7 +5831,7 @@ MonoBehaviour:
   currentEnemyHealthBar: {fileID: 1662865142}
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
-  currentHealth: 250
+  currentHealth: 400
 --- !u!1 &1852645498 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100132, guid: db3314d0158c1ff4cb311221c0b612e6, type: 3}
@@ -5831,6 +5875,7 @@ MonoBehaviour:
   naturesWrath: {fileID: 401072, guid: fa1260828ea4c0945918e5ad391e1cb1, type: 2}
   blizzard: {fileID: 490956, guid: 93a2780b3eab5ac478877f4c8ce49e64, type: 2}
   warningText: {fileID: 2038471471}
+  hoveringShrine: 0
   healthGlobe: {fileID: 2044297446}
   manaGlobe: {fileID: 1888240056}
   strengthGlobe: {fileID: 1897279736}
@@ -6329,6 +6374,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
@@ -6907,6 +6956,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
+    - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
   m_IsPrefabParent: 0
