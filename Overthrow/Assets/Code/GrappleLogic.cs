@@ -3,8 +3,6 @@ using System.Collections;
 
 public class GrappleLogic : MonoBehaviour {
 
-	public Transform enemiesRootElement;
-
 	public int duration = 6;
 
 	// Use this for initialization
@@ -14,7 +12,8 @@ public class GrappleLogic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		foreach (Transform golem in enemiesRootElement) {
+		foreach (Transform golem in GameObject.Find("Golems").transform) {
+			Debug.Log ("sdasdasdsad");
 			golem.GetComponent<EnemyScript>().pulledToPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 			golem.GetComponent<EnemyScript>().state = EnemyState.PULLED;
 		}
