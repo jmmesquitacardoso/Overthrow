@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -84,14 +84,8 @@ public class PlayerControl : MonoBehaviour
 	void Update ()
 	{
 
+
 		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
-		
-		var position = transform.position;
-		if (oldY + 1f > position.y) {
-			//oldY = position.y;
-			position.y = oldY + 1f;
-			transform.position = position;
-		}
 		
 		manaGlobe.fillAmount = (float)currentMana / (float)maxMana;
 
@@ -127,6 +121,13 @@ public class PlayerControl : MonoBehaviour
 	
 		if (currentStrength <= 0 && mode == Mode.Stealth) {
 			ChangeMode ();
+		}
+
+		RaycastHit hit;
+		Physics.Raycast(transform.position, Vector3.down, out hit);
+		if (Physics.Raycast(transform.position, Vector3.down, 2)){
+			transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+			this.GetComponent<Rigidbody>().AddForce(transform.up * -20, ForceMode.VelocityChange);
 		}
 	}
 	
@@ -215,11 +216,16 @@ public class PlayerControl : MonoBehaviour
 	
 	void OnCollisionEnter (Collision collision)
 	{
-		if (state == PlayerState.MOVING) {
+		//Debug.Log (collision.gameObject.transform.tag);
+		if (collision.gameObject.transform.tag == "Terrain") {
+			Vector3 position = transform.position;
+			position.y += 0.01f;
+			transform.position = position;
+		} else if (state == PlayerState.MOVING) {
 			state = PlayerState.IDLE;
 		}
 	}
-	
+
 	//This function is called every second, so the mana regens at a rate of manaPerSecond/second
 	void ManaRegen ()
 	{
@@ -483,10 +489,12 @@ public class PlayerControl : MonoBehaviour
 		}
 		
 		if (state == PlayerState.MOVING) {
+
 			transform.position = Vector3.MoveTowards (transform.position, targetPosition, Time.deltaTime * speed);
 			if ((targetPosition - transform.position).magnitude < 0.1) {
 				state = PlayerState.IDLE;
 			}
+
 		}
 	}
 	
