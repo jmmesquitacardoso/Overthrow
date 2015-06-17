@@ -822,6 +822,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &169933211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1823,6 +1825,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &464734391
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1882,6 +1886,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &470057454
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2064,6 +2070,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &506299474
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3065,6 +3073,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &676592486
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3290,6 +3300,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &775931070
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4551,6 +4563,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &1408435794
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4727,6 +4741,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 10
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 360
 --- !u!136 &1461834513
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4761,6 +4777,18 @@ MonoBehaviour:
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
   currentHealth: 400
+--- !u!135 &1461834516
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1461834510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 12
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1465830509 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 20a1eaca4a6b8364badf4eee56be445e, type: 2}
@@ -5858,6 +5886,8 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
+  sphereCollider: {fileID: 0}
+  fieldOfViewAngle: 110
 --- !u!136 &1821970876
 CapsuleCollider:
   m_ObjectHideFlags: 0

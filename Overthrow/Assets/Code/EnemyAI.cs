@@ -12,10 +12,12 @@ public class EnemyAI : MonoBehaviour
 	public bool attacking = false;
 	private string hitobject;
 	public int enemyDamage = 2;
+	private SphereCollider sphereCollider;
 
 	// Use this for initialization
 	void Start ()
 	{
+		sphereCollider = GetComponent<SphereCollider> ();
 	}
 	
 	// Update is called once per frame
@@ -23,21 +25,25 @@ public class EnemyAI : MonoBehaviour
 	{
 		playerDistance = Vector3.Distance (player.position, transform.position);
 
-		if (playerDistance < 90f) {
+
+		if (playerDistance < 5f) {
 			//transform.Rotate(0,20*Time.deltaTime,0);
 			//transform.rotation = new Quaternion(transform.rotation.x,180,transform.rotation.z,transform.rotation.w);
-			lookAtPlayer ();
+			//lookAtPlayer ();
 		}
 
 		if (playerDistance < 85f) { 
-			if (playerDistance > 3f) {
-				attacking = false;
+			//lookAtPlayer ();
+			if (playerDistance > 3f && playerInSight) {
 				chase ();
+				attacking = false;
+				lookAtPlayer();
 			} else if (playerDistance < 3f) {
 				if (!attacking) {
 					Debug.Log("asdasd");
 					attacking = true;
 					StartCoroutine(Attack ());
+				lookAtPlayer();
 				}
 			}
 		}
@@ -75,5 +81,49 @@ public class EnemyAI : MonoBehaviour
 				}
 			}
 		}
+	}
+
+	bool playerInSight = false;
+	public float fieldOfViewAngle = 110;
+
+	void OnTriggerStay (Collider other)
+	{
+		// If the player has entered the trigger sphere...
+		if(other.gameObject == player.gameObject)
+		{
+
+			// By default the player is not in sight.
+			playerInSight = false;
+			
+			// Create a vector from the enemy to the player and store the angle between it and forward.
+			Vector3 direction = other.transform.position - transform.position;
+			float angle = Vector3.Angle(direction, transform.forward);
+			// If the angle between forward and where the player is, is less than half the angle of view...
+			if(angle < fieldOfViewAngle * 0.5f)
+			{
+				RaycastHit hit;
+				
+				// ... and if a raycast towards the player hits something...
+				if(Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, sphereCollider.radius))
+				{
+					// ... and if the raycast hits the player...
+					if(hit.collider.gameObject == player.gameObject)
+					{
+						// ... the player is in sight.
+						playerInSight = true;
+
+					}
+				}
+			}
+		}
+	}
+	
+	
+	void OnTriggerExit (Collider other)
+	{
+		// If the player leaves the trigger zone...
+		if(other.gameObject == player)
+			// ... the player is not in sight.
+			playerInSight = false;
 	}
 }
