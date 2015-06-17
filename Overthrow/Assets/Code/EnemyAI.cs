@@ -24,11 +24,12 @@ public class EnemyAI : MonoBehaviour {
 		}
 		else {
 			playerDistance = Vector3.Distance (player.position, transform.position);
-
-			if (playerDistance < 18f) {
+			if (playerDistance < 30f){
+				//transform.Rotate(0,20*Time.deltaTime,0);
+				//transform.rotation = new Quaternion(transform.rotation.x,180,transform.rotation.z,transform.rotation.w);
 				lookAtPlayer ();
 			}
-			if (playerDistance < 16f) {
+			if (playerDistance < 25f) { 
 				if (playerDistance > 3f) {
 					chase ();
 				} 
@@ -42,6 +43,7 @@ public class EnemyAI : MonoBehaviour {
 	void lookAtPlayer(){
 		Quaternion rotation = Quaternion.LookRotation (player.position - transform.position);
 		transform.rotation = Quaternion.Slerp (transform.rotation, rotation, Time.deltaTime * rotationDamping);
+		//transform.rotation.y += 180;
 
 	}
 
@@ -55,14 +57,14 @@ public class EnemyAI : MonoBehaviour {
 	}
 	void attack(){
 		RaycastHit hit;
-		health -= 1;
-		/*Debug.Log("tou aqui");
+		health -= 5;
+		Debug.Log("tou aqui");
 		if (Physics.Raycast (transform.position, transform.forward ,out hit)){
 			Debug.Log("tou aqui1");
-			if(hit.collider.gameObject.tag == "Player"){
+			if(hit.collider.gameObject.name == "Teste"){
 				Debug.Log("tou aqui2");
-				hit.collider.gameObject.GetComponent<PlayerControl>().currentHealth -= 20;
+				hit.collider.gameObject.GetComponent<PlayerControl>().TakeDamage(2);
 			}
-		}*/
+		}
 	}
 }
