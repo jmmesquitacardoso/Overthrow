@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
 	public float dodgeChance = 15f;
 	public float critChance = 15f;
 	public float criticalHitDamage = 1;
+	public float burnDuration = 3f;
 	private float blinkTimeSpan;
 	private float naturesWrathTimeSpan;
 	private float grappleTimeSpan;
@@ -49,6 +50,7 @@ public class PlayerControl : MonoBehaviour
 	public bool hoveringShrine = false;
 	private bool shiftDown = false;
 	private bool blinkBack = false;
+	public bool burning = false;
 	public Image healthGlobe;
 	public Image manaGlobe;
 	public Image strengthGlobe;
@@ -150,6 +152,10 @@ public class PlayerControl : MonoBehaviour
 		if (Physics.Raycast(transform.position, Vector3.down, 2)){
 			transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
 			this.GetComponent<Rigidbody>().AddForce(transform.up * -20, ForceMode.VelocityChange);
+		}
+
+		if (burning) {
+			burn();
 		}
 	}
 	
@@ -570,6 +576,21 @@ public class PlayerControl : MonoBehaviour
 		if (playerPlane.Raycast (ray, out hitDist)) {
 			targetPosition = ray.GetPoint (hitDist);
 			RotateTowardsTargetPosition (targetPosition);
+		}
+	}
+
+	public void StartBurning(float duration) {
+		burning = true;
+		burnDuration = duration;
+	}
+
+	private float burnDamage = 0;
+	private void burn() {
+		burnDuration -= Time.deltaTime;
+		currentHealth -= 1;
+		if (burnDuration <= 0) {
+			burning = false;
+
 		}
 	}
 }

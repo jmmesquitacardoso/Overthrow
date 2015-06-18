@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour {
 	public float criticalHitDamage = 1;
 	public float moveSpeed = 6;
 	public float rotationDamping = 15;
-	public int attackPower = 3000;
+	public int attackPower = 1200;
 	public int MaxHealth=2000;
 	public int Health{ get; private set; }
 	public Transform fire;
@@ -68,13 +68,14 @@ public class Boss : MonoBehaviour {
 
 	void ElementalMissiles (Vector3 targetPosition, bool targeted)
 	{
-			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
-			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);
-			elementalMissiles.GetComponent<MissileLogic> ().critChance = critChance;
-			elementalMissiles.GetComponent<MissileLogic> ().criticalHitDamage = criticalHitDamage;
-			elementalMissiles.position = new Vector3 (transform.position.x + 3, transform.position.y+8, transform.position.z + 1);
-			RotateTowardsTargetPosition (targetPosition);
-			Instantiate (elementalMissiles);
+		EnemyMissileLogic eml = elementalMissiles.GetComponent<EnemyMissileLogic> ();
+		eml.targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
+		eml.damage = (int)(attackPower * 0.10);
+		eml.critChance = critChance;
+		eml.criticalHitDamage = criticalHitDamage;
+		elementalMissiles.position = new Vector3 (transform.position.x + 3, transform.position.y+8, transform.position.z + 1);
+		RotateTowardsTargetPosition (targetPosition);
+		Instantiate (elementalMissiles);
 	}
 
 	//Rotates the player in the direction of the vector3 targetPosition
