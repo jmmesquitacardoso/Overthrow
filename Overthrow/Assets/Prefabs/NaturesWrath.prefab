@@ -219,12 +219,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49fe96d8b6c345a4e9baf507860dd44a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
+  m_EditorClassIdentifier:
   targetPosition: {x: 196.494934, y: -59.4178467, z: 781.863037}
-=======
-  targetPosition: {x: 156.800293, y: .324554443, z: -38.3589478}
->>>>>>> origin/master
   speed: 5
   critChance: 15
   criticalHitDamage: 1

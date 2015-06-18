@@ -276,11 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f263ec564905f6a4283e0a80e84193d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   targetPosition: {x: 48.090374, y: 13.3231688, z: 741.082825}
-=======
-  targetPosition: {x: 180.253418, y: 3.32501221, z: -24.7998657}
->>>>>>> origin/master
   speed: 15
   damage: 100
   critChance: 15
