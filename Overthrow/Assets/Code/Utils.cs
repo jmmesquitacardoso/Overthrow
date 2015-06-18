@@ -15,7 +15,7 @@ public enum EnemyState
 enum Mode
 {
 	ARPG,
-	Stealth}
+	STEALTH}
 ;
 
 enum PlayerState
