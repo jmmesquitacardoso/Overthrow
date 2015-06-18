@@ -11,6 +11,7 @@ GameObject:
   - 198: {fileID: 19800694}
   - 199: {fileID: 19950446}
   - 114: {fileID: 11444066}
+  - 65: {fileID: 6518220}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -25,11 +26,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152690}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 70.353302, y: 9.99816895, z: 775.967529}
+  m_LocalPosition: {x: 47.024353, y: 4.67655182, z: 701.454163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!65 &6518220
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.17686462, y: 3.11432076, z: 6.44516516}
+  m_Center: {x: -.0414352417, y: -.0508425348, z: 2.03639889}
 --- !u!114 &11444066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -41,6 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c6f201d7eb04a8fa8cbcae4dd4bfbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!198 &19800694
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -287,7 +287,7 @@ Transform:
   - {fileID: 1731678011}
   - {fileID: 988033436}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
 --- !u!95 &42727761
 Animator:
   serializedVersion: 3
@@ -1467,12 +1467,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 218234903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94, y: 0, z: -64}
+  m_LocalPosition: {x: 94, y: 9.69999981, z: 707.099976}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 597042246}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 19
 --- !u!65 &218234905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1519,6 +1519,7 @@ MonoBehaviour:
   dodgeChance: 15
   critChance: 15
   criticalHitDamage: 1
+  burnDuration: 3
   maxHealth: 400
   currentHealth: 400
   healthPerSecond: 2
@@ -1541,6 +1542,7 @@ MonoBehaviour:
   bow: {fileID: 0}
   warningText: {fileID: 2038471471}
   hoveringShrine: 0
+  burning: 0
   healthGlobe: {fileID: 2044297446}
   manaGlobe: {fileID: 1888240056}
   strengthGlobe: {fileID: 1897279736}
@@ -1866,7 +1868,7 @@ Transform:
   - {fileID: 1396066229}
   - {fileID: 2129585601}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!1 &332422270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,7 +3868,7 @@ Transform:
   - {fileID: 464734389}
   - {fileID: 1461834511}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
 --- !u!1001 &611592844
 Prefab:
   m_ObjectHideFlags: 0
@@ -3966,7 +3968,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5a9b872c9013cdf40953c4d0e10206aa, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5a9b872c9013cdf40953c4d0e10206aa, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4219,7 +4221,7 @@ RectTransform:
   - {fileID: 2089794434}
   - {fileID: 500401135}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4504,7 +4506,7 @@ Transform:
   - {fileID: 1425170014}
   - {fileID: 1650861159}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!1 &841386120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,7 +4832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
 --- !u!1 &947962118
 GameObject:
   m_ObjectHideFlags: 0
@@ -5120,7 +5122,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
 --- !u!114 &1074777315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5234,7 +5236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1 &1107515812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5655,7 +5657,7 @@ Transform:
   - {fileID: 1965378196}
   - {fileID: 740317173}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &1180014883
 GameObject:
   m_ObjectHideFlags: 0
@@ -5680,10 +5682,9 @@ Transform:
   m_LocalRotation: {x: -3.01787182e-08, y: -.829860568, z: 2.77802002e-07, w: .557970822}
   m_LocalPosition: {x: .244398892, y: -.0207025018, z: -.902039587}
   m_LocalScale: {x: .99999994, y: 1, z: .99999994}
-  m_Children:
-  - {fileID: 1834576850}
-  m_Father: {fileID: 1576716764}
-  m_RootOrder: 4
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!4 &1180112141 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 7a93e07023f417142881f9ebea0e642b, type: 2}
@@ -5954,7 +5955,7 @@ Transform:
   - {fileID: 4290620}
   - {fileID: 1660904367}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!1 &1316204531
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,7 +6025,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
 --- !u!4 &1322054561 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 7a93e07023f417142881f9ebea0e642b, type: 2}
@@ -7023,6 +7024,7 @@ MonoBehaviour:
   dodgeChance: 15
   critChance: 15
   criticalHitDamage: 1
+  burnDuration: 3
   maxHealth: 400
   currentHealth: 200
   healthPerSecond: 2
@@ -7045,6 +7047,7 @@ MonoBehaviour:
   bow: {fileID: 0}
   warningText: {fileID: 2038471471}
   hoveringShrine: 0
+  burning: 0
   healthGlobe: {fileID: 2044297446}
   manaGlobe: {fileID: 1888240056}
   strengthGlobe: {fileID: 1897279736}
@@ -8167,6 +8170,7 @@ MonoBehaviour:
   dodgeChance: 15
   critChance: 15
   criticalHitDamage: 1
+  burnDuration: 3
   maxHealth: 400
   currentHealth: 200
   healthPerSecond: 2
@@ -8189,6 +8193,7 @@ MonoBehaviour:
   bow: {fileID: 0}
   warningText: {fileID: 2038471471}
   hoveringShrine: 0
+  burning: 0
   healthGlobe: {fileID: 2044297446}
   manaGlobe: {fileID: 1888240056}
   strengthGlobe: {fileID: 1897279736}
@@ -8979,7 +8984,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 892bc2f8b0b522d44a69daf905ee7951, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 892bc2f8b0b522d44a69daf905ee7951, type: 3}
       propertyPath: m_LocalScale.x
