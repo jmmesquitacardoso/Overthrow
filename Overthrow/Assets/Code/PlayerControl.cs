@@ -278,7 +278,7 @@ public class PlayerControl : MonoBehaviour
 	{
 		var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		
-		RaycastHit hit;
+		RaycastHit hit;  
 		
 		if (Physics.Raycast (ray, out hit)) {
 			currentTarget = hit.transform;
