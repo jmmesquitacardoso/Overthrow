@@ -34,6 +34,7 @@ public class PlayerControl : MonoBehaviour
 	public int blizzardManaCost = 100;
 	private Vector3 targetPosition;
 	private Animator anim;
+	private Animator bowAnim;
 	private PlayerState state;
 	public Transform elementalMissiles;
 	public Transform grapple;
@@ -74,6 +75,7 @@ public class PlayerControl : MonoBehaviour
 		globalCooldown = 1f / attackSpeed;
 		globalCooldownTimeSpan = Time.time;
 		anim = gameObject.GetComponentInChildren<Animator> ();
+		bowAnim = GameObject.Find ("Arco").GetComponent<Animator> ();
 		state = PlayerState.IDLE;
 		blizzardIconColor = blizzardIcon.color;
 		currentBuffs = new ArrayList ();
@@ -133,6 +135,7 @@ public class PlayerControl : MonoBehaviour
 			break;
 		case PlayerState.FLARE:
 			anim.Play("ShootBow");
+			bowAnim.Play("Shoot");
 			break;
 		default:
 			break;
