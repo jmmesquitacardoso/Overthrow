@@ -5557,6 +5557,7 @@ MonoBehaviour:
   fire: {fileID: 0}
   elementalMissiles: {fileID: 416032, guid: 69486f405a39aeb4e89e253f09436b2f, type: 2}
   playerTarget: {fileID: 218234904}
+  playerDistance: 0
   fireRate: 1
   canFire: 0
 --- !u!1 &1680844522

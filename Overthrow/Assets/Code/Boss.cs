@@ -14,6 +14,7 @@ public class Boss : MonoBehaviour {
 	public Transform elementalMissiles;
 	public Transform playerTarget;
 
+	public float playerDistance;
 	public float fireRate = 20;
 	public float canFire;
 	// Use this for initialization
@@ -28,8 +29,11 @@ public class Boss : MonoBehaviour {
 	void Update () {
 		if ((canFire -= Time.deltaTime) > 0)
 			return;
-		ElementalMissiles (playerTarget.position, true);
-		canFire = fireRate;
+		playerDistance = Vector3.Distance (playerTarget.position, transform.position);
+		if (playerDistance < 70) {
+			ElementalMissiles (playerTarget.position, true);
+			canFire = fireRate;
+		}
 	}
 
 	void ElementalMissiles (Vector3 targetPosition, bool targeted)
