@@ -4803,6 +4803,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &941444465
 MonoBehaviour:
@@ -5107,6 +5108,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1074777314
 Transform:
   m_ObjectHideFlags: 0
@@ -5654,6 +5656,34 @@ Transform:
   - {fileID: 740317173}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &1180014883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100054, guid: 60720279f64771f43b0c0fc4aa6f3b80, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1180014884}
+  m_Layer: 0
+  m_Name: top_ik_002
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180014884
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400054, guid: 60720279f64771f43b0c0fc4aa6f3b80, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180014883}
+  m_LocalRotation: {x: -3.01787182e-08, y: -.829860568, z: 2.77802002e-07, w: .557970822}
+  m_LocalPosition: {x: .244398892, y: -.0207025018, z: -.902039587}
+  m_LocalScale: {x: .99999994, y: 1, z: .99999994}
+  m_Children:
+  - {fileID: 1834576850}
+  m_Father: {fileID: 1576716764}
+  m_RootOrder: 4
 --- !u!4 &1180112141 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 7a93e07023f417142881f9ebea0e642b, type: 2}
