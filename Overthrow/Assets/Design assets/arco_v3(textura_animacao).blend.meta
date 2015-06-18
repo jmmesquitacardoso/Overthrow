@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 60720279f64771f43b0c0fc4aa6f3b80
+timeCreated: 1434628752
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arco
+    100002: //RootNode
+    100004: Armature
+    100006: bottom_ik
+    100008: flecha
+    100010: main
+    100012: pega_L
+    100014: pega_L_001
+    100016: pega_L_002
+    100018: pega_L_003
+    100020: pega_L_004
+    100022: pega_L_005
+    100024: pega_L_006
+    100026: pega_L_007
+    100028: pega_L_008
+    100030: pega_R
+    100032: pega_R_001
+    100034: pega_R_002
+    100036: pega_R_003
+    100038: pega_R_004
+    100040: pega_R_005
+    100042: pega_R_006
+    100044: pega_R_007
+    100046: pega_R_008
+    100048: string
+    100050: top_ik
+    100052: top_ik_001
+    100054: top_ik_002
+    100056: top_limit
+    100058: top_limit_001
+    400000: arco
+    400002: //RootNode
+    400004: Armature
+    400006: bottom_ik
+    400008: flecha
+    400010: main
+    400012: pega_L
+    400014: pega_L_001
+    400016: pega_L_002
+    400018: pega_L_003
+    400020: pega_L_004
+    400022: pega_L_005
+    400024: pega_L_006
+    400026: pega_L_007
+    400028: pega_L_008
+    400030: pega_R
+    400032: pega_R_001
+    400034: pega_R_002
+    400036: pega_R_003
+    400038: pega_R_004
+    400040: pega_R_005
+    400042: pega_R_006
+    400044: pega_R_007
+    400046: pega_R_008
+    400048: string
+    400050: top_ik
+    400052: top_ik_001
+    400054: top_ik_002
+    400056: top_limit
+    400058: top_limit_001
+    2300000: flecha
+    3300000: flecha
+    4300000: arco
+    4300002: flecha
+    7400000: Default Take
+    7400002: ArmatureAction
+    9500000: //RootNode
+    13700000: arco
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

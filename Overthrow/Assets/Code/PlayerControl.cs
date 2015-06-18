@@ -41,6 +41,7 @@ public class PlayerControl : MonoBehaviour
 	public Transform flare;
 	public Transform naturesWrath;
 	public Transform blizzard;
+	public Transform bow;
 	private Transform currentTarget;
 	private Mode mode;
 	public Text warningText;
@@ -107,6 +108,12 @@ public class PlayerControl : MonoBehaviour
 		PlayerSkills ();
 		
 		UpdateCurrentTarget ();
+
+		/*if (mode == Mode.ARPG) {
+			bow.gameObject.SetActive(false);
+		} else if (mode == Mode.STEALTH) {
+			bow.gameObject.SetActive(true);
+		}*/
 		
 		switch (state) {
 		case PlayerState.IDLE:
@@ -131,7 +138,7 @@ public class PlayerControl : MonoBehaviour
 			break;
 		}
 	
-		if (currentStrength <= 0 && mode == Mode.Stealth) {
+		if (currentStrength <= 0 && mode == Mode.STEALTH) {
 			ChangeMode ();
 		}
 
@@ -371,7 +378,7 @@ public class PlayerControl : MonoBehaviour
 	void ChangeMode ()
 	{
 		if (mode == Mode.ARPG) {
-			mode = Mode.Stealth;
+			mode = Mode.STEALTH;
 			manaGlobe.enabled = false;
 			strengthGlobe.enabled = true;
 			missilesIcon.enabled = false;

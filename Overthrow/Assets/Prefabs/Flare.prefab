@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 254.134506, y: 1, z: 41.7240295}
+  m_LocalPosition: {x: 298.091949, y: 1, z: 196.101517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469436}
@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5c4ef98203fea4e943977467164d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 293.368774, y: .325012207, z: 74.6104126}
-  rotation: {x: -0, y: 230.060715, z: 0}
+  targetPosition: {x: 307.742004, y: .325012207, z: 228.702881}
+  rotation: {x: -0, y: 196.224121, z: 0}
   flareDuration: 10
 --- !u!198 &19852662
 ParticleSystem:
