@@ -3,9 +3,11 @@ using System.Collections;
 
 public class Boss : MonoBehaviour {
 	
-	public float attackSpeed = 1f;
+	public float attackSpeed = 10f;
 	public float critChance = 15f;
 	public float criticalHitDamage = 1;
+	public float moveSpeed = 6;
+	public float rotationDamping = 15;
 	public int attackPower = 3000;
 	public int MaxHealth=2000;
 	public int Health{ get; private set; }
@@ -27,13 +29,28 @@ public class Boss : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if ((canFire -= Time.deltaTime) > 0)
-			return;
+
 		playerDistance = Vector3.Distance (playerTarget.position, transform.position);
-		if (playerDistance < 70) {
-			ElementalMissiles (playerTarget.position, true);
-			canFire = fireRate;
+		if (playerDistance < 80f) {
+			lookAtPlayer ();
+		
+			if (playerDistance < 60f && playerDistance > 6f ) {
+				transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
+		
+				if (playerDistance < 55f) {
+					if ((canFire -= Time.deltaTime) > 0)
+						return;
+					ElementalMissiles (playerTarget.position, true);
+					canFire = fireRate;
+				}
+			}
 		}
+	}
+
+	void lookAtPlayer ()
+	{
+		Quaternion rotation = Quaternion.LookRotation (playerTarget.position - transform.position);
+		transform.rotation = Quaternion.Slerp (transform.rotation, rotation, Time.deltaTime * rotationDamping);
 	}
 
 	void ElementalMissiles (Vector3 targetPosition, bool targeted)
