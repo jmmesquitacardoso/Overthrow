@@ -278,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 84.912384, y: 3.00152779, z: -29.3304749}
   speed: 15
-  damage: 100
+  damage: 300
   critChance: 15
   criticalHitDamage: 1
 --- !u!198 &19806436

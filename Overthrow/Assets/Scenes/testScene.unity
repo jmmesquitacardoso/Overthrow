@@ -495,6 +495,60 @@ Transform:
   - {fileID: 1089088772}
   m_Father: {fileID: 1020969491}
   m_RootOrder: 0
+--- !u!1001 &135396255
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 40.5999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -.707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 478364, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 128822, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19818534, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: ShapeModule.boxX
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 19818534, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: ShapeModule.boxY
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &147908289
 Prefab:
   m_ObjectHideFlags: 0
@@ -4054,6 +4108,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &941444465
 MonoBehaviour:
@@ -4326,6 +4381,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1074777314
 Transform:
   m_ObjectHideFlags: 0
@@ -6138,7 +6194,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ad1456b36fa4ed592c6abf61fc9d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHelath: 2000
+  attackSpeed: 1
+  critChance: 15
+  criticalHitDamage: 1
+  attackPower: 3000
+  MaxHealth: 2000
+  rain: {fileID: 0}
+  fire: {fileID: 0}
+  elementalMissiles: {fileID: 416032, guid: 69486f405a39aeb4e89e253f09436b2f, type: 2}
+  playerTarget: {fileID: 218234904}
+  playerDistance: 0
+  fireRate: 1
+  canFire: 0
 --- !u!1 &1680844522
 GameObject:
   m_ObjectHideFlags: 0
@@ -8071,7 +8138,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 1e762b3ba2d6eb94d82decd813ab59aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 874
+      value: 46.2999992
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 1e762b3ba2d6eb94d82decd813ab59aa, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8111,15 +8178,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 1e762b3ba2d6eb94d82decd813ab59aa, type: 3}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 1e762b3ba2d6eb94d82decd813ab59aa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 1e762b3ba2d6eb94d82decd813ab59aa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e762b3ba2d6eb94d82decd813ab59aa, type: 3}
