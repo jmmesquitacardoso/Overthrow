@@ -62,6 +62,7 @@
      <Compile Include="Assets\Code\MissileLogic.cs" />
      <Compile Include="Assets\Code\NaturesWrathLogic.cs" />
      <Compile Include="Assets\Code\PlayerControl.cs" />
+     <Compile Include="Assets\Code\RockScript.cs" />
      <Compile Include="Assets\Code\RunestoneLogic.cs" />
      <Compile Include="Assets\Code\TelekinesisLogic.cs" />
      <Compile Include="Assets\Code\Utils.cs" />

@@ -5,16 +5,17 @@ public class EnemyAI : MonoBehaviour
 {
 	
 	public Transform player;
+	public Transform rock;
 	public float playerDistance;
 	public float rotationDamping;
 	public float moveSpeed;
+	public float fieldOfViewAngle = 110;
 	public static bool isPlayerAlive = true;
 	public bool attacking = false;
+	public bool ranged = false;
 	private string hitobject;
 	public int enemyDamage = 2;
 	private SphereCollider sphereCollider;
-	bool playerInSight = true;
-	public float fieldOfViewAngle = 110;
 
 
 	// Use this for initialization
@@ -36,18 +37,31 @@ public class EnemyAI : MonoBehaviour
 		}
 
 		if (playerDistance < 85f) { 
-			//lookAtPlayer ();
-			if (playerDistance > 4f && playerInSight) {
-				chase ();
-				attacking = false;
-				lookAtPlayer();
-			} else if (playerDistance < 4f) {
-				if (!attacking) {
-					attacking = true;
-					StartCoroutine(Attack ());
-				lookAtPlayer();
+			lookAtPlayer ();
+			if (ranged) {
+				if (playerDistance > 50f) {
+					Debug.Log("asd");
+					chase ();
+					attacking = false;
+				} else {
+					Debug.Log("asd2");
+					if (!attacking) {
+						attacking = true;
+						StartCoroutine(Attack ());
+					}
 				}
+			} else {
+				if (playerDistance > 4f) {
+					chase ();
+					attacking = false;
+				} else {
+					if (!attacking) {
+						attacking = true;
+						StartCoroutine(Attack ());
+					}
+				} 
 			}
+
 		}
 	}
 
@@ -72,19 +86,30 @@ public class EnemyAI : MonoBehaviour
 		RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward, out hit)) {
 			if (hit.collider.gameObject.name == "Player") {
-				if (gameObject.GetComponent<EnemyScript> ().state != EnemyState.MELEEATTACKING) {
-					gameObject.GetComponent<EnemyScript> ().state = EnemyState.MELEEATTACKING;
-				}
 				if (attacking) {
-					player.GetComponent<PlayerControl> ().TakeDamage (enemyDamage);
-					yield return new WaitForSeconds (2f);
-					StartCoroutine(Attack());
+					if (ranged) {
+						rock.GetComponent<RockScript>().transform.position = new Vector3 (transform.position.x, transform.position.y + 5, transform.position.z);
+						rock.GetComponent<RockScript>().playerPosition = new Vector3 (hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y+2.5f, hit.collider.gameObject.transform.position.z);
+						if (gameObject.GetComponent<EnemyScript> ().state != EnemyState.RANGEDATTACKING) {
+							gameObject.GetComponent<EnemyScript> ().state = EnemyState.RANGEDATTACKING;
+						}
+						yield return new WaitForSeconds (2.583f);
+						Instantiate(rock);
+						StartCoroutine(Attack());
+					} else {
+						if (gameObject.GetComponent<EnemyScript> ().state != EnemyState.MELEEATTACKING) {
+							gameObject.GetComponent<EnemyScript> ().state = EnemyState.MELEEATTACKING;
+						}
+						player.GetComponent<PlayerControl> ().TakeDamage (enemyDamage);
+						yield return new WaitForSeconds (2f);
+						StartCoroutine(Attack());
+					}
 				}
 			}
 		}
 	}
 
-	void OnTriggerStay (Collider other)
+	/*void OnTriggerStay (Collider other)
 	{
 		// If the player has entered the trigger sphere...
 		if(other.gameObject == player.gameObject)
@@ -123,5 +148,5 @@ public class EnemyAI : MonoBehaviour
 		if(other.gameObject == player)
 			// ... the player is not in sight.
 			playerInSight = false;
-	}
+	}*/
 }
