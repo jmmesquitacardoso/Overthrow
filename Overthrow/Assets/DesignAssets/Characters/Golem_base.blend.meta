@@ -1,0 +1,748 @@
+fileFormatVersion: 2
+guid: c0689d5ee6c58f54f8da1da2c07e05fc
+timeCreated: 1434665602
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arm_L
+    100002: Arm_L_001
+    100004: Arm_R
+    100006: Arm_R_001
+    100008: Armature-golembase
+    100010: Chest
+    100012: FingerIndex_L
+    100014: FingerIndex_L_001
+    100016: FingerIndex_R
+    100018: FingerIndex_R_001
+    100020: FingerMiddle_L
+    100022: FingerMiddle_L_001
+    100024: FingerMiddle_R
+    100026: FingerMiddle_R_001
+    100028: FingerSmall_L
+    100030: FingerSmall_L_001
+    100032: FingerSmall_R
+    100034: FingerSmall_R_001
+    100036: FingerThumb_L
+    100038: FingerThumb_L_001
+    100040: FingerThumb_R
+    100042: FingerThumb_R_001
+    100044: Foot_L
+    100046: Foot_R
+    100048: ForeArm_L
+    100050: ForeArm_R
+    100052: golem
+    100054: //RootNode
+    100056: Hand_L
+    100058: Hand_R
+    100060: Head
+    100062: Knee_L
+    100064: Knee_R
+    100066: Pelvis
+    100068: Spine
+    100070: Thigh_L
+    100072: Thigh_R
+    400000: Arm_L
+    400002: Arm_L_001
+    400004: Arm_R
+    400006: Arm_R_001
+    400008: Armature-golembase
+    400010: Chest
+    400012: FingerIndex_L
+    400014: FingerIndex_L_001
+    400016: FingerIndex_R
+    400018: FingerIndex_R_001
+    400020: FingerMiddle_L
+    400022: FingerMiddle_L_001
+    400024: FingerMiddle_R
+    400026: FingerMiddle_R_001
+    400028: FingerSmall_L
+    400030: FingerSmall_L_001
+    400032: FingerSmall_R
+    400034: FingerSmall_R_001
+    400036: FingerThumb_L
+    400038: FingerThumb_L_001
+    400040: FingerThumb_R
+    400042: FingerThumb_R_001
+    400044: Foot_L
+    400046: Foot_R
+    400048: ForeArm_L
+    400050: ForeArm_R
+    400052: golem
+    400054: //RootNode
+    400056: Hand_L
+    400058: Hand_R
+    400060: Head
+    400062: Knee_L
+    400064: Knee_R
+    400066: Pelvis
+    400068: Spine
+    400070: Thigh_L
+    400072: Thigh_R
+    4300000: golem
+    7400000: Default Take
+    7400002: Golemb_ataque_cabe_a
+    7400004: Golemb_combo
+    7400006: Golemb_idle
+    7400008: Golemb_melee-attack
+    7400010: Golemb_walk-cycle
+    9500000: //RootNode
+    13700000: golem
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature-golembase
+        weight: 1
+      - path: Armature-golembase/Spine
+        weight: 1
+      - path: Armature-golembase/Spine/Chest
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Head
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Golemb_ataque_cabe_a
+      takeName: Golemb_ataque_cabe_a
+      firstFrame: -1
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature-golembase
+        weight: 1
+      - path: Armature-golembase/Spine
+        weight: 1
+      - path: Armature-golembase/Spine/Chest
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Head
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Golemb_combo
+      takeName: Golemb_combo
+      firstFrame: -1
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature-golembase
+        weight: 1
+      - path: Armature-golembase/Spine
+        weight: 1
+      - path: Armature-golembase/Spine/Chest
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Head
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Golemb_idle
+      takeName: Golemb_idle
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature-golembase
+        weight: 1
+      - path: Armature-golembase/Spine
+        weight: 1
+      - path: Armature-golembase/Spine/Chest
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Head
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Golemb_melee-attack
+      takeName: Golemb_melee-attack
+      firstFrame: -1
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature-golembase
+        weight: 1
+      - path: Armature-golembase/Spine
+        weight: 1
+      - path: Armature-golembase/Spine/Chest
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Head
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Golemb_walk-cycle
+      takeName: Golemb_walk-cycle
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature-golembase
+        weight: 1
+      - path: Armature-golembase/Spine
+        weight: 1
+      - path: Armature-golembase/Spine/Chest
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerIndex_L/FingerIndex_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerMiddle_L/FingerMiddle_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerSmall_L/FingerSmall_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_L_001/Arm_L/ForeArm_L/Hand_L/FingerThumb_L_001/FingerThumb_L
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerIndex_R/FingerIndex_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerMiddle_R/FingerMiddle_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerSmall_R/FingerSmall_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Arm_R_001/Arm_R/ForeArm_R/Hand_R/FingerThumb_R/FingerThumb_R_001
+        weight: 1
+      - path: Armature-golembase/Spine/Chest/Head
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_L/Knee_L/Foot_L
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R
+        weight: 1
+      - path: Armature-golembase/Spine/Pelvis/Thigh_R/Knee_R/Foot_R
+        weight: 1
+      - path: golem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

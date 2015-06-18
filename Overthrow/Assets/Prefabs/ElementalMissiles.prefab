@@ -124,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197680}
   m_LocalRotation: {x: -.492438167, y: -.50744915, z: .50744915, w: .492438167}
-  m_LocalPosition: {x: 77.3483887, y: 17.2910538, z: 807.737549}
+  m_LocalPosition: {x: 189.38446, y: 3.32499933, z: -44.5150146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 460666}
@@ -164,7 +164,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194688}
-  m_LocalRotation: {x: .653281569, y: .270597994, z: -.270597965, w: .65328145}
+  m_LocalRotation: {x: .653281629, y: .270598024, z: -.270597994, w: .65328151}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -276,9 +276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f263ec564905f6a4283e0a80e84193d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 68.1343384, y: 16.9880562, z: 860.307434}
+  targetPosition: {x: 215.318481, y: 3.32501221, z: -47.7167358}
   speed: 15
-  damage: 300
+  damage: 100
   critChance: 15
   criticalHitDamage: 1
 --- !u!198 &19806436
