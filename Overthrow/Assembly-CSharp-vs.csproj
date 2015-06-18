@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\AutoDestroyParticleSystem.cs" />
      <Compile Include="Assets\Code\Bezier.cs" />
      <Compile Include="Assets\Code\BlizzardLogic.cs" />
      <Compile Include="Assets\Code\Boss.cs" />

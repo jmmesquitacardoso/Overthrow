@@ -16,7 +16,7 @@ public class Boss : MonoBehaviour {
 	public Transform playerTarget;
 
 	public float playerDistance;
-	public float fireRate = 20;
+	public float fireRate = 1;
 	public float canFire;
 	private Transform fireTransform;
 	private float fireTime=2;
@@ -39,19 +39,19 @@ public class Boss : MonoBehaviour {
 			if (playerDistance < 60f && playerDistance > 4f ) {
 				transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 		
-				if (playerDistance < 55f && playerDistance > 20f) {
+				if (playerDistance < 55f && playerDistance > 12f) {
 					if ((canFire -= Time.deltaTime) > 0)
 						return;
 					ElementalMissiles (playerTarget.position, true);
 					canFire = fireRate;
 				}
-				if(playerDistance < 20f){
+				if(playerDistance < 12f){
 					if((fireT -= Time.deltaTime) >0)
 						return;
-					if(fireTransform != null){
+					/*if(fireTransform != null){
 						DestroyImmediate(fireTransform.gameObject, true);
 
-					}
+					}*/
 					fireTransform= Instantiate (fire);
 					fireTransform.position = playerTarget.position;
 					fireT=fireTime;
@@ -72,7 +72,7 @@ public class Boss : MonoBehaviour {
 			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);
 			elementalMissiles.GetComponent<MissileLogic> ().critChance = critChance;
 			elementalMissiles.GetComponent<MissileLogic> ().criticalHitDamage = criticalHitDamage;
-			elementalMissiles.position = new Vector3 (transform.position.x + 1, transform.position.y+3, transform.position.z + 1);
+			elementalMissiles.position = new Vector3 (transform.position.x + 3, transform.position.y+8, transform.position.z + 1);
 			RotateTowardsTargetPosition (targetPosition);
 			Instantiate (elementalMissiles);
 	}
