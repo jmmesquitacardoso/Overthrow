@@ -13,6 +13,9 @@ public class EnemyAI : MonoBehaviour
 	private string hitobject;
 	public int enemyDamage = 2;
 	private SphereCollider sphereCollider;
+	bool playerInSight = true;
+	public float fieldOfViewAngle = 110;
+
 
 	// Use this for initialization
 	void Start ()
@@ -29,18 +32,17 @@ public class EnemyAI : MonoBehaviour
 		if (playerDistance < 5f) {
 			//transform.Rotate(0,20*Time.deltaTime,0);
 			//transform.rotation = new Quaternion(transform.rotation.x,180,transform.rotation.z,transform.rotation.w);
-			//lookAtPlayer ();
+			lookAtPlayer ();
 		}
 
 		if (playerDistance < 85f) { 
 			//lookAtPlayer ();
-			if (playerDistance > 3f && playerInSight) {
+			if (playerDistance > 4f && playerInSight) {
 				chase ();
 				attacking = false;
 				lookAtPlayer();
-			} else if (playerDistance < 3f) {
+			} else if (playerDistance < 4f) {
 				if (!attacking) {
-					Debug.Log("asdasd");
 					attacking = true;
 					StartCoroutine(Attack ());
 				lookAtPlayer();
@@ -74,7 +76,6 @@ public class EnemyAI : MonoBehaviour
 					gameObject.GetComponent<EnemyScript> ().state = EnemyState.MELEEATTACKING;
 				}
 				if (attacking) {
-					Debug.Log ("attack");
 					player.GetComponent<PlayerControl> ().TakeDamage (enemyDamage);
 					yield return new WaitForSeconds (2f);
 					StartCoroutine(Attack());
@@ -82,9 +83,6 @@ public class EnemyAI : MonoBehaviour
 			}
 		}
 	}
-
-	bool playerInSight = false;
-	public float fieldOfViewAngle = 110;
 
 	void OnTriggerStay (Collider other)
 	{

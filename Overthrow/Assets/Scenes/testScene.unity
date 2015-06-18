@@ -126,6 +126,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 128822, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 229d8915a271e4259ba0c85b52d8e0d6, type: 2}
   m_IsPrefabParent: 0
@@ -688,7 +692,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
     - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
@@ -822,7 +826,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &169933211
 CapsuleCollider:
@@ -1795,7 +1798,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
     - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
@@ -1825,7 +1828,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &464734391
 CapsuleCollider:
@@ -1861,6 +1863,21 @@ MonoBehaviour:
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
   currentHealth: 400
+--- !u!54 &464734393
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464734388}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &470057451 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
@@ -1886,7 +1903,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &470057454
 CapsuleCollider:
@@ -2070,7 +2086,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &506299474
 CapsuleCollider:
@@ -2106,6 +2121,21 @@ MonoBehaviour:
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
   currentHealth: 400
+--- !u!54 &506299477
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 506299471}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &507759786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,7 +3103,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &676592486
 CapsuleCollider:
@@ -3300,7 +3329,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &775931070
 CapsuleCollider:
@@ -3682,7 +3710,6 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
-  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &941444465
 MonoBehaviour:
@@ -3899,7 +3926,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!4 &1074777314
 Transform:
   m_ObjectHideFlags: 0
@@ -4219,7 +4245,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
     - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
@@ -4563,7 +4589,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &1408435794
 CapsuleCollider:
@@ -4599,6 +4624,21 @@ MonoBehaviour:
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
   currentHealth: 400
+--- !u!54 &1408435797
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408435791}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!4 &1417734103 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a74d6c1e0c291b64db4bad3a3b342144, type: 2}
@@ -4689,21 +4729,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .313186944, y: .251767933, z: .824795425}
   m_Center: {x: -.00332676619, y: .0412958488, z: .408998072}
---- !u!54 &1445680457
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1445680452}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!114 &1445680458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4741,7 +4766,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 10
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 360
 --- !u!136 &1461834513
 CapsuleCollider:
@@ -4777,6 +4801,21 @@ MonoBehaviour:
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
   currentHealth: 400
+--- !u!54 &1461834515
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1461834510}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!135 &1461834516
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4785,7 +4824,7 @@ SphereCollider:
   m_GameObject: {fileID: 1461834510}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 12
   m_Center: {x: 0, y: 0, z: 0}
@@ -5886,7 +5925,6 @@ MonoBehaviour:
   moveSpeed: 10
   attacking: 0
   enemyDamage: 2
-  sphereCollider: {fileID: 0}
   fieldOfViewAngle: 110
 --- !u!136 &1821970876
 CapsuleCollider:
@@ -5922,6 +5960,21 @@ MonoBehaviour:
   currentEnemyOuterHealthBar: {fileID: 199817644}
   maxHealth: 400
   currentHealth: 400
+--- !u!54 &1821970879
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1821970873}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1852645498 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100132, guid: db3314d0158c1ff4cb311221c0b612e6, type: 3}
@@ -6683,6 +6736,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 152690, guid: 4dcff83cbdacd41118980610ebcbb4bb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dcff83cbdacd41118980610ebcbb4bb, type: 2}
   m_IsPrefabParent: 0
@@ -7090,7 +7147,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: fbd5c8f60a00e2546b9e8dbaacd24ae9, type: 2}
     - target: {fileID: 100054, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}

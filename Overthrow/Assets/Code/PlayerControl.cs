@@ -88,8 +88,6 @@ public class PlayerControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-
-
 		healthGlobe.fillAmount = (float)currentHealth / (float)maxHealth;
 		
 		manaGlobe.fillAmount = (float)currentMana / (float)maxMana;
@@ -125,6 +123,9 @@ public class PlayerControl : MonoBehaviour
 			break;
 		case PlayerState.GRAPPLE:
 			anim.Play("Grapple");
+			break;
+		case PlayerState.FLARE:
+			anim.Play("ShootBow");
 			break;
 		default:
 			break;
@@ -342,7 +343,7 @@ public class PlayerControl : MonoBehaviour
 				if (mode == Mode.ARPG) {
 					StartCoroutine(Blizzard());
 				} else {
-					Flare ();
+					StartCoroutine(Flare());
 				}
 				globalCooldownTimeSpan = Time.time + globalCooldown;
 			}
@@ -429,14 +430,18 @@ public class PlayerControl : MonoBehaviour
 	}
 
 	// Casts the Flare skill
-	void Flare ()
+	IEnumerator Flare ()
 	{
-		state = PlayerState.IDLE;
+		anim.speed = 2;
+		state = PlayerState.FLARE;
 		GetMouseWorldPosition ();
 		flare.position = new Vector3 (transform.position.x + Mathf.Cos (transform.rotation.eulerAngles.y), 1, transform.position.z + Mathf.Sin (transform.rotation.eulerAngles.y));
 		flare.GetComponent<FlareLogic> ().targetPosition = targetPosition;
 		flare.GetComponent<FlareLogic> ().rotation = transform.rotation.eulerAngles;
+		yield return new WaitForSeconds(1f);
 		Instantiate (flare);
+		anim.speed = 1;
+		state = PlayerState.IDLE;
 	}
 
 	// Casts the Blizzard skill
