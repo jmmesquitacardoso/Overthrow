@@ -20,7 +20,7 @@ AnimatorController:
     m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_MultiThreadedStateMachine: 1
 --- !u!1102 &110214252
 AnimatorState:
@@ -37,7 +37,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400006, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+  m_Motion: {fileID: 7400008, guid: c0689d5ee6c58f54f8da1da2c07e05fc, type: 3}
   m_Tag: 
 --- !u!1102 &110246258
 AnimatorState:
@@ -54,7 +54,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400008, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+  m_Motion: {fileID: 7400010, guid: c0689d5ee6c58f54f8da1da2c07e05fc, type: 3}
   m_Tag: 
 --- !u!1102 &110254296
 AnimatorState:
@@ -71,7 +71,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400006, guid: c0689d5ee6c58f54f8da1da2c07e05fc, type: 3}
   m_Tag: 
 --- !u!1102 &110293626
 AnimatorState:
@@ -88,7 +88,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400002, guid: 9767a926fd12244bdb598de9d1f0b176, type: 3}
+  m_Motion: {fileID: 7400002, guid: c0689d5ee6c58f54f8da1da2c07e05fc, type: 3}
   m_Tag: 
 --- !u!1107 &110719908
 AnimatorStateMachine:
@@ -120,6 +120,6 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 636, y: 144, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 110254296}

@@ -72,6 +72,9 @@ public class EnemyScript : MonoBehaviour
 		case EnemyState.MELEEATTACKING:
 			anim.Play("MeleeAttack");
 			break;
+		case EnemyState.RANGEDATTACKING:
+			anim.Play("HeadAttack");
+			break;
 		default:
 			break;
 		}
