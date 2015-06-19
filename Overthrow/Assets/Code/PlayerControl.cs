@@ -28,6 +28,7 @@ public class PlayerControl : MonoBehaviour
 	public int manaPerSecond = 2;
 	public int maxStrength = 100;
 	public int currentStrength = 100;
+	public int strengthPerSecond = 4;
 	public int attackPower = 1000;
 	public int blizzardRange = 30;
 	public int trapRange = 10;
@@ -86,6 +87,7 @@ public class PlayerControl : MonoBehaviour
 		currentBuffs = new ArrayList ();
 		InvokeRepeating ("ManaRegen", 0, 1f);
 		InvokeRepeating ("HealthRegen", 0, 1f);
+		InvokeRepeating ("StrengthRegen", 0, 1f);
 	}
 	
 	void Awake ()
@@ -149,7 +151,7 @@ public class PlayerControl : MonoBehaviour
 			break;
 		}
 	
-		if (currentStrength <= 0 && mode == Mode.STEALTH) {
+		if (currentStrength < 10 && mode == Mode.STEALTH) {
 			ChangeMode ();
 		}
 
@@ -226,7 +228,7 @@ public class PlayerControl : MonoBehaviour
 		switch (buff) {
 		case PlayerBuffs.CRITICAL:
 			critChance -= 25f;
-			//critBuffIcon.enabled = false;
+			critBuffIcon.enabled = false;
 			break;
 		case PlayerBuffs.DESTRUCTION:
 			attackPower -= 2000;
@@ -290,6 +292,20 @@ public class PlayerControl : MonoBehaviour
 				currentHealth += healthPerSecond;
 			} else {
 				currentHealth = maxHealth;
+			}
+		}
+	}
+
+	//This function is called every second, so strength regens at a rate of strengthPerSecond/second
+	void StrengthRegen ()
+	{
+		if (mode == Mode.ARPG) {
+			if (currentStrength <= maxStrength) {
+				if ((currentStrength + strengthPerSecond) <= maxStrength) {
+					currentStrength += strengthPerSecond;
+				} else {
+					currentStrength = maxStrength;
+				}
 			}
 		}
 	}
@@ -456,6 +472,7 @@ public class PlayerControl : MonoBehaviour
 			position.y = 1.5f;
 			trap.position = position;
 			Instantiate (trap);
+			currentStrength -=50;
 		} else {
 			StartCoroutine (DisplayWarningText ("Out of range!"));
 		}
@@ -530,6 +547,7 @@ public class PlayerControl : MonoBehaviour
 			grappleTimeSpan = Time.time + grappleCooldown;
 			anim.speed = 1;
 			Instantiate (grapple);
+			currentStrength -= 50;
 			state = PlayerState.IDLE;
 		}
 	}
