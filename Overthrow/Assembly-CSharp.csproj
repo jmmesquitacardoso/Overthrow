@@ -153,6 +153,7 @@
      <None Include="Assets\SandstoneDesertRocksFree\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\SandstoneDesertRocksFree\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\SandstoneDesertRocksFree\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\RiverWater\Shaders\RiverWater.shader" />
      <None Include="Assets\SandstoneDesertRocksFree\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\SandstoneDesertRocksFree\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\SandstoneDesertRocksFree\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />

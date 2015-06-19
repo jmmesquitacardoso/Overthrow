@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2353964}
   - 95: {fileID: 9556182}
   - 114: {fileID: 11431220}
+  - 65: {fileID: 6529962}
   m_Layer: 0
   m_Name: GolemRock
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152330}
   m_LocalRotation: {x: -.50000006, y: -.49999994, z: -.499999911, w: .500000119}
-  m_LocalPosition: {x: 151.295639, y: .726694882, z: -77.5337906}
+  m_LocalPosition: {x: 75.1753387, y: 5.78664207, z: -29.0813255}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,6 +63,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152330}
   m_Mesh: {fileID: 4300000, guid: 8f785c45e3cb1664f9c00faa2030b34e, type: 3}
+--- !u!65 &6529962
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.28620505, y: 1.39194798, z: 1.41842294}
+  m_Center: {x: -.033584509, y: .0638570189, z: -.0174814779}
 --- !u!95 &9556182
 Animator:
   serializedVersion: 3
@@ -90,9 +103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673d643c36de6ae47adc1cf61eca9840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: 157.624695, y: .325000286, z: -60.5115967}
-  speed: 30
-  damage: 10
+  playerPosition: {x: 86.3832626, y: 2.82499909, z: 30.8317146}
+  speed: 50
+  damage: 30
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
