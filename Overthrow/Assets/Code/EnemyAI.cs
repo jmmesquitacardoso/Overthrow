@@ -39,24 +39,19 @@ public class EnemyAI : MonoBehaviour
 		if (playerDistance < 85f) { 
 			lookAtPlayer ();
 			if (ranged) {
-				if (playerDistance > 50f) {
-					Debug.Log("asd");
+				if (playerDistance >= 40f) {
+					//attacking = false;
 					chase ();
-					attacking = false;
 				} else {
-					Debug.Log("asd2");
 					if (!attacking) {
-						attacking = true;
 						StartCoroutine(Attack ());
 					}
 				}
 			} else {
 				if (playerDistance > 4f) {
 					chase ();
-					attacking = false;
 				} else {
 					if (!attacking) {
-						attacking = true;
 						StartCoroutine(Attack ());
 					}
 				} 
@@ -86,6 +81,7 @@ public class EnemyAI : MonoBehaviour
 		RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward, out hit)) {
 			if (hit.collider.gameObject.name == "Player") {
+				attacking = true;
 				if (attacking) {
 					if (ranged) {
 						rock.GetComponent<RockScript>().transform.position = new Vector3 (transform.position.x, transform.position.y + 5, transform.position.z);
@@ -95,6 +91,7 @@ public class EnemyAI : MonoBehaviour
 						}
 						yield return new WaitForSeconds (2.583f);
 						Instantiate(rock);
+						attacking = false;
 						StartCoroutine(Attack());
 					} else {
 						if (gameObject.GetComponent<EnemyScript> ().state != EnemyState.MELEEATTACKING) {
@@ -102,6 +99,7 @@ public class EnemyAI : MonoBehaviour
 						}
 						player.GetComponent<PlayerControl> ().TakeDamage (enemyDamage);
 						yield return new WaitForSeconds (2f);
+						attacking = false;
 						StartCoroutine(Attack());
 					}
 				}
