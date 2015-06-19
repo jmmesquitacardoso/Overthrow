@@ -14,6 +14,7 @@ public class Boss : MonoBehaviour {
 	public Transform fire;
 	public Transform elementalMissiles;
 	public Transform playerTarget;
+	public Transform blizzard;
 
 	public float playerDistance;
 	public float fireRate = 1;
@@ -42,7 +43,11 @@ public class Boss : MonoBehaviour {
 				if (playerDistance < 55f && playerDistance > 12f) {
 					if ((canFire -= Time.deltaTime) > 0)
 						return;
-					ElementalMissiles (playerTarget.position, true);
+
+					if (Random.Range(0, 3) != 0) 
+						ElementalMissiles (playerTarget.position, true);
+					else 
+						Blizzard (playerTarget.position, true);
 					canFire = fireRate;
 				}
 				if(playerDistance < 12f){
@@ -76,6 +81,18 @@ public class Boss : MonoBehaviour {
 		elementalMissiles.position = new Vector3 (transform.position.x + 3, transform.position.y+8, transform.position.z + 1);
 		RotateTowardsTargetPosition (targetPosition);
 		Instantiate (elementalMissiles);
+	}
+
+	void Blizzard (Vector3 targetPosition, bool targeted)
+	{
+		BlizzardLogic eml = blizzard.GetComponent<BlizzardLogic> ();
+		//eml.targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
+		eml.damage = (int)(attackPower * 0.20);
+		eml.critChance = critChance;
+		eml.criticalHitDamage = criticalHitDamage;
+		blizzard.position = new Vector3 (transform.position.x + 3, transform.position.y+20, transform.position.z + 1);
+		RotateTowardsTargetPosition (targetPosition);
+		Instantiate (blizzard);
 	}
 
 	//Rotates the player in the direction of the vector3 targetPosition

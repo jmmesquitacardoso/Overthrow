@@ -584,7 +584,6 @@ public class PlayerControl : MonoBehaviour
 		burnDuration = duration;
 	}
 
-	private float burnDamage = 0;
 	private void burn() {
 		burnDuration -= Time.deltaTime;
 		currentHealth -= 1;
