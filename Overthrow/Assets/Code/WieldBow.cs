@@ -10,7 +10,7 @@ public class WieldBow : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		hand = GameObject.Find ("Player/personagem_v6_/Aarmature-human/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Braço_L/Ante_Braço_L/Mao_L");
+		hand = GameObject.Find ("Player/Human/Aarmature-human/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder_L/Bra_o_L/Ante_Bra_o_L/M_o_L");
 		// Find the bone in the Player object where we want to attach the object	
 	}
 	

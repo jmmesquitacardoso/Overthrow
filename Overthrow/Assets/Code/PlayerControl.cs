@@ -62,6 +62,9 @@ public class PlayerControl : MonoBehaviour
 	public Image grappleIcon;
 	public Image flareIcon;
 	public Image mindControlIcon;
+	public Image critBuffIcon;
+	public Image attackPowerBuffIcon;
+	public Image movementSpeedBuffIcon;
 	private Color blizzardIconColor;
 	private Vector3 positionBeforeBlink;
 	private ArrayList currentBuffs;
@@ -125,6 +128,9 @@ public class PlayerControl : MonoBehaviour
 			break;
 		case PlayerState.MOVING:
 			anim.Play ("Run");
+			break;
+		case PlayerState.MISSILES:
+			anim.Play ("Missiles");
 			break;
 		case PlayerState.BLINK:
 			anim.Play ("Blink");
@@ -203,12 +209,15 @@ public class PlayerControl : MonoBehaviour
 		switch (buff) {
 		case PlayerBuffs.CRITICAL:
 			critChance += 25f;
+			critBuffIcon.enabled = true;
 			break;
 		case PlayerBuffs.DESTRUCTION:
 			attackPower += 2000;
+			attackPowerBuffIcon.enabled = true;
 			break;
 		case PlayerBuffs.SWIFT:
 			speed += 15;
+			movementSpeedBuffIcon.enabled = true;
 			break;
 		default:
 			break;
@@ -217,12 +226,15 @@ public class PlayerControl : MonoBehaviour
 		switch (buff) {
 		case PlayerBuffs.CRITICAL:
 			critChance -= 25f;
+			//critBuffIcon.enabled = false;
 			break;
 		case PlayerBuffs.DESTRUCTION:
 			attackPower -= 2000;
+			attackPowerBuffIcon.enabled = false;
 			break;
 		case PlayerBuffs.SWIFT:
 			speed -= 15;
+			movementSpeedBuffIcon.enabled = false;
 			break;
 		default:
 			break;
@@ -309,7 +321,7 @@ public class PlayerControl : MonoBehaviour
 			
 			if (!shiftDown && Input.GetKeyDown (KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
-					ElementalMissiles (currentTarget.position, true);
+					StartCoroutine(ElementalMissiles(currentTarget.position, true));
 				} else {
 					Trap ();
 				}
@@ -319,7 +331,7 @@ public class PlayerControl : MonoBehaviour
 			if (shiftDown && Input.GetKeyDown (KeyCode.Alpha1)) {
 				if (mode == Mode.ARPG) {
 					GetMouseWorldPosition ();
-					ElementalMissiles (targetPosition, false);
+					StartCoroutine(ElementalMissiles(targetPosition, false));
 				} else {
 					
 				}
@@ -415,16 +427,20 @@ public class PlayerControl : MonoBehaviour
 	
 	// Casts the Elemental Missiles skill
 	// Player stops moving and rotates in the direction of the missiles
-	void ElementalMissiles (Vector3 targetPosition, bool targeted)
+	IEnumerator ElementalMissiles (Vector3 targetPosition, bool targeted)
 	{
 		if (currentTarget != null && (currentTarget.tag == "Enemy" || currentTarget.tag == "Boss") && targeted || !targeted) {
-			state = PlayerState.IDLE;
+			anim.speed = 2;
+			state = PlayerState.MISSILES;
 			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
 			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);
 			elementalMissiles.GetComponent<MissileLogic> ().critChance = critChance;
 			elementalMissiles.GetComponent<MissileLogic> ().criticalHitDamage = criticalHitDamage;
 			elementalMissiles.position = new Vector3 (transform.position.x + 1, transform.position.y+3, transform.position.z + 1);
 			RotateTowardsTargetPosition (targetPosition);
+			yield return new WaitForSeconds(0.9375f);
+			anim.speed = 1;
+			state = PlayerState.IDLE;
 			Instantiate (elementalMissiles);
 		}
 	}

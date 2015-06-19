@@ -33,9 +33,13 @@ public class Boss : MonoBehaviour {
 	public Image currentEnemyOuterHealthBar;
 	public Texture2D mouseTexture;
 
+	private Animator anim;
+	private BossState state = BossState.IDLE;
+
 	// Use this for initialization
 	public void Awake () {
 		Health = MaxHealth;
+		anim = gameObject.GetComponent<Animator> ();
 	}
 
 	void Start () {
@@ -45,11 +49,23 @@ public class Boss : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		switch (state) {
+		case BossState.IDLE:
+			anim.Play("Idle");
+			break;
+		case BossState.RUN:
+			anim.Play("Run");
+			break;
+		default:
+			break;
+		}
+
 		playerDistance = Vector3.Distance (playerTarget.position, transform.position);
 		if (playerDistance < 80f) {
 			lookAtPlayer ();
 		
 			if (playerDistance < 60f && playerDistance > 4f ) {
+				state = BossState.RUN;
 				transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
 		
 				if (playerDistance < 55f && playerDistance > 12f) {
