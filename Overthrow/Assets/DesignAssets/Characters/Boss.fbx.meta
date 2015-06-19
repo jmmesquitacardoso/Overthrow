@@ -195,17 +195,2245 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
-    animationImportWarnings: 
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Boss_blink
+      takeName: Armature|Boss_blink
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_blizzard
+      takeName: Armature|Boss_blizzard
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_elemental-missils
+      takeName: Armature|Boss_elemental-missils
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_grapple
+      takeName: Armature|Boss_grapple
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_jump-cycle
+      takeName: Armature|Boss_jump-cycle
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_mind control
+      takeName: Armature|Boss_mind control
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_mostra-caixa
+      takeName: Armature|Boss_mostra-caixa
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_respirar_base
+      takeName: Armature|Boss_respirar_base
+      firstFrame: 0
+      lastFrame: 197
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_run_cycle
+      takeName: Armature|Boss_run_cycle
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Boss_walk_cycle
+      takeName: Armature|Boss_walk_cycle
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Plane|Boss_mind control
+      takeName: Plane|Boss_mind control
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Cinto|Boss_mind control
+      takeName: Cinto|Boss_mind control
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Espinha_Inferior
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_L/Perna_L/Calcanhar_L/P\xE9_L/P\xE9_L_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R
+        weight: 1
+      - path: Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/Coxa_R/Perna_R/Calcanhar_R/P\xE9_R/P\xE9_R_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Diafragma/Diafragma_end
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Pesco\xE7o/Cabe\xE7a/Cabe\xE7a_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Anelar_L/Anelar_L.001/Anelar_L.002/Anelar_L.003/Anelar_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Indicador_L/Indicador_L.001/Indicador_L.002/Indicador_L.003/Indicador_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Meio_L/Meio_L.001/Meio_L.002/Meio_L.003/Meio_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Mindinho_L/Mindinho_L.001/Mindinho_L.002/Mindinho_L.003/Mindinho_L.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.L/Bra\xE7o_L/Ante_Bra\xE7o_L/M\xE3o_L/Polegar_L/Polegar_L.001/Polegar_L.002/Polegar_L.002_end"
+        weight: 1
+      - path: Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Anelar_R/Anelar_R.001/Anelar_R.002/Anelar_R.003/Anelar_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Indicador_R/Indicador_R.001/Indicador_R.002/Indicador_R.003/Indicador_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Meio_R/Meio_R.001/Meio_R.002/Meio_R.003/Meio_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Mindinho_R/Mindinho_R.001/Mindinho_R.002/Mindinho_R.003/Mindinho_R.003_end"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002"
+        weight: 1
+      - path: "Armature/Espinha_Inferior/espinha_centro/espinha_sup/Shoulder.R/Bra\xE7o_R/Ante_Bra\xE7o_R/M\xE3o_R/Polegar_R/Polegar_R.001/Polegar_R.002/Polegar_R.002_end"
+        weight: 1
+      - path: Cinto
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: HUMAN
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

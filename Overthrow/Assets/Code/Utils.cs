@@ -37,6 +37,11 @@ public enum PlayerBuffs {
 	SWIFT
 };
 
+public enum BossState {
+	IDLE,
+	RUN
+};
+
 public class Utils
 {
 	private static Utils instance;
