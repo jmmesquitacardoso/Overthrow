@@ -27,9 +27,15 @@ public class MissileLogic : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
+		Debug.Log("asdsa");
+		Debug.Log (collision.gameObject.tag);
 		if (collision.gameObject.tag == "Enemy") {
-			collision.gameObject.GetComponent<EnemyScript>().TakeDamage(Utils.Instance.CalculateDamage(critChance,criticalHitDamage,damage));
-			Destroy(gameObject);
+			collision.gameObject.GetComponent<EnemyScript> ().TakeDamage (Utils.Instance.CalculateDamage (critChance, criticalHitDamage, damage));
+			Destroy (gameObject);
+		} else if (collision.gameObject.tag == "Boss") {
+			Debug.Log("ola");
+			collision.gameObject.GetComponent<Boss> ().TakeDamage (Utils.Instance.CalculateDamage (critChance, criticalHitDamage, damage));
+			Destroy (gameObject);
 		}
 	}
 }

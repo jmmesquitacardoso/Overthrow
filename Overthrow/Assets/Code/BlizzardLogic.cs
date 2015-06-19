@@ -14,7 +14,7 @@ public class BlizzardLogic : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		InvokeRepeating ("BlizzardDuration", 0, blizzardDuration);
+		StartCoroutine (BlizzardDuration());
 		collidedEnemies = new ArrayList ();
 	}
 	
@@ -27,7 +27,10 @@ public class BlizzardLogic : MonoBehaviour
 	void OnCollisionEnter (Collision collision)
 	{
 		if (collision.gameObject.tag == "Enemy") {
-			collision.gameObject.GetComponent<EnemyScript> ().EnterBlizzard (critChance,criticalHitDamage,damage);
+			collision.gameObject.GetComponent<EnemyScript> ().EnterBlizzard (critChance, criticalHitDamage, damage);
+			collidedEnemies.Add (collision.gameObject);
+		} else if (collision.gameObject.tag == "Boss") {
+			collision.gameObject.GetComponent<Boss> ().EnterBlizzard (critChance, criticalHitDamage, damage);
 			collidedEnemies.Add (collision.gameObject);
 		}
 	}
@@ -36,17 +39,14 @@ public class BlizzardLogic : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Enemy") {
 			collision.gameObject.GetComponent<EnemyScript> ().ExitBlizzard ();
+		} else if (collision.gameObject.tag == "Enemy") {
+			collision.gameObject.GetComponent<Boss> ().ExitBlizzard ();
 		}
 	}
 
-	void BlizzardDuration ()
+	IEnumerator BlizzardDuration ()
 	{
-		if (!firstTime) {
-			foreach (GameObject enemy in collidedEnemies) {
-				enemy.GetComponent<EnemyScript> ().ExitBlizzard ();
-			}
-			Destroy (gameObject);
-		}
-		firstTime = false;
+		yield return new WaitForSeconds (blizzardDuration);
+		Destroy (gameObject);
 	}
 }

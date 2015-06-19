@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Boss : MonoBehaviour {
@@ -10,7 +11,7 @@ public class Boss : MonoBehaviour {
 	public float rotationDamping = 15;
 	public int attackPower = 1200;
 	public int MaxHealth=2000;
-	public int Health{ get; private set; }
+	public int Health;
 	public Transform fire;
 	public Transform elementalMissiles;
 	public Transform playerTarget;
@@ -22,10 +23,21 @@ public class Boss : MonoBehaviour {
 	private Transform fireTransform;
 	private float fireTime=2;
 	private float fireT;
+
+	private bool inBlizzard = false;
+	private float blizzardCritChance;
+	private float blizzardCriticialHitDamage;
+	private int blizzardDamage;
+	public Text currentEnemyText;
+	public Image currentEnemyHealthBar;
+	public Image currentEnemyOuterHealthBar;
+	public Texture2D mouseTexture;
+
 	// Use this for initialization
 	public void Awake () {
 		Health = MaxHealth;
 	}
+
 	void Start () {
 
 	}
@@ -44,10 +56,7 @@ public class Boss : MonoBehaviour {
 					if ((canFire -= Time.deltaTime) > 0)
 						return;
 
-					if (Random.Range(0, 3) != 0) 
-						ElementalMissiles (playerTarget.position, true);
-					else 
-						Blizzard (playerTarget.position, true);
+					ElementalMissiles (playerTarget.position, true);
 					canFire = fireRate;
 				}
 				if(playerDistance < 12f){
@@ -65,6 +74,23 @@ public class Boss : MonoBehaviour {
 		}
 	}
 
+	void OnMouseEnter ()
+	{
+		Cursor.SetCursor (mouseTexture, new Vector2 (0, 0), CursorMode.Auto);
+		currentEnemyText.text = gameObject.name;
+		currentEnemyHealthBar.enabled = true;
+		currentEnemyOuterHealthBar.enabled = true;
+		currentEnemyHealthBar.fillAmount = ((float)Health / (float)MaxHealth);
+	}
+	
+	void OnMouseExit ()
+	{
+		Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
+		currentEnemyText.text = "";
+		currentEnemyHealthBar.enabled = false;
+		currentEnemyOuterHealthBar.enabled = false;
+	}
+
 	void lookAtPlayer ()
 	{
 		Quaternion rotation = Quaternion.LookRotation (playerTarget.position - transform.position);
@@ -79,24 +105,12 @@ public class Boss : MonoBehaviour {
 		eml.critChance = critChance;
 		eml.criticalHitDamage = criticalHitDamage;
 		elementalMissiles.position = new Vector3 (transform.position.x + 3, transform.position.y+8, transform.position.z + 1);
-		RotateTowardsTargetPosition (targetPosition);
+		//RotateTowardsTargetPosition (targetPosition);
 		Instantiate (elementalMissiles);
 	}
 
-	void Blizzard (Vector3 targetPosition, bool targeted)
-	{
-		BlizzardLogic eml = blizzard.GetComponent<BlizzardLogic> ();
-		//eml.targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
-		eml.damage = (int)(attackPower * 0.20);
-		eml.critChance = critChance;
-		eml.criticalHitDamage = criticalHitDamage;
-		blizzard.position = new Vector3 (transform.position.x + 3, transform.position.y+20, transform.position.z + 1);
-		RotateTowardsTargetPosition (targetPosition);
-		Instantiate (blizzard);
-	}
-
 	//Rotates the player in the direction of the vector3 targetPosition
-	void RotateTowardsTargetPosition (Vector3 targetPosition)
+	/*void RotateTowardsTargetPosition (Vector3 targetPosition)
 	{
 		var targetRotation = Quaternion.LookRotation (targetPosition - transform.position);
 		transform.rotation = targetRotation;
@@ -105,5 +119,38 @@ public class Boss : MonoBehaviour {
 		rotation.y += 180;
 		rotation.z = 0;
 		transform.rotation = Quaternion.Euler (rotation);
+	}*/
+
+	public void TakeDamage (int damage)
+	{
+		Health -= damage;
+		currentEnemyHealthBar.fillAmount = ((float)Health / (float)MaxHealth);
+		if (Health <= 0) {
+			Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
+			currentEnemyText.text = "";
+			currentEnemyOuterHealthBar.enabled = false;
+			Destroy (gameObject);
+		}
 	}
+
+	public void EnterBlizzard (float blizzardCritChance, float blizzardCriticialHitDamage, int blizzardDamage)
+	{
+		inBlizzard = true;
+		this.blizzardCritChance = blizzardCritChance;
+		this.blizzardCriticialHitDamage = blizzardCriticialHitDamage;
+		this.blizzardDamage = blizzardDamage;
+	}
+	
+	public void ExitBlizzard ()
+	{
+		inBlizzard = false;
+	}
+	
+	void TakeBlizzardDamage ()
+	{
+		if (inBlizzard) {
+			TakeDamage (Utils.Instance.CalculateDamage(blizzardCritChance,blizzardCriticialHitDamage,blizzardDamage));
+		}
+	}
+
 }

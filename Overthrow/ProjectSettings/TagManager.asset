@@ -8,6 +8,7 @@ TagManager:
   - New Tag
   - Enemy
   - Terrain
+  - Boss
   layers:
   - Default
   - TransparentFX

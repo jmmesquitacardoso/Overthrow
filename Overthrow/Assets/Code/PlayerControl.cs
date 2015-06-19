@@ -417,7 +417,7 @@ public class PlayerControl : MonoBehaviour
 	// Player stops moving and rotates in the direction of the missiles
 	void ElementalMissiles (Vector3 targetPosition, bool targeted)
 	{
-		if (currentTarget != null && currentTarget.tag == "Enemy" && targeted || !targeted) {
+		if (currentTarget != null && (currentTarget.tag == "Enemy" || currentTarget.tag == "Boss") && targeted || !targeted) {
 			state = PlayerState.IDLE;
 			elementalMissiles.GetComponent<MissileLogic> ().targetPosition = new Vector3 (targetPosition.x, targetPosition.y + 3, targetPosition.z);
 			elementalMissiles.GetComponent<MissileLogic> ().damage = (int)(attackPower * 0.10);
