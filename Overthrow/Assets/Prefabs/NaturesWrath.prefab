@@ -112,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.3699951, y: .325000048, z: 585.388794}
+  m_LocalPosition: {x: 163.331589, y: .324977398, z: -51.5275688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438116}
@@ -220,11 +220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fe96d8b6c345a4e9baf507860dd44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 34.1737671, y: .325012207, z: 590.953003}
+  targetPosition: {x: 188.9599, y: .324951172, z: -30.4034424}
   speed: 5
-  critChance: 15
+  critChance: 40
   criticalHitDamage: 1
-  damage: 100
+  damage: 300
 --- !u!198 &19825400
 ParticleSystem:
   m_ObjectHideFlags: 1

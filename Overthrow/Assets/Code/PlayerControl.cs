@@ -251,6 +251,7 @@ public class PlayerControl : MonoBehaviour
 		if (currentHealth <= 0) {
 			EnemyAI.isPlayerAlive = false;
 			Destroy (gameObject);
+			Application.LoadLevel("testScene");
 		}
 	}
 	
