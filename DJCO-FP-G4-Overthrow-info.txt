@@ -1,0 +1,10 @@
+Main github repo: https://github.com/jmmesquitacardoso/Overthrow
+
+Source code can be found inside the  DJCO-FP-G4-Overthrown-source folder within the root of the github repo.
+
+Game executable can be found inside the  DJCO-FP-G4-Overthrown-game folder within the root of the github repo.
+
+Gameplay video: https://www.youtube.com/watch?v=1fxZZmmYf8w&feature=youtu.be
+
+Wiki can be found within the repo at this link: https://github.com/jmmesquitacardoso/Overthrow/wiki
+
